@@ -1,5 +1,5 @@
 <p align="center">
-  <img align="center" width="200" src="https://github.com/MemoOR/about-me/blob/master/assets/README/GDLogo.png">
+  <img align="center" width="200" src="https://github.com/MemoOR/about-me/blob/master/assets/GDLogo.png">
   <h1 align="center" style="margin: 0 auto 0 auto;">Guillermo Ortega Romo</h1>
   <h5 align="center" style="margin: 0 auto 0 auto;">About me</h5>
 </p>
