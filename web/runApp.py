@@ -3,8 +3,9 @@
 #@Description: This file starts all the complete server builded with flask, this code has only the way the app should be executed.
 #              Which means if the server should be executed in development mode or production.
 try:
+    import os
     import sys
-    from app import app
+    from app import create_app
     from gevent.pywsgi import WSGIServer
 except ImportError as error:
     sys.exit("Error in:" + __file__ + " " + error.__class__.__name__ + ": " + error.msg)
@@ -14,6 +15,8 @@ except Exception as exception:
 #-------------------------------Execute----------------------------------------#
 if __name__ == "__main__":
     try:
+        settings_module = os.getenv('APP_SETTINGS_MODULE', "app.config.local")
+        app = create_app(settings_module)
         # -----------------Dev mode-----------------
         app.run(host="127.0.0.1", port=7168, debug=True, use_reloader=True)
 

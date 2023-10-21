@@ -17,4 +17,3 @@ def error404():
 @app.route("/error500")
 def error500():
     return render_template('errorHandlers/error500.html')
-
