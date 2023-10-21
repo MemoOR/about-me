@@ -1,6 +1,6 @@
-#@File: main.py
-#@Author: Guillermo Ortega Romo.
-#@Description: This file starts all the complete server builded with flask, this code has only the way the app should be executed.
+# @File: main.py
+# @Author: Guillermo Ortega Romo.
+# @Description: This file starts all the complete server builded with flask, this code has only the way the app should be executed.
 #              Which means if the server should be executed in development mode or production.
 try:
     import os
@@ -12,10 +12,10 @@ except ImportError as error:
 except Exception as exception:
     sys.exit("Error in:" + __file__ + exception)
 
-#-------------------------------Execute----------------------------------------#
+# -------------------------------Execute----------------------------------------#
 if __name__ == "__main__":
     try:
-        settings_module = os.getenv('APP_SETTINGS_MODULE', "app.config.local")
+        settings_module = os.getenv("APP_SETTINGS_MODULE", "app.config.local")
         app = create_app(settings_module)
         # -----------------Dev mode-----------------
         app.run(host="127.0.0.1", port=7168, debug=True, use_reloader=True)

@@ -7,13 +7,15 @@ except ImportError as error:
 except Exception as exception:
     sys.exit("Error in:" + __file__ + exception)
 
-#----------------------------Error Handlers------------------------------------#
+# ----------------------------Error Handlers------------------------------------#
+
 
 @app.route("/error404")
 def error404():
-    return render_template('errorHandlers/error404.html')
+    return render_template("errorHandlers/error404.html")
+
 
 # @Description: Endpoint to verify error 500 if its the case.
 @app.route("/error500")
 def error500():
-    return render_template('errorHandlers/error500.html')
+    return render_template("errorHandlers/error500.html")

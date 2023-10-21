@@ -15,8 +15,8 @@ except Exception as exception:
 
 mail = Mail()
 
-def create_app(settings_module):
 
+def create_app(settings_module):
     app = Flask(__name__, instance_relative_config=True)
 
     # Load the config file specified by the APP environment variable
@@ -34,12 +34,13 @@ def create_app(settings_module):
 
     # Filters
     register_filters(app)
-    
-    #context_processor
+
+    # context_processor
     register_context_processor(app)
 
     # Blueprints
     from app.blueprints.appThreejs import appthreejs_bp
+
     app.register_blueprint(appthreejs_bp)
 
     # Custom error handlers
@@ -51,9 +52,7 @@ def create_app(settings_module):
 def register_context_processor(app):
     @app.context_processor
     def dateNow():
-        return {
-            "now": dt.datetime.utcnow()
-        }
+        return {"now": dt.datetime.utcnow()}
 
 
 def register_filters(app):
@@ -76,9 +75,9 @@ def register_error_handlers(app):
 
 def configure_logging(app):
     """
-    Configura el módulo de logs. Establece los manejadores para cada logger.
+    Configure Logs.
 
-    :param app: Instancia de la aplicación Flask
+    :param app: Flask app
 
     """
 
