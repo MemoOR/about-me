@@ -44,7 +44,7 @@
 					{
 						scrollTop: $(hash).offset().top,
 					},
-					700,
+					50,
 					"easeInOutExpo",
 					function () {
 						window.location.hash = hash;
