@@ -67,7 +67,7 @@ a:hover, a:focus, a:active {
 
 @media (max-width: 991.98px) {
     .site-navbar.bg-light {
-        background: #fff !important;
+        background: #b1b1b1cc !important;
         top: 0;
     }
 }
