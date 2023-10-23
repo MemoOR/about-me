@@ -1,6 +1,6 @@
 try:
     import sys
-    from flask import Blueprint, render_template
+    from flask import render_template
 
     from . import appthreejs_bp
 except ImportError as error:

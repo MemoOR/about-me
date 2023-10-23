@@ -1,7 +1,8 @@
 try:
     import sys
-    from app import app
     from flask import render_template
+
+    from . import errors_bp
 except ImportError as error:
     sys.exit("Error in:" + __file__ + " " + error.__class__.__name__ + ": " + error.msg)
 except Exception as exception:
@@ -10,12 +11,12 @@ except Exception as exception:
 # ----------------------------Error Handlers------------------------------------#
 
 
-@app.route("/error404")
-def error404():
-    return render_template("errorHandlers/error404.html")
+@errors_bp.app_errorhandler(404)
+def error404(e):
+    return render_template("error404.html", pageTitlte="Not Found")
 
 
 # @Description: Endpoint to verify error 500 if its the case.
-@app.route("/error500")
-def error500():
-    return render_template("errorHandlers/error500.html")
+@errors_bp.app_errorhandler(500)
+def error500(e):
+    return render_template("error500.html")

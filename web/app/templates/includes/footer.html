@@ -1,6 +1,22 @@
 <div class="footer">
-    <footer>
-        GDcode Labs & Studios &copy; {{now.day}}-{{now.strftime("%B")}}-{{now.year}}
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        GDcode Labs & Studios &copy; {{now.year}} All rights reserved
+                    </p>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12 text-center">
+                    <p>
+                        <a href="https://www.linkedin.com/in/guillermo-or/" target="_blank" class="social-item"><span class="icon-linkedin2"></span></a>
+                        <a href="https://github.com/MemoOR" target="_blank" class="social-item"><span class="icon-github2"></span></a>
+                        <a href="https://twitter.com/Memo_OR9" target="_blank" class="social-item"><span class="icon-twitter2"></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
     </footer>
 </div>
-<script src="{{url_for('static', filename= 'css/bootstrap/js/bootstrap.js')}}"></script>

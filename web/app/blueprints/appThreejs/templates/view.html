@@ -18,4 +18,13 @@
 <p id="gameover">Game over</p>
 <button id="playBtn">PLAY</button>
 <canvas class="webgl"></canvas>
+
+<script type="module">
+    import { App3D } from "{{url_for('static', filename= 'js/app3/Game.js')}}";
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const app = new App3D();
+        window.app = app;
+    });
+</script>
 {% endblock %}

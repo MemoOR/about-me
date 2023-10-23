@@ -39,12 +39,17 @@ def create_app(settings_module):
     register_context_processor(app)
 
     # Blueprints
-    from app.blueprints.appThreejs import appthreejs_bp
+    # # Main Page
+    from app.blueprints.index import index_bp
+    app.register_blueprint(index_bp)
 
+    # # Threejs app
+    from app.blueprints.appThreejs import appthreejs_bp
     app.register_blueprint(appthreejs_bp)
 
-    # Custom error handlers
-    register_error_handlers(app)
+    # # Error handlers
+    from app.blueprints.errorHandlers import errors_bp
+    app.register_blueprint(errors_bp)
 
     return app
 
@@ -57,20 +62,6 @@ def register_context_processor(app):
 
 def register_filters(app):
     app.jinja_env.filters["datetime"] = format_datetime
-
-
-def register_error_handlers(app):
-    @app.errorhandler(500)
-    def base_error_handler(e):
-        return render_template("500.html"), 500
-
-    @app.errorhandler(404)
-    def error_404_handler(e):
-        return render_template("404.html"), 404
-
-    @app.errorhandler(401)
-    def error_404_handler(e):
-        return render_template("401.html"), 401
 
 
 def configure_logging(app):
