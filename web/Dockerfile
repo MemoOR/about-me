@@ -1,10 +1,20 @@
 FROM python:3.11
+LABEL maintainer "memo.or99@hotmail.com"
 
-WORKDIR /app
+RUN mkdir -p /opt/app
 
-ADD . /app
+WORKDIR /opt/app
 
-RUN pip install -r requirements.txt
-RUN pip3 install --upgrade pip
+# install
+COPY requirements.txt ./
+RUN pip install --progress-bar off --no-cache-dir -r requirements.txt
 
-CMD ["python3", "runApp.py"]
+# copy app
+COPY app /opt/app
+COPY about-me.py /opt/app
+COPY gunicorn.conf.py /opt/app
+
+EXPOSE 7168
+
+WORKDIR /opt/app/app
+CMD ["gunicorn", "about-me:app"]

@@ -12,12 +12,12 @@ version: "3.7"
 services:
 
   appweb:
-    image: will_put_web_page_image_here
+    image: memoor_appweb:latest
     ports:
       - "7168:7168"
 
   router:
-    image: will_put_nginxconfing_image_here
+    image: memoor_router:latesr
     ports:
       - "80:80"
       - "443:443"
