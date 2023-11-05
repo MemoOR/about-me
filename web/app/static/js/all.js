@@ -964,7 +964,7 @@ function initWorkFilter(){
          if ($("body").hasClass("appear-animate")) {
              var wow_p = new WOW({
                  boxClass: "wow-p",
-                 animateClass: "animated",
+                 animateClass: "animate__animated",
                  offset: 100,
                  mobile: false,
                  live: true,
@@ -1080,7 +1080,7 @@ function init_wow(){
         }
         var wow = new WOW({
             boxClass: 'wow',
-            animateClass: 'animated',
+            animateClass: 'animate__animated',
             offset: 100,
             mobile: false, 
             live: true,
@@ -1090,7 +1090,7 @@ function init_wow(){
         });
         
         if ($("body").hasClass("appear-animate")){
-           wow.init();            
+            wow.init();
         } else{
             $(".wow").css("opacity", "1");
         }
@@ -1102,7 +1102,7 @@ function init_wow(){
         }
         var wow_p = new WOW({
             boxClass: 'wow-p',
-            animateClass: 'animated',
+            animateClass: 'animate__animated',
             offset: 100,
             mobile: false, 
             live: true,
@@ -1120,8 +1120,8 @@ function init_wow(){
         /* Wow for menu bar init */
         
         if (($("body").hasClass("appear-animate")) && ($(window).width() >= 1024) && ($("html").hasClass("no-mobile"))){
-           $(".wow-menubar").addClass("no-animate").addClass("fadeInDownShort").addClass("animated");  
-           setInterval(function(){ $(".wow-menubar").removeClass("no-animate"); }, 1500);         
+           $(".wow-menubar").addClass("animate__no-animate").addClass("animate__fadeInDown").addClass("animate__animated");  
+           setInterval(function(){ $(".wow-menubar").removeClass("animate__no-animate"); }, 1500);         
         } else{
             $(".wow-menubar").css("opacity", "1");
         }

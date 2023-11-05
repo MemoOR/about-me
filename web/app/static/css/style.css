@@ -1847,10 +1847,10 @@ html:not(.mobile) .wow-p {
     transform: scale(1.2);
 }
 
-.appear-animate .wow.animated,
-.appear-animate .wow.scaleOutIn.animated,
-.appear-animate .wow-p.amimated,
-.appear-animate .wow-menubar.animated,
+.appear-animate .wow.animate__animated,
+.appear-animate .wow.scaleOutIn.animate__animated,
+.appear-animate .wow-p.animate__animated,
+.appear-animate .wow-menubar.animate__animated,
 .mobile .appear-animate .wow,
 .mobile .appear-animate .wow-menubar,
 .mobile .appear-animate .wow-p {
