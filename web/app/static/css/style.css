@@ -1873,16 +1873,16 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeInDownShort, .fadeInUpShort, .scalexIn, .fadeScaleIn,
-.fadeScaleOutIn, .fadeScaleOutInShort,
-.backInDown, .backInLeft, .backInRight, .backInUp,
-.bounceIn, .bounceInDown, .bounceInLeft, .bounceInRight, .bounceInUp,
-.fadeIn, .fadeInDown, .fadeInDownBig, .fadeInLeft, .fadeInLeftBig,
-.fadeInRight, .fadeInRightBig, .fadeInUp, .fadeInUpBig, .fadeInTopLeft,
-.fadeInTopRight, .fadeInBottomLeft, .fadeInBottomRight, .flipInX, .flipInY,
-.lightSpeedInRight, .lightSpeedInLeft, .rotateIn, .rotateInDownLeft,
-.rotateInDownRight, .rotateInUpLeft, .rotateInUpRight, .jackInTheBox,
-.rollIn, .zoomIn, .zoomInDown, .zoomInLeft, .zoomInRight, .zoomInUp {
+.animate__fadeInDownShort, .animate__fadeInUpShort, .animate__scalexIn, .animate__fadeScaleIn,
+.animate__fadeScaleOutIn, .animate__fadeScaleOutInShort,
+.animate__backInDown, .animate__backInLeft, .animate__backInRight, .animate__backInUp,
+.animate__bounceIn, .animate__bounceInDown, .animate__bounceInLeft, .animate__bounceInRight, .animate__bounceInUp,
+.animate__fadeIn, .animate__fadeInDown, .animate__fadeInDownBig, .animate__fadeInLeft, .animate__fadeInLeftBig,
+.animate__fadeInRight, .animate__fadeInRightBig, .animate__fadeInUp, .animate__fadeInUpBig, .animate__fadeInTopLeft,
+.animate__fadeInTopRight, .animate__fadeInBottomLeft, .animate__fadeInBottomRight, .animate__flipInX, .animate__flipInY,
+.animate__lightSpeedInRight, .animate__lightSpeedInLeft, .animate__rotateIn, .animate__rotateInDownLeft,
+.animate__rotateInDownRight, .animate__rotateInUpLeft, .animate__rotateInUpRight, .animate__jackInTheBox,
+.animate__rollIn, .animate__zoomIn, .animate__zoomInDown, .animate__zoomInLeft, .animate__zoomInRight, .animate__zoomInUp {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     -webkit-transform: translateZ(0);
@@ -1903,7 +1903,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeInDownShort {
+.animate__fadeInDownShort {
     -webkit-animation-name: fadeInDownShort;
     animation-name: fadeInDownShort
 }
@@ -1922,7 +1922,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeInUpShort {
+.animate__fadeInUpShort {
     -webkit-animation-name: fadeInUpShort;
     animation-name: fadeInUpShort;
 
@@ -1946,7 +1946,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.scalexIn {
+.animate__scalexIn {
     -webkit-animation-name: scalexIn;
     animation-name: scalexIn;
 }
@@ -1965,7 +1965,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeScaleIn {
+.animate__fadeScaleIn {
     -webkit-animation-name: fadeScaleIn;
     animation-name: fadeScaleIn;
 }
@@ -1982,7 +1982,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.scaleOutIn {
+.animate__scaleOutIn {
     -webkit-animation-name: scaleOutIn;
     animation-name: scaleOutIn;
 }
@@ -2001,7 +2001,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeScaleOutIn {
+.animate__fadeScaleOutIn {
     -webkit-animation-name: fadeScaleOutIn;
     animation-name: fadeScaleOutIn;
 }
@@ -2020,7 +2020,7 @@ html:not(.mobile) .wow-p {
     }
 }
 
-.fadeScaleOutInShort {
+.animate__fadeScaleOutInShort {
     -webkit-animation-name: fadeScaleOutInShort;
     animation-name: fadeScaleOutInShort;
 }
@@ -2698,6 +2698,10 @@ a.logo:hover {
 }
 
 .main-nav.light-after-scroll .logo-white {
+    display: none;
+}
+
+.main-nav.dark .logo-dark {
     display: none;
 }
 

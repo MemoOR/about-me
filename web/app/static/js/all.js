@@ -6,12 +6,17 @@
      Scripts initialization
      --------------------------------------------- */
     
-    $(window).on("load", function(){
+    $(window).on("load", function () {
+        if (localStorage.getItem("mode") === "light") {
+            setLightMode();
+        } else {
+            setDarkMode();
+        }
         
         // Page loader        
         $(".page-loader div").fadeOut();
         $(".page-loader").delay(200).fadeOut("slow");
-        
+
         init_text_rotator();
         initWorkFilter();
         init_scroll_navigate();
