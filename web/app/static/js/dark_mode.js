@@ -1,6 +1,6 @@
 // Dark Mode
 function setDarkMode() {
-    $("#DarkLightToggle").text("Dark Mode");
+    $("#DarkLightToggle").text("Light Mode");
     $(".page").addClass("bg-dark light-content")
     $(".page-loader").addClass("dark")
     $(".main-nav").removeClass("light-after-scroll")
@@ -18,7 +18,7 @@ function setDarkMode() {
 
 // Light Mode
 function setLightMode() {
-    $("#DarkLightToggle").text("Light Mode");
+    $("#DarkLightToggle").text("Dark Mode");
     $(".page").removeClass("bg-dark light-content")
     $(".page-loader").removeClass("dark")
     $(".main-nav").addClass("light-after-scroll")
@@ -35,7 +35,7 @@ function setLightMode() {
 }
 
 function DarkLightToggle() {
-    if ($("#DarkLightToggle").text() === "Dark Mode") {
+    if ($("#DarkLightToggle").text() === "Light Mode") {
         localStorage.setItem("mode", "light");
         location.reload();
     } else {
