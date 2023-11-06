@@ -7,15 +7,14 @@
      --------------------------------------------- */
     
     $(window).on("load", function () {
-        if (localStorage.getItem("mode") === "light") {
+        if (localStorage.getItem("theme") === "light") {
             setLightMode();
         } else {
             setDarkMode();
         }
-        
-        // Page loader        
+        // Page loader
         $(".page-loader div").fadeOut();
-        $(".page-loader").delay(200).fadeOut("slow");
+        $(".page-loader").delay(350).fadeOut("slow");
 
         init_text_rotator();
         initWorkFilter();

@@ -396,6 +396,21 @@ img:not([draggable]), embed, object, video {
 /* ==============================
    Page loader
    ============================== */
+:root[data-applied-theme="light"] {
+    --loader-background: #fefefe;
+    --loader-border-top: 1px solid rgba(0, 0, 0, 0.15);
+    --loader-border-right: 1px solid rgba(0, 0, 0, 0.15);
+    --loader-border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    --loader-border-left: 1px solid rgba(0, 0, 0, .55);
+}
+
+:root[data-applied-theme="dark"] {
+    --loader-background: #111;
+    --loader-border-top: 1px solid rgba(255, 255, 255, 0.15);
+    --loader-border-right: 1px solid rgba(255, 255, 255, 0.15);
+    --loader-border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    --loader-border-left: 1px solid rgba(255, 255, 255, .5);
+}
 
 .page-loader {
     display: block;
@@ -404,7 +419,7 @@ img:not([draggable]), embed, object, video {
     position: fixed;
     top: 0;
     left: 0;
-    background: #fefefe;
+    background: var(--loader-background);
     z-index: 100000;
 }
 
@@ -417,10 +432,11 @@ img:not([draggable]), embed, object, video {
     margin: -25px 0 0 -25px;
     font-size: 10px;
     text-indent: -12345px;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-    border-left: 1px solid rgba(0, 0, 0, .55);
+
+    border-top: var(--loader-border-top);
+    border-right: var(--loader-border-right);
+    border-bottom: var(--loader-border-bottom);
+    border-left: var(--loader-border-left);
 
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -433,27 +449,6 @@ img:not([draggable]), embed, object, video {
     animation: spinner 700ms infinite linear;
 
     will-change: transform;
-
-    z-index: 100001;
-}
-
-.page-loader.dark {
-    background: #111;
-}
-
-.page-loader.dark .loader {
-    border-top: 1px solid rgba(255, 255, 255, 0.15);
-    border-right: 1px solid rgba(255, 255, 255, 0.15);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    border-left: 1px solid rgba(255, 255, 255, .5);
-
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%;
-
-    -webkit-animation: spinner 700ms infinite linear;
-    -moz-animation: spinner 700ms infinite linear;
-    animation: spinner 700ms infinite linear;
 
     z-index: 100001;
 }
@@ -1756,7 +1751,7 @@ html:not(.mobile) .appear-animate .wordsAnimIn .word {
     }
 }
 
-.wordsAnimIn.animated .word,
+.wordsAnimIn.animate__animated .word,
 .mobile .wordsAnimIn .word {
     opacity: 1;
     -webkit-transform: translateY(0) scale(1) skew(0) rotate(0);
@@ -1785,14 +1780,14 @@ html:not(.mobile) .appear-animate .wordsAnimLongIn .word {
     }
 }
 
-.wordsAnimLongIn.animated .word,
+.wordsAnimLongIn.animate__animated .word,
 .mobile .wordsAnimLongIn .word {
     opacity: 1;
     -webkit-transform: translateY(0);
     transform: translateY(0);
 }
 
-.appear-animate .linesAnimIn .word {
+.appear-animate .animate__linesAnimIn .word {
     opacity: 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -1806,20 +1801,20 @@ html:not(.mobile) .appear-animate .wordsAnimLongIn .word {
     transition-delay: calc(0.1s * var(--line-index));
 }
 
-html:not(.mobile) .appear-animate .linesAnimIn .word {
+html:not(.mobile) .appear-animate .animate__linesAnimIn .word {
     will-change: opacity, transform;
 }
 
 @media (prefers-reduced-motion:reduce), print {
-    .appear-animate .linesAnimIn .word {
+    .appear-animate .animate__linesAnimIn .word {
         opacity: 1 !important;
         -webkit-transform: none !important;
         transform: none !important;
     }
 }
 
-.linesAnimIn.animated .word,
-.mobile .linesAnimIn .word {
+.animate__linesAnimIn.animate__animated .word,
+.mobile .animate__linesAnimIn .word {
     opacity: 1;
     -webkit-transform: translateY(0) translateZ(0) scale(1.0) rotate(0.02deg);
     transform: translateY(0) translateZ(0) scale(1.0) rotate(0.02deg);
@@ -2568,7 +2563,8 @@ a.logo:hover {
 .mobile-on .js-opened>.mn-has-sub>.mn-has-sub-icon-right {
     border-color: rgba(255, 255, 255, .4);
     -webkit-transform: rotate(270deg);
-    -moz-transform: rotate(270deg) transform: rotate(270deg)
+    -moz-transform: rotate(270deg);
+    transform: rotate(270deg);
 }
 
 .mobile-on .inner-nav li {
@@ -4108,7 +4104,6 @@ a.logo:hover {
 
 .work-item:hover .work-title,
 .work-item:hover .work-descr {
-    ;
     color: #fff;
     -webkit-transition: all 0.35s cubic-bezier(0.300, 0.100, 0.580, 1.000);
     transition: all 0.35s cubic-bezier(0.300, 0.100, 0.580, 1.000);
@@ -7284,7 +7279,7 @@ table.shopping-cart-table tr td {
    Morphext
    ============================== */
 
-.morphext>.animated {
+.morphext>.animate__animated {
     display: inline-block;
     -webkit-animation-duration: 1.2s;
     animation-duration: 1.2s;
