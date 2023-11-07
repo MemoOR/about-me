@@ -3416,8 +3416,8 @@ a.logo:hover {
 }
 
 .resume-icon {
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     margin: 0 auto 0 auto;
     font-size: 72px;
     text-align: center;
@@ -3448,13 +3448,13 @@ a.logo:hover {
 
 .resume-icon svg {
     display: block;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
 }
 
 .resume-icon.icon-rect svg{
     display: block;
-    width: 80%;
+    width: 60%;
     height: 40%;
 }
 
