@@ -30,8 +30,8 @@
     9.4. Dark panel style
 10. Sections styles
     10.1. Common
-11. Services
-12. Alternative services
+11. Resume
+12. Alternative resume
 13. Team
 14. Features
 15. Alt features
@@ -3404,40 +3404,65 @@ a.logo:hover {
 
 
 /* ==============================
-   Services
+   Resume
    ============================== */
 
-.services-grid {
+.resume-grid {
     margin-top: -60px;
 }
 
-.services-item {
+.resume-item {
     margin-top: 60px;
 }
 
-.services-icon {
-    width: 1em;
-    height: 1em;
-    margin: 0 auto 18px auto;
+.resume-icon {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto 0 auto;
     font-size: 72px;
     text-align: center;
     line-height: 1.3;
-    color: #111111;
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.light-content .services-icon {
+.resume-item .date {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #111111;
+}
+
+.resume-item .date i{
+    font-size: 1rem;
+}
+
+.light-content .resume-item .date {
     color: #fff;
 }
 
-.services-icon svg {
-    display: block;
-    width: 1em;
-    height: 1em;
+.light-content .resume-icon {
+    color: #fff;
 }
 
-.services-title {
+.resume-icon svg {
+    display: block;
+    width: 80%;
+    height: 80%;
+}
+
+.resume-icon.icon-rect svg{
+    display: block;
+    width: 80%;
+    height: 40%;
+}
+
+.light-content .resume-icon.icon-light .icon-fill{
+    fill: rgb(200, 200, 200);
+}
+
+.resume-title {
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: 600;
@@ -3446,7 +3471,7 @@ a.logo:hover {
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.services-descr {
+.resume-descr {
     font-family: var(--font-global-alt);
     margin-bottom: 15px;
     font-size: 16px;
@@ -3456,34 +3481,34 @@ a.logo:hover {
     color: #757575;
 }
 
-.light-content .services-descr {
+.light-content .resume-descr {
     color: #bbb;
 }
 
-.services-more {
+.resume-more {
     -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
 
 /* ==============================
-   Alternative services
+   Alternative resume
    ============================== */
 
 .alt-service-grid {
     margin-top: -60px;
 }
 
-.alt-services-image {
+.alt-resume-image {
     text-align: center;
 }
 
-.alt-services-image>img {
+.alt-resume-image>img {
     display: block;
     width: 100%;
 }
 
-.alt-service-item {
+.alt-resume-item {
     margin: 60px 0 0 0;
     position: relative;
     padding-left: 55px;
@@ -3498,7 +3523,7 @@ a.logo:hover {
     transition: all 0.3s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.alt-service-icon {
+.alt-resume-icon {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -3512,19 +3537,19 @@ a.logo:hover {
     transition: all 0.17s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.alt-service-icon svg {
+.alt-resume-icon svg {
     width: 1em;
     height: 1em;
 }
 
-.alt-services-title {
+.alt-resume-title {
     margin: 0 0 10px 0;
     font-size: 22px;
     font-weight: 600;
     letter-spacing: -0.02em;
 }
 
-.alt-services-descr {
+.alt-resume-descr {
     font-family: var(--font-global-alt);
     font-weight: 400;
     /*500*/
@@ -3535,7 +3560,7 @@ a.logo:hover {
     color: #fff;
 }
 
-.light-content .alt-services-descr {
+.light-content .alt-resume-descr {
     color: #bbb;
 }
 
