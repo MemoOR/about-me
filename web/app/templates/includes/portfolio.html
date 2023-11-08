@@ -12,8 +12,7 @@
         <!-- Works Filter -->
         <div class="works-filter text-center">
             <a href="#" class="filter active" role="button" aria-pressed="true" data-filter="*">All works</a>
-            <a href="#personal" class="filter" role="button" aria-pressed="false"
-                data-filter=".personal">Personal</a>
+            <a href="#personal" class="filter" role="button" aria-pressed="false" data-filter=".personal">Personal</a>
             <a href="#gdcode" class="filter" role="button" aria-pressed="false" data-filter=".gdcode">GDcode</a>
             <a href="#espressive" class="filter" role="button" aria-pressed="false"
                 data-filter=".espressive">Espressive</a>
@@ -21,21 +20,26 @@
         <!-- End Works Filter -->
 
         <!-- Works Grid -->
-        <ul class="works-grid work-grid-3 work-grid-gut clearfix hide-titles" id="work-grid">
+        <ul class="works-grid work-grid-4 clearfix hide-titles" id="work-grid">
 
-            <!-- Work Item (Lightbox) -->
+            <!-- Work Item (External Page) -->
             <li class="work-item mix gdcode">
-                <a href="images/portfolio/full-project-1.jpg" class="work-lightbox-link mfp-image">
-                    <div class="work-img">
-                        <div class="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/portfolio/projects-1.jpg" alt="Work Description" class="wow-p fadeIn"
-                            data-wow-delay="1s" />
+                <a href="https://github.com/gd-code-md/SmartTerrariumR" target="_blank" class="work-ext-link">
+                    <div class="work-img text-center">
+                        <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                        <img src="{{url_for('static', filename='assets/img/terrario.jpg')}}" alt="Work Description"
+                            class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s"
+                            style="margin: 0 auto;" />
                     </div>
                     <div class="work-intro">
                         <h3 class="work-title">Smart Terra</h3>
                         <div class="work-descr">
-                            I worked with a friend using IoT to develop a smart terrarium app that allows you to manage
-                            the terrarium 
+                            <br>
+                            In collaboration with a partner we developed an IoT based smart terrarium application for
+                            precise terrarium management.
+                            <br>
+                            <br>
+                            Click to learn more
                         </div>
                     </div>
                 </a>
@@ -44,16 +48,22 @@
 
             <!-- Work Item (External Page) -->
             <li class="work-item mix branding personal">
-                <a href="portfolio-single-1.html" class="work-ext-link">
-                    <div class="work-img">
-                        <div class="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/portfolio/projects-2.jpg" alt="Work Description" class="wow-p fadeIn"
-                            data-wow-delay="1s" />
+                <a href="https://github.com/MemoOR/SmartWifiBlinds" target="_blank" class="work-ext-link">
+                    <div class="work-img text-center">
+                        <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                        <img src="{{url_for('static', filename='assets/img/blinds_model.png')}}" alt="Work Description"
+                            class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s"
+                            style="margin: 0 auto;" />
                     </div>
                     <div class="work-intro">
-                        <h3 class="work-title">Photo Lighting</h3>
+                        <h3 class="work-title">Smart Blinds</h3>
                         <div class="work-descr">
-                            External Page
+                            <br>
+                            I designed, developed and built an IoT device compatible with Alexa, enabling precise
+                            control of my bedroom blinds.
+                            <br>
+                            <br>
+                            Click to learn more
                         </div>
                     </div>
                 </a>
@@ -61,17 +71,19 @@
             <!-- End Work Item -->
 
             <!-- Work Item (External Page) -->
-            <li class="work-item mix personal">
-                <a href="portfolio-single-1.html" class="work-ext-link">
-                    <div class="work-img">
-                        <div class="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/portfolio/projects-3.jpg" alt="Work Description" class="wow-p fadeIn"
-                            data-wow-delay="1s" />
+            <li class="work-item mix gdcode">
+                <a href="#!" class="work-ext-link">
+                    <div class="work-img text-center">
+                        <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                        <img src="{{url_for('static', filename='assets/img/gdcode_logo.png')}}" alt="Description"
+                            class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s"
+                            style="margin: 0 auto;" />
                     </div>
                     <div class="work-intro">
-                        <h3 class="work-title">Green Branch</h3>
+                        <h3 class="work-title">GD-code web page</h3>
                         <div class="work-descr">
-                            External Page
+                            <br>
+                            Comming soon
                         </div>
                     </div>
                 </a>
@@ -79,17 +91,22 @@
             <!-- End Work Item -->
 
             <!-- Work Item (External Page) -->
-            <li class="work-item mix design personal">
-                <a href="portfolio-single-1.html" class="work-ext-link">
-                    <div class="work-img">
-                        <div class="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/portfolio/projects-4.jpg" alt="Work Description" class="wow-p fadeIn"
-                            data-wow-delay="1s" />
+            <li class="work-item mix gdcode">
+                <a href="#!" class="work-ext-link">
+                    <div class="work-img text-center">
+                        <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                        <img src="{{url_for('static', filename='assets/img/home_logo.png')}}" alt="Description"
+                            class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s"
+                            style="margin: 0 auto;" />
                     </div>
                     <div class="work-intro">
-                        <h3 class="work-title">White Chair</h3>
+                        <h3 class="work-title">Casa4U</h3>
                         <div class="work-descr">
-                            External Page
+                            <br>
+                            A real state web app to help people find their dream home, rent or sales
+                            <br>
+                            <br>
+                            Comming Soon
                         </div>
                     </div>
                 </a>
@@ -98,19 +115,75 @@
 
             <!-- Work Item (Lightbox) -->
             <li class="work-item mix design espressive">
-                <a href="images/portfolio/full-project-6.jpg" class="work-lightbox-link mfp-image">
-                    <div class="work-img">
-                        <div class="work-img-bg wow-p scalexIn"></div>
-                        <img src="images/portfolio/projects-6.jpg" alt="Work Description" class="wow-p fadeIn"
-                            data-wow-delay="1s" />
+                <div class="work-img text-center">
+                    <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                    <img src="{{url_for('static', filename='assets/img/barista_logo.svg')}}" alt="Work Description"
+                        class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s" style="margin: 0 auto;" />
+                </div>
+                <div class="work-intro no-link text-center">
+                    <h3 class="work-title">1password Library</h3>
+                    <div class="work-descr">
+                        <br>
+                        I created an in-house library enabling employees to securely share secrets using 1Password
+                        app, significantly enhancing automation within our IT department streamlining various internal
+                        tasks.
                     </div>
-                    <div class="work-intro">
-                        <h3 class="work-title">The Book</h3>
-                        <div class="work-descr">
-                            Lightbox
-                        </div>
+                </div>
+            </li>
+            <!-- End Work Item -->
+
+            <!-- Work Item (Lightbox) -->
+            <li class="work-item mix design espressive">
+                <div class="work-img text-center">
+                    <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                    <img src="{{url_for('static', filename='assets/img/barista_logo.svg')}}" alt="Work Description"
+                        class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s" style="margin: 0 auto;" />
+                </div>
+                <div class="work-intro no-link text-center">
+                    <h3 class="work-title">Data Warehouse</h3>
+                    <div class="work-descr">
+                        <br>
+                        Automated infrastructure deployment for an AWS Redshift data warehouse using Terraform and
+                        Python adhering to internal security and compliance best practices.
                     </div>
-                </a>
+                </div>
+            </li>
+            <!-- End Work Item -->
+
+            <!-- Work Item (Lightbox) -->
+            <li class="work-item mix design espressive">
+                <div class="work-img text-center">
+                    <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                    <img src="{{url_for('static', filename='assets/img/barista_logo.svg')}}" alt="Work Description"
+                        class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s" style="margin: 0 auto;" />
+                </div>
+                <div class="work-intro no-link text-center">
+                    <h3 class="work-title">MLOps</h3>
+                    <div class="work-descr">
+                        <br>
+                        Implemented a Blue-Green deployment strategy for AWS SageMaker endpoints
+                        hosting machine learning models, transforming a 30-minute downtime during updates into zero
+                        downtime.
+                    </div>
+                </div>
+            </li>
+            <!-- End Work Item -->
+
+            <!-- Work Item (Lightbox) -->
+            <li class="work-item mix design personal">
+                <div class="work-img text-center">
+                    <div class="work-img-bg wow-p animate__animated animate__scalexIn"></div>
+                    <img src="{{url_for('static', filename='assets/img/crawler.jpg')}}" alt="Work Description"
+                        class="wow-p animate__animated animate__fadeIn" data-wow-delay="1s" style="margin: 0 auto;" />
+                </div>
+                <div class="work-intro no-link text-center">
+                    <h3 class="work-title">Baby crawling aid</h3>
+                    <div class="work-descr">
+                        <br>
+                        I collaborated with a partner to design and build a device aimed at assisting children with
+                        intellectual disabilities in their crawling journey.
+                    </div>
+                </div>
             </li>
             <!-- End Work Item -->
 

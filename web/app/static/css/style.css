@@ -1728,7 +1728,7 @@ a.bg-video-button-muted {
    Custom appear animation
    ============================== */
 
-.appear-animate .wordsAnimIn .word {
+.appear-animate .animate__wordsAnimIn .word {
     opacity: 0;
     -webkit-transform: translateY(1em) scale(.75) skew(-5deg) rotate(7deg);
     transform: translateY(1em) scale(.75) skew(-5deg) rotate(7deg);
@@ -1739,20 +1739,20 @@ a.bg-video-button-muted {
     transition-delay: calc(0.05s * var(--word-index));
 }
 
-html:not(.mobile) .appear-animate .wordsAnimIn .word {
+html:not(.mobile) .appear-animate .animate__wordsAnimIn .word {
     will-change: opacity, transform;
 }
 
 @media (prefers-reduced-motion:reduce), print {
-    .appear-animate .wordsAnimIn .word {
+    .appear-animate .animate__wordsAnimIn .word {
         opacity: 1 !important;
         -webkit-transform: none !important;
         transform: none !important;
     }
 }
 
-.wordsAnimIn.animate__animated .word,
-.mobile .wordsAnimIn .word {
+.animate__wordsAnimIn.animate__animated .word,
+.mobile .animate__wordsAnimIn .word {
     opacity: 1;
     -webkit-transform: translateY(0) scale(1) skew(0) rotate(0);
     transform: translateY(0) scale(1) skew(0) rotate(0);
@@ -3589,8 +3589,6 @@ a.logo:hover {
     left: 0;
     width: 60%;
     height: 100%;
-    opacity: .3;
-    background-color: #777777;
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center center;
@@ -3599,6 +3597,19 @@ a.logo:hover {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.team-item-decoration-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.light-content .team-item-decoration-overlay {
+    background-color: rgba(30, 30, 30, 0.8);
 }
 
 .team-item-image {
@@ -3986,6 +3997,7 @@ a.logo:hover {
     width: 25%;
     float: left;
     margin: 0;
+    padding: 1px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -4065,13 +4077,25 @@ a.logo:hover {
 
 .work-intro {
     width: 100%;
-    height: 100px;
-    padding: 20px 20px 0 20px;
+    height: 100%;
+    padding: 10%;
     box-sizing: border-box;
     position: absolute;
     bottom: 0;
     left: 0;
     text-align: center;
+    margin: auto;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+.work-intro.no-link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding-left: 10%;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }

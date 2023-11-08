@@ -11,18 +11,22 @@
                     </div>
                 </div>
 
-                <div style="text-align: justify;" class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__animated animate__linesAnimIn" data-splitting="lines">
+                <div style="text-align: justify;"
+                    class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__animated animate__wordsAnimIn"
+                    data-splitting="words">
                     I hold a degree in Mechatronics Engineering from Universidad Iberoamericana, where I gained a strong
                     foundation in interdisciplinary engineering principles. I seamlessly integrate hardware and software
-                    solutions to create innovative, multifaceted systems. I bring a wealth of expertise in Python 
+                    solutions to create innovative, multifaceted systems. I bring a wealth of expertise in Python
                     programming, AWS cloud infrastructure, and efficient code deployment practices to my work.
                 </div>
 
-                <div style="text-align: justify;" class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__animated animate__linesAnimIn" data-splitting="lines">
-                    My passion lies in merging machine learning with automotive technology, specifically focusing on 
-                    enhancing autonomous vehicles. When I'm not immersed in my technical pursuits, I find tranquility 
-                    in playing the piano and crafting with wood, balancing creativity and precision in my hobbies. 
-                    Whether I'm exploring melodies on the piano or creating handmade furniture, I'm dedicated to 
+                <div style="text-align: justify;"
+                    class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__animated animate__wordsAnimIn"
+                    data-splitting="words">
+                    My passion lies in merging machine learning with automotive technology, specifically focusing on
+                    enhancing autonomous vehicles. When I'm not immersed in my technical pursuits, I find tranquility
+                    in playing the piano and crafting with wood, balancing creativity and precision in my hobbies.
+                    Whether I'm exploring melodies on the piano or creating handmade furniture, I'm dedicated to
                     continuous personal and professional growth.
                 </div>
 
@@ -32,9 +36,15 @@
         <div class="row">
             <!-- Team item -->
             <div class="col-md-4 mb-xs-30 mx-auto">
-                <div class="team-item-wrap wow animate__animated animate__fadeInUp" data-wow-delay=".1s" data-wow-duration="1.2s">
-                    <div class="team-item-decoration" style="background-image: url({{url_for('static', filename='assets/img/decorator.png')}});"></div>
-                    <div class="team-item">
+                <div class="team-item-wrap">
+                    <div>
+                        <div class="team-item-decoration wow animate__animated animate__fadeInUp"
+                            style="background-image: url({{url_for('static', filename='assets/img/decorator.png')}});">
+                        </div>
+                        <div class="team-item-decoration-overlay wow animate__animated animate__fadeInUp"></div>
+                    </div>
+
+                    <div class="team-item wow animate__animated animate__fadeInDown">
                         <div class="team-item-image">
                             <img src="{{url_for('static', filename='assets/img/me.png')}}" alt="" />
                             <div class="team-item-detail">
@@ -45,10 +55,11 @@
                                     Feel free to visit my LinkedIn and GitHub profiles to learn a little more about me
                                 </p>
                                 <div class="team-social-links">
-                                    <a href="https://github.com/MemoOR" target="_blank"><i class="fab fa-github"></i><span
-                                            class="sr-only">Github profile</span></a>
-                                    <a href="https://www.linkedin.com/in/guillermo-or" target="_blank"><i class="fab fa-linkedin"></i><span
-                                            class="sr-only">LinkedIn profile</span></a>
+                                    <a href="https://github.com/MemoOR" target="_blank"><i
+                                            class="fab fa-github"></i><span class="sr-only">Github profile</span></a>
+                                    <a href="https://www.linkedin.com/in/guillermo-or" target="_blank"><i
+                                            class="fab fa-linkedin"></i><span class="sr-only">LinkedIn
+                                            profile</span></a>
                                 </div>
                             </div>
                         </div>
