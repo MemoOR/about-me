@@ -1,0 +1,30 @@
+<!-- Navigation panel -->
+<nav class="main-nav dark transparent stick-fixed wow-menubar">
+    <div class="full-wrapper relative clearfix">
+
+        <!-- Logo ( * your text or image into link tag *) -->
+        <div class="nav-logo-wrap local-scroll">
+            <a href="/" class="logo">
+                <img src="{{url_for('static', filename= 'assets/img/name_white.png')}}" alt="Company logo" width="188" height="37" class="logo-white" />
+                <img src="{{url_for('static', filename= 'assets/img/name_black.png')}}" alt="Company logo" width="188" height="37" class="logo-dark" />
+            </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="mobile-nav" role="button" tabindex="0">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </div>
+
+        <!-- Main Menu -->
+        <div class="inner-nav desktop-nav">
+            <ul class="clearlist scroll-nav local-scroll">
+                <li class="active"><a href="#home">Home</a></li>
+                <li><a id="DarkLightToggle" href="#!" onclick="DarkLightToggle(); return false;">Dark Mode</a></li>
+            </ul>
+        </div>
+        <!-- End Main Menu -->
+
+    </div>
+</nav>
+<!-- End Navigation panel -->

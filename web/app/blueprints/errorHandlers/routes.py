@@ -13,7 +13,7 @@ except Exception as exception:
 
 @errors_bp.app_errorhandler(404)
 def error404(e):
-    return render_template("error404.html", pageTitlte="Not Found")
+    return render_template("error404.html", pageTitle="Not Found")
 
 
 # @Description: Endpoint to verify error 500 if its the case.
