@@ -929,23 +929,32 @@ function initPageSliders() {
 		});
 
 		// Item carousel
-		$(".item-carousel").addClass("autoplay");
-		$(".item-carousel").owlCarousel({
-			autoPlay: 3500,
-			stopOnHover: false,
-			items: 3,
-			itemsDesktop: [1199, 3],
-			itemsTabletSmall: [768, 3],
-			itemsMobile: [480, 1],
-			navigation: true,
+		var owl = $(".item-carousel").owlCarousel({
+			loop: true,
+			mouseDrad: true,
+			touchDrag: true,
+			center: true,
+			autoplay: true,
+			autoplayTimeout: 2000,
+			autoplaySpeed: 2000,
+			items: 5,
 			lazyLoad: true,
 			addClassActive: true,
-			navigationText: [
-				'<span class="sr-only">Previous Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M5.005,28.500 L27.000,54.494 L24.000,56.994 L0.005,28.500 L24.000,0.006 L27.000,2.506 L5.005,28.500 Z"/></svg>',
-				'<span class="sr-only">Next Slide</span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="57px" viewBox="0 0 27 57" fill="currentColor" aria-hidden="true" focusable="false"><path d="M21.995,28.500 L-0.000,54.494 L3.000,56.994 L26.995,28.500 L3.000,0.006 L-0.000,2.506 L21.995,28.500 Z"/></svg>',
-			],
-			afterInit: owl_keynav,
-			afterAction: owl_update,
+			slideTransition: "linear",
+			responsive:{
+				0:{
+					items: 3,
+					loop: true,
+				},
+				600:{
+					items: 4,
+					loop: true,
+				},
+				1000:{
+					items: 6,
+					loop: true,
+				}
+			}
 		});
 
 		// Small item carousel

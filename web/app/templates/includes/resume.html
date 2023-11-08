@@ -1,7 +1,7 @@
 <!-- Resume Section -->
 <section class="page-section bg-dark light-content" id="resume">
     <div class="container relative">
-        <div class="text-center mb-80 mb-sm-50 wow animate__animated  animate__fadeInUpShort" data-wow-delay="0"
+        <div class="text-center mb-80 mb-sm-50 wow animate__animated animate__fadeInUpShort" data-wow-delay="0"
             data-wow-duration="1s">
             <h2 class="section-title">Resume</h2>
             <p class="section-title-descr">
@@ -17,7 +17,7 @@
                 </div>
 
                 <!-- Resume Education Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/Udemy_logo.html' %}
@@ -38,7 +38,7 @@
                 <!-- End Education Item -->
 
                 <!-- Resume Education Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/Udemy_logo.html' %}
@@ -48,7 +48,7 @@
                             class="sr-only"></span>&nbsp;&nbsp;&nbsp;2023</span>
                     <div class="resume-descr">
                         Udemy Certification<br>
-                        Learned how to write JavaScript code to create 3D games using the WebGL library, Three JS
+                        Learned how to write JavaScript code to create 3D games using the WebGL library, Three JS.
                     </div>
                     <div class="resume-more">
                         <a href="https://www.udemy.com/certificate/UC-d092d663-38aa-4c7c-9b56-b3d2705e530d/"
@@ -58,7 +58,7 @@
                 <!-- End Education Item -->
 
                 <!-- Resume Education Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/IELTS_logo.html' %}
@@ -76,7 +76,7 @@
                 <!-- End Education Item -->
 
                 <!-- Resume Education Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect">
                         {% include 'icons/Logo_Universidad_Iberoamericana.html' %}
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Resume Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect">
                         {% include 'icons/espressive_logo.html' %}
@@ -124,7 +124,7 @@
                 <!-- End Resume Item -->
 
                 <!-- Resume Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center text-center resume-icon icon-rect icon-light">
                         {% include 'icons/INIAT_logo.html' %}
@@ -146,7 +146,7 @@
                 <!-- End Resume Item -->
 
                 <!-- Resume Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon">
                         <img src="{{url_for('static', filename='assets/img/gdcode_logo.png')}}" />
@@ -169,7 +169,7 @@
                 <!-- End Resume Item -->
 
                 <!-- Resume Item -->
-                <div class="resume-item text-center wow animate__animated  animate__fadeInUpShort" data-wow-delay=".1s"
+                <div class="resume-item text-center wow animate__animated animate__fadeInUpShort" data-wow-delay=".1s"
                     data-wow-duration="1.5s">
                     <div class="pb-3 d-flex align-items-center resume-icon">
                         <img src="{{url_for('static', filename='assets/img/malinalli_logo.png')}}" />
@@ -195,12 +195,35 @@
 </section>
 <!-- End Resume Section -->
 
+<!-- Carousel Section -->
+<div class="container relative" data-wow-delay=".1s"
+    data-wow-duration="1.5s">
+
+    <div class="wow animate__animated animate__fadeInUpShort">
+        <div class="item-carousel owl-carousel">
+
+            {% for icon_file in icon_files %}
+            <!-- Features Item -->
+            <div class="features-item">
+                <div class="features-icon">
+                    {% include "icons/carousel/" + icon_file %}
+                </div>
+            </div>
+            <!-- End Features Item -->
+            {% endfor %}
+
+        </div>
+    </div>
+
+</div>
+<!-- End Carousel Section -->
+
 {% include 'includes/divider.html' %}
 
 <!-- Download pdf Section -->
 <section class="small-section bg-dark-lighter light-content">
     <div class="container relative">
-        <div class="row wow animate__animated  animate__fadeInUpShort">
+        <div class="row wow animate__animated animate__fadeInUpShort">
             <div class="col-lg-5 offset-lg-2">
                 <h3 class="text-center call-action-1-heading">Feeling interested?</h3>
                 <div class="text-center call-action-1-decription mb-0 pb-md-20">
@@ -209,7 +232,8 @@
             </div>
             <div class="col-lg-3 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
-                    <a href="#!" class="call-action-btn btn btn-mod btn-w btn-large btn-round">Download</a>
+                    <a href="/download/cv/english"
+                        class="call-action-btn btn btn-mod btn-w btn-large btn-round">Download</a>
                 </div>
             </div>
         </div>

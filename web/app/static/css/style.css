@@ -3750,6 +3750,14 @@ a.logo:hover {
     background-size: cover;
 }
 
+.features-item .icon-fill{
+    fill: rgb(27, 27, 27);
+}
+
+.light-content .features-item .icon-fill{
+    fill: rgb(200, 200, 200);
+}
+
 .features-icon {
     font-size: 72px;
     margin-bottom: 20px;
