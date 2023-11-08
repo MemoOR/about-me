@@ -3751,11 +3751,11 @@ a.logo:hover {
 }
 
 .features-item .icon-fill{
-    fill: rgb(27, 27, 27);
+    fill: rgb(0, 0, 0);
 }
 
 .light-content .features-item .icon-fill{
-    fill: rgb(200, 200, 200);
+    fill: rgb(255, 255, 255);
 }
 
 .features-icon {
