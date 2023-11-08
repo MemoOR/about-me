@@ -3435,7 +3435,7 @@ a.logo:hover {
     color: #111111;
 }
 
-.resume-item .date i{
+.resume-item .date i {
     font-size: 1rem;
 }
 
@@ -3461,13 +3461,13 @@ a.logo:hover {
     height: 50%;
 }
 
-.resume-icon.icon-rect svg{
+.resume-icon.icon-rect svg {
     display: block;
     width: 60%;
     height: 40%;
 }
 
-.light-content .resume-icon.icon-light .icon-fill{
+.light-content .resume-icon.icon-light .icon-fill {
     fill: rgb(200, 200, 200);
 }
 
@@ -3750,11 +3750,11 @@ a.logo:hover {
     background-size: cover;
 }
 
-.features-item .icon-fill{
+.features-item .icon-fill {
     fill: rgb(0, 0, 0);
 }
 
-.light-content .features-item .icon-fill{
+.light-content .features-item .icon-fill {
     fill: rgb(255, 255, 255);
 }
 
@@ -6103,9 +6103,14 @@ table.shopping-cart-table tr td {
 /*
  * Lightbox Modal
  */
+.mfp-iframe-holder .mfp-content {
+    max-width: 80% !important;
+    min-height: 60% !important;
+}
 
 .mfp-inline-holder .mfp-content {
-    max-width: 800px;
+    max-width: 80%;
+    min-width: 80%;
     margin: 0 auto;
     padding: 30px;
     background: #fff;

@@ -31,8 +31,8 @@
                         and deepening my understanding of industry best practices.
                     </div>
                     <div class="resume-more">
-                        <a href="https://www.udemy.com/certificate/UC-65676f6e-b294-40c6-9889-e5e4c9d0f0dc/"
-                            class="text-link" target="_blank">Certificate</a>
+                        <a href="{{ certificate_urls['udemy_devops'] }}"
+                            class="text-link lightbox-gallery-1 mfp-image">Certificate</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -51,8 +51,8 @@
                         Learned how to write JavaScript code to create 3D games using the WebGL library, Three JS.
                     </div>
                     <div class="resume-more">
-                        <a href="https://www.udemy.com/certificate/UC-d092d663-38aa-4c7c-9b56-b3d2705e530d/"
-                            class="text-link" target="_blank">Certificate</a>
+                        <a href="{{ certificate_urls['udemy_threejs'] }}"
+                            class="text-link lightbox-gallery-1 mfp-image">Certificate</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -70,7 +70,8 @@
                         English level: Full professional proficiency
                     </div>
                     <div class="resume-more">
-                        <a href="#!" class="text-link" target="_blank">Certificate</a>
+                        <a href="{{ pdf_urls['ielts_certificate_url'] }}"
+                            class="text-link lightbox-gallery-1 mfp-iframe">Certificate</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -196,8 +197,7 @@
 <!-- End Resume Section -->
 
 <!-- Carousel Section -->
-<div class="container relative" data-wow-delay=".1s"
-    data-wow-duration="1.5s">
+<div class="container relative" data-wow-delay=".1s" data-wow-duration="1.5s">
 
     <div class="wow animate__animated animate__fadeInUpShort">
         <div class="item-carousel owl-carousel">
@@ -224,16 +224,22 @@
 <section class="small-section bg-dark-lighter light-content">
     <div class="container relative">
         <div class="row wow animate__animated animate__fadeInUpShort">
-            <div class="col-lg-5 offset-lg-2">
+            <div class="col-lg-6">
                 <h3 class="text-center call-action-1-heading">Feeling interested?</h3>
                 <div class="text-center call-action-1-decription mb-0 pb-md-20">
                     Download my CV in PDF
                 </div>
             </div>
-            <div class="col-lg-3 pt-10 text-lg-end text-center">
+            <div class="col-lg-2 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
-                    <a href="/download/cv/english"
-                        class="call-action-btn btn btn-mod btn-w btn-large btn-round">Download</a>
+                    <a href="{{ pdf_urls['cv_url_preview'] }}"
+                        class="call-action-btn btn btn-mod btn-w btn-large btn-round lightbox-gallery-1 mfp-iframe" download="File.pdf">View</a>
+                </div>
+            </div>
+            <div class="col-lg-2 pt-10 text-lg-end text-center">
+                <div class="local-scroll">
+                    <a href="{{ pdf_urls['cv_url_download'] }}"
+                        class="call-action-btn btn btn-mod btn-w btn-large btn-round" download="File.pdf">Download</a>
                 </div>
             </div>
         </div>

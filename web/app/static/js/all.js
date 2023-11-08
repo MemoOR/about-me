@@ -510,7 +510,7 @@
 		// Other Custom Lightbox
 		$(".lightbox-gallery-1").magnificPopup({
 			gallery: {
-				enabled: true,
+				enabled: false,
 			},
 			mainClass: "mfp-fade",
 		});
@@ -941,20 +941,20 @@ function initPageSliders() {
 			lazyLoad: true,
 			addClassActive: true,
 			slideTransition: "linear",
-			responsive:{
-				0:{
+			responsive: {
+				0: {
 					items: 3,
 					loop: true,
 				},
-				600:{
+				600: {
 					items: 4,
 					loop: true,
 				},
-				1000:{
+				1000: {
 					items: 6,
 					loop: true,
-				}
-			}
+				},
+			},
 		});
 
 		// Small item carousel
