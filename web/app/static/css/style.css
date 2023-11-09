@@ -79,10 +79,6 @@
    Fonts
    ============================== */
 
-.grecaptcha-badge {
-    visibility: hidden !important;
-}
-
 /*
    * Font Awesome
    */
@@ -181,6 +177,10 @@ div:focus.focus-visible {
 img:not([draggable]), embed, object, video {
     max-width: 100%;
     height: auto;
+}
+
+.grecaptcha-badge {
+    visibility: hidden !important;
 }
 
 .min-height-80vh {
