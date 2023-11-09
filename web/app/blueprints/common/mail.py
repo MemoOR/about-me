@@ -39,7 +39,7 @@ def validate_mail_fields(user_name, user_email, user_message):
     if not re.match(email_regex, user_email):
         return False, "The email you entered is not valid"
 
-    return True
+    return True, "Validation success"
 
 
 def send_mail(
