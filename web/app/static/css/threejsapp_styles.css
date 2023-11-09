@@ -1,29 +1,5 @@
 /*Your css code here*/
 
-@font-face {
-    font-family: myriad;
-    src: url('../fonts/MyriadPro-Regular.otf');
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: myriad;
-}
-
-.footer footer {
-    background-color: rgba(0, 140, 255, 0.432);
-}
-
-html, body {
-    max-width: 100%;
-    overflow: hidden;
-}
-
 #playBtn {
     position: absolute;
     width: 180px;

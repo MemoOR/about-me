@@ -1,3 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{pageTitle}}
+{% endblock %}
+
+{% block content %}
 <p id="instructions">Collect stars. <br>Avoid bombs. <br>Spacebar, mousedown or touch to climb</p>
 <div id="info">
     <div id="life">
@@ -13,10 +20,11 @@
 <canvas class="webgl"></canvas>
 
 <script type="module">
-    import { App3D } from "{{url_for('static', filename= 'js/app3/Game.js')}}";
+    import { App3D } from "{{url_for('static', filename= 'js/app/Game.js')}}";
 
     document.addEventListener("DOMContentLoaded", function () {
         const app = new App3D();
         window.app = app;
     });
 </script>
+{% endblock %}

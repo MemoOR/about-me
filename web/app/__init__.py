@@ -43,6 +43,10 @@ def create_app(settings_module):
     from app.blueprints.index import index_bp
     app.register_blueprint(index_bp)
 
+    # # 3d Page
+    from app.blueprints.appThreejs import appthreejs_bp
+    app.register_blueprint(appthreejs_bp)
+
     # # Email
     from app.blueprints.email import email_bp
     app.register_blueprint(email_bp)

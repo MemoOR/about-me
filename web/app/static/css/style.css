@@ -2838,6 +2838,13 @@ a.logo:hover {
 
 .small-section {
     padding: 100px 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .fixed-height-large,
@@ -5165,6 +5172,13 @@ a.logo:hover {
 .footer {
     text-align: center;
     font-size: 18px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .footer a {
@@ -5207,7 +5221,7 @@ a.logo:hover {
     height: 81px;
     line-height: 81px !important;
     position: relative;
-    margin: 0 2px;
+    margin: 0 5%;
     text-align: center;
     display: inline-block;
     color: #000000;

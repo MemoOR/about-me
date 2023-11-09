@@ -516,7 +516,7 @@
 		});
 		$(".lightbox-gallery-2").magnificPopup({
 			gallery: {
-				enabled: true,
+				enabled: false,
 			},
 			mainClass: "mfp-fade",
 		});
