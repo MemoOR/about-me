@@ -2,7 +2,7 @@ try:
     import os
     import sys
     import random
-    from flask import render_template
+    from flask import render_template, current_app
     from instance import pdf_urls, certificate_urls
 
     from . import index_bp
@@ -32,5 +32,6 @@ def index():
         pageTitle="Guillermo Ortega",
         icon_files=icon_files,
         pdf_urls=pdf_urls_filtered,
-        certificate_urls=certificate_urls
+        certificate_urls=certificate_urls,
+        captcha_key=current_app.config["RECAPTCHA_SITE_KEY"]
     )

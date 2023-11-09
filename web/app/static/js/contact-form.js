@@ -2,7 +2,7 @@
  Contact form
  --------------------------------------------- */
 $(document).ready(function () {
-	$("#submit_btn").click(function () {
+	$("#submit_btn").click(function (token) {
 		//get input field values
 		var user_name = $("input[name=name]").val();
 		var user_email = $("input[name=email]").val();
@@ -32,9 +32,10 @@ $(document).ready(function () {
 		if (proceed) {
 			//data to be sent to server
 			post_data = {
-				userName: user_name,
-				userEmail: user_email,
-				userMessage: user_message,
+				'userName': user_name,
+				'userEmail': user_email,
+				'userMessage': user_message,
+				'g-recaptcha-response': grecaptcha.getResponse()
 			};
 
 			//Ajax post data to server

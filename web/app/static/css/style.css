@@ -79,6 +79,10 @@
    Fonts
    ============================== */
 
+.grecaptcha-badge {
+    visibility: hidden !important;
+}
+
 /*
    * Font Awesome
    */
