@@ -221,7 +221,7 @@
 {% include 'includes/divider.html' %}
 
 <!-- Download pdf Section -->
-<section class="small-section bg-dark-lighter light-content">
+<section class="small-section light-content bg-dark-alfa-50 parallax-5" data-background="{{url_for('static', filename= 'assets/img/decorator.png')}}">
     <div class="container relative">
         <div class="row wow animate__animated animate__fadeInUpShort">
             <div class="col-lg-6">
@@ -233,13 +233,13 @@
             <div class="col-lg-2 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
                     <a href="{{ pdf_urls['cv_url_preview'] }}"
-                        class="call-action-btn btn btn-mod btn-w btn-large btn-round lightbox-gallery-1 mfp-iframe" download="File.pdf">View</a>
+                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 lightbox-gallery-1 mfp-iframe" download="File.pdf">View</a>
                 </div>
             </div>
             <div class="col-lg-2 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
                     <a href="{{ pdf_urls['cv_url_download'] }}"
-                        class="call-action-btn btn btn-mod btn-w btn-large btn-round" download="File.pdf">Download</a>
+                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 btn-round" download="File.pdf">Download</a>
                 </div>
             </div>
         </div>
