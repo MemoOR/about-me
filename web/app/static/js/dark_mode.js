@@ -7,12 +7,10 @@ function setDarkMode() {
     $(".page-section").addClass("bg-dark light-content")
     $(".home-section").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
     $("#work-grid").removeClass("hover-white")
-    $(".small-section").removeClass("bg-gray")
-    $(".small-section").addClass("bg-dark-lighter light-content")
+    $(".small-section").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
     $(".call-action-btn").addClass("btn-w")
     $(".submit_btn").addClass("btn-w")
-    $(".main-footer").removeClass("bg-gray-lighter")
-    $(".main-footer").addClass("bg-dark-lighter light-content")
+    $(".main-footer-div").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
 }
 
 // Light Mode
@@ -24,12 +22,10 @@ function setLightMode() {
     $(".page-section").removeClass("bg-dark light-content")
     $(".home-section").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
     $("#work-grid").addClass("hover-white")
-    $(".small-section").addClass("bg-gray")
-    $(".small-section").removeClass("bg-dark-lighter light-content")
+    $(".small-section").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
     $(".call-action-btn").removeClass("btn-w")
     $(".submit_btn").removeClass("btn-w")
-    $(".main-footer").addClass("bg-gray-lighter")
-    $(".main-footer").removeClass("bg-dark-lighter light-content")
+    $(".main-footer-div").toggleClass("bg-dark-alfa-50 bg-dark-alfa-70")
 }
 
 function DarkLightToggle() {

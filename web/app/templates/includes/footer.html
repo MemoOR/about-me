@@ -1,12 +1,18 @@
 <!-- Footer -->
-<footer class="main-footer page-section bg-dark-lighter light-content footer pb-100 pb-sm-50">
+<footer class="main-footer page-section bg-dark-lighter light-content footer pb-100 pb-sm-50 parallax-5"
+    data-background="{{url_for('static', filename= 'assets/img/decorator.png')}}">
+
+    <div class="main-footer-div bg-dark-alfa-50"></div>
+
     <div class="container">
 
         <!-- Social Links -->
         <div class="footer-social-links mb-90 mb-xs-40">
-            <a href="https://github.com/MemoOR" title="Github" target="_blank"><i class="fab fa-github"></i> <span class="sr-only">Github
+            <a href="https://github.com/MemoOR" title="Github" target="_blank"><i class="fab fa-github"></i> <span
+                    class="sr-only">Github
                     profile</span></a>
-            <a href="https://www.linkedin.com/in/guillermo-or" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn
+            <a href="https://www.linkedin.com/in/guillermo-or" title="LinkedIn" target="_blank"><i
+                    class="fab fa-linkedin"></i> <span class="sr-only">LinkedIn
                     profile</span></a>
         </div>
         <!-- End Social Links -->
@@ -16,7 +22,7 @@
 
             <!-- Copyright -->
             <div class="footer-copy">
-                <a href="#">GDcode Labs & Studios &copy; {{now.year}} All rights reserved</a>.
+                <a href="#!">GDcode Labs & Studios &copy; {{now.year}} All rights reserved</a>.
             </div>
             <!-- End Copyright -->
 
