@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{pageTitle}}
+{% endblock %}
+
+{% block content %}
+{% include "includes/loader.html" %}
+{% include "includes/skip2content.html" %}
+
+<!-- Page Wrap -->
+<div class="page bg-dark light-content" id="top">
+    {% include "includes/navbar.html" %}
+
+    <main id="main">
+        {% include "includes/home.html" %}
+        {% include "includes/about.html" %}
+        {% include "includes/divider.html" %}
+        {% include "includes/resume.html" %}
+        {% include "includes/divider.html" %}
+        {% include "includes/portfolio.html" %}
+        {% include "includes/divider.html" %}
+        {% include "includes/contact.html" %}
+    </main>
+</div>
+<!-- End Page Wrap -->
+{% endblock %}

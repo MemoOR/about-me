@@ -22,11 +22,8 @@ APP_ENV_PRODUCTION = "production"
 APP_ENV = ""
 
 # # Configuración del email
-# MAIL_SERVER = 'tu servidor smtp'
-# MAIL_PORT = 587
-# MAIL_USERNAME = 'tu correo'
-# MAIL_PASSWORD = 'tu contraseña'
-# DONT_REPLY_FROM_EMAIL = 'dirección from'
-# ADMINS = ('', )
-# MAIL_USE_TLS = True
-# MAIL_DEBUG = False
+MAIL_DEBUG = False
+MAIL_SERVER='smtp.gmail.com'
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True

@@ -4,7 +4,7 @@ try:
     import datetime as dt
     from logging.handlers import SMTPHandler
 
-    from flask import Flask, render_template
+    from flask import Flask
     from flask_mail import Mail
 
     from app.blueprints.common.filters import format_datetime
@@ -43,9 +43,9 @@ def create_app(settings_module):
     from app.blueprints.index import index_bp
     app.register_blueprint(index_bp)
 
-    # # Threejs app
-    from app.blueprints.appThreejs import appthreejs_bp
-    app.register_blueprint(appthreejs_bp)
+    # # Email
+    from app.blueprints.email import email_bp
+    app.register_blueprint(email_bp)
 
     # # Error handlers
     from app.blueprints.errorHandlers import errors_bp

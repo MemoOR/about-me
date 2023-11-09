@@ -3,7 +3,7 @@ try:
     import sys
     import random
     from flask import render_template
-    from app.instance import pdf_urls, certificate_urls
+    from instance import pdf_urls, certificate_urls
 
     from . import index_bp
 except ImportError as error:
