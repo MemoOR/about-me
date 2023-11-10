@@ -102,7 +102,7 @@
 
 	// Sections backgrounds
 	var pageSection = $(
-		".home-section, .page-section, .small-section, .split-section"
+		".home-section, .page-section, .small-section, .split-section, .team-item-decoration"
 	);
 	pageSection.each(function (indx) {
 		if ($(this).attr("data-background")) {
@@ -183,7 +183,7 @@
 				$(
 					".main-nav, .nav-logo-wrap .logo, .mobile-nav, .mobile-cart"
 				).addClass("small-height");
-				$(".arrows").addClass("scrolled");
+				$(".arrows").fadeOut();
 				$(".light-after-scroll").removeClass("dark");
 				$(".main-nav").addClass("body-scrolled");
 			} else if ($(window).scrollTop() === 0) {
@@ -191,7 +191,7 @@
 				$(
 					".main-nav, .nav-logo-wrap .logo, .mobile-nav, .mobile-cart"
 				).removeClass("small-height");
-				$(".arrows").removeClass("scrolled");
+				$(".arrows").fadeIn();
 				$(".light-after-scroll").addClass("dark");
 				$(".main-nav").removeClass("body-scrolled");
 			}
