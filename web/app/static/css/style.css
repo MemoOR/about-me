@@ -373,7 +373,7 @@ img:not([draggable]), embed, object, video {
     transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.no-animate {
+.animate__no-animate {
     -webkit-transition-property: none !important;
     -moz-transition-property: none !important;
     -o-transition-property: none !important;
@@ -2482,7 +2482,7 @@ a.logo:hover {
 .mobile-on .desktop-nav ul {
     width: 100%;
     float: none;
-    background: rgba(18, 18, 18, .99);
+    background: rgba(18, 18, 18, 0.85);
     position: relative;
     overflow-x: hidden;
 }
