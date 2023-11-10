@@ -290,18 +290,18 @@
     .hs-line-7{
         font-size: 64px;
     }
-    .float-images-1{;
+    .float-images-1{
         top: 27vw;
         width: 18vw;
     }
-    .float-images-2{;
+    .float-images-2{
         width: 18vw;
     }
     .float-images-3{
         bottom: 29.5vh;
         width: 13vw;
     }
-    .float-images-4{;
+    .float-images-4{
         bottom: 15vh;
         width: 18vw;
     }
@@ -603,12 +603,12 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .float-images-1{;
+    .float-images-1{
         top: 32vw;
         left: 7vw;
         width: 25vw;
     }
-    .float-images-2{;
+    .float-images-2{
         width: 25vw;
     }
     .float-images-3{
@@ -616,7 +616,7 @@
         right: 17vw;
         width: 18vw;
     }
-    .float-images-4{;
+    .float-images-4{
         bottom: 8vh;
         width: 25vw;
     }
@@ -853,7 +853,18 @@
     .shopping-cart-table-title{
         min-width: 150px; 
     }
-    
+    .handdrawn-arrow:before {
+        width: 100px;
+        height: 75px;
+        transform: translateX(60px) translateY(10px) rotate(45deg);
+    }
+    .arrow-text-1 {
+        font-size: small;
+        font-weight: bold;
+        position: relative;
+        display: flex;
+        transform: translateX(80px) translateY(50px); 
+    }
 }
 
 
@@ -894,12 +905,12 @@
 
 @media only screen and (max-height: 480px) {
     
-    .float-images-1{;
+    .float-images-1{
         top: 13.3vw;
         left: 7vw;
         width: 12vw;
     }
-    .float-images-2{;
+    .float-images-2{
         width: 12vw;
     }
     .float-images-3{
@@ -907,7 +918,7 @@
         right: 9.8vw;
         width: 9vw;
     }
-    .float-images-4{;
+    .float-images-4{
         bottom: 8vh;
         width: 12vw;
     }

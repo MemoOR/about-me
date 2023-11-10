@@ -11,6 +11,13 @@
 		} else {
 			setDarkMode();
 		}
+
+		if (mobileTest == true) {
+			$(".mobile-play").removeAttr("hidden")
+		} else {
+			$(".desktop-play").removeAttr("hidden")
+		}
+
 		// Page loader
 		$(".page-loader div").fadeOut();
 		$(".page-loader").delay(350).fadeOut("slow");
@@ -176,6 +183,7 @@
 				$(
 					".main-nav, .nav-logo-wrap .logo, .mobile-nav, .mobile-cart"
 				).addClass("small-height");
+				$(".arrows").addClass("scrolled");
 				$(".light-after-scroll").removeClass("dark");
 				$(".main-nav").addClass("body-scrolled");
 			} else if ($(window).scrollTop() === 0) {
@@ -183,6 +191,7 @@
 				$(
 					".main-nav, .nav-logo-wrap .logo, .mobile-nav, .mobile-cart"
 				).removeClass("small-height");
+				$(".arrows").removeClass("scrolled");
 				$(".light-after-scroll").addClass("dark");
 				$(".main-nav").removeClass("body-scrolled");
 			}
