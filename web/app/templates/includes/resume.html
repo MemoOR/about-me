@@ -3,9 +3,9 @@
     <div class="container relative">
         <div class="text-center mb-80 mb-sm-50 wow animate__animated animate__fadeInUpShort" data-wow-delay="0"
             data-wow-duration="1s">
-            <h2 class="section-title">Resume</h2>
+            <h2 class="section-title">{{_('Resume')}}</h2>
             <p class="section-title-descr">
-                Education and professional experience
+                {{_('Education and professional experience')}}
             </p>
         </div>
 
@@ -13,7 +13,7 @@
         <div class="row resume-grid">
             <div class="col-sm-6 col-md-6 col-lg-6 mt-5">
                 <div class="d-flex align-items-center justify-content-center">
-                    <h3 class="mb-5"><u>Education</u></h3>
+                    <h3 class="mb-5"><u>{{_('Education')}}</u></h3>
                 </div>
 
                 <!-- Resume Education Item -->
@@ -22,17 +22,17 @@
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/Udemy_logo.html' %}
                     </div>
-                    <h3 class="resume-title">DevOps Beginners to Advanced with Projects</h3>
+                    <h3 class="resume-title">{{_('DevOps Beginners to Advanced with Projects')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
                             class="sr-only"></span>&nbsp;&nbsp;&nbsp;2023</span>
                     <div class="resume-descr">
-                        Udemy Certification<br>
-                        Completed a DevOps course with a focus on AWS and Kubernetes, significantly improving my skills
-                        and deepening my understanding of industry best practices.
+                        {{_('Udemy Certification')}}<br>
+                        {{_("""Completed a DevOps course with a focus on AWS and Kubernetes, significantly improving my skills
+                        and deepening my understanding of industry best practices.""")}}
                     </div>
                     <div class="resume-more">
                         <a href="{{ certificate_urls['udemy_devops'] }}"
-                            class="text-link lightbox-gallery-1 mfp-image">Certificate</a>
+                            class="text-link lightbox-gallery-1 mfp-image">{{_('Certificate')}}</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -43,16 +43,16 @@
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/Udemy_logo.html' %}
                     </div>
-                    <h3 class="resume-title">The Beginners Guide to 3D Web Game Development with Three.JS</h3>
+                    <h3 class="resume-title">{{_('The Beginners Guide to 3D Web Game Development with Three.JS')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
                             class="sr-only"></span>&nbsp;&nbsp;&nbsp;2023</span>
                     <div class="resume-descr">
-                        Udemy Certification<br>
-                        Learned how to write JavaScript code to create 3D games using the WebGL library, Three JS.
+                        {{_('Udemy Certification')}}<br>
+                        {{_('Learned how to write JavaScript code to create 3D games using the WebGL library, Three JS.')}}
                     </div>
                     <div class="resume-more">
                         <a href="{{ certificate_urls['udemy_threejs'] }}"
-                            class="text-link lightbox-gallery-1 mfp-image">Certificate</a>
+                            class="text-link lightbox-gallery-1 mfp-image">{{_('Certificate')}}</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -63,15 +63,15 @@
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect icon-light">
                         {% include 'icons/IELTS_logo.html' %}
                     </div>
-                    <h3 class="resume-title">IELTS English Certification - C1</h3>
+                    <h3 class="resume-title">{{_('IELTS English Certification - C1')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
                             class="sr-only"></span>&nbsp;&nbsp;&nbsp;2022</span>
                     <div class="resume-descr">
-                        English level: Full professional proficiency
+                        {{_('English level: Full professional proficiency')}}
                     </div>
                     <div class="resume-more">
                         <a href="{{ pdf_urls['ielts_certificate_url'] }}"
-                            class="text-link lightbox-gallery-1 mfp-iframe">Certificate</a>
+                            class="text-link lightbox-gallery-1 mfp-iframe">{{_('Certificate')}}</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -82,15 +82,15 @@
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect">
                         {% include 'icons/Logo_Universidad_Iberoamericana.html' %}
                     </div>
-                    <h3 class="resume-title">Mechatronics Engineering</h3>
+                    <h3 class="resume-title">{{_('Mechatronics Engineering')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
-                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;Aug/2017 - Dec/2022</span>
+                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;{{_('Aug/2017 - Dec/2022')}}</span>
                     <div class="resume-descr">
-                        Bachelor's Degree<br>
-                        Universidad Iberoamericana
+                        {{_('Bachelor's Degree')}}<br>
+                        {{_('Universidad Iberoamericana')}}
                     </div>
                     <div class="resume-more">
-                        <a href="https://ibero.mx/" class="text-link" target="_blank">Learn More</a>
+                        <a href="https://ibero.mx/" class="text-link" target="_blank">{{_('Learn More')}}</a>
                     </div>
                 </div>
                 <!-- End Education Item -->
@@ -98,7 +98,7 @@
 
             <div class="col-sm-6 col-md-6 col-lg-6 mt-5">
                 <div class="d-flex align-items-center justify-content-center">
-                    <h3 class="mb-5"><u>Experience</u></h3>
+                    <h3 class="mb-5"><u>{{_('Experience')}}</u></h3>
                 </div>
 
                 <!-- Resume Item -->
@@ -107,19 +107,19 @@
                     <div class="pb-3 d-flex align-items-center resume-icon icon-rect">
                         {% include 'icons/espressive_logo.html' %}
                     </div>
-                    <h3 class="resume-title">DevOps Engineer</h3>
+                    <h3 class="resume-title">{{_('DevOps Engineer')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
-                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;Sep/2022 - Present</span>
+                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;{{_('Sep/2022 - Present')}}</span>
                     <div class="resume-descr">
-                        Espressive Inc.<br>
-                        As a DevOps engineer, I develop tools to automate company processes using Python and Bash.
+                        {{_('Espressive Inc.')}}<br>
+                        {{_("""As a DevOps engineer, I develop tools to automate company processes using Python and Bash.
                         I also create infrastructure for new development and production environments with Terraform,
                         update automation scripts for technologies like Kubernetes, Docker, AWS, and Django, and
                         integrate third-party services via APIs. My work enhances resource management and streamlines
-                        application deployment in our organization.
+                        application deployment in our organization.""")}}
                     </div>
                     <div class="resume-more">
-                        <a href="https://www.espressive.com/" class="text-link" target="_blank">Learn More</a>
+                        <a href="https://www.espressive.com/" class="text-link" target="_blank">{{_('Learn More')}}</a>
                     </div>
                 </div>
                 <!-- End Resume Item -->
@@ -130,18 +130,18 @@
                     <div class="pb-3 d-flex align-items-center text-center resume-icon icon-rect icon-light">
                         {% include 'icons/INIAT_logo.html' %}
                     </div>
-                    <h3 class="resume-title">Control Systems python developer</h3>
+                    <h3 class="resume-title">{{_('Control Systems python developer')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
-                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;Aug/2021 - Jan/2023</span>
+                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;{{_('Aug/2021 - Jan/2023')}}</span>
                     <div class="resume-descr">
-                        INIAT<br>
-                        I took the lead in designing and developing a self-driving two-wheeled vehicle, using Python,
+                        {{_('INIAT')}}<br>
+                        {{_("""I took the lead in designing and developing a self-driving two-wheeled vehicle, using Python,
                         ROS 2, and C++ to implement artificial intelligence. This project involved integrating hardware
                         and software systems and crafting control and navigation algorithms, marking a notable
-                        achievement in the field of robotics.
+                        achievement in the field of robotics.""")}}
                     </div>
                     <div class="resume-more">
-                        <a href="https://iniat.ibero.mx/" class="text-link" target="_blank">Learn More</a>
+                        <a href="https://iniat.ibero.mx/" class="text-link" target="_blank">{{_('Learn More')}}</a>
                     </div>
                 </div>
                 <!-- End Resume Item -->
@@ -152,19 +152,19 @@
                     <div class="pb-3 d-flex align-items-center resume-icon">
                         <img src="{{url_for('static', filename='assets/img/gdcode_logo.png')}}" />
                     </div>
-                    <h3 class="resume-title">Software and Hardware Developer</h3>
+                    <h3 class="resume-title">{{_('Software and Hardware Developer')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
-                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;May/2020 - Present</span>
+                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;{{_('May/2020 - Present')}}</span>
                     <div class="resume-descr">
-                        GD-code - Freelance <br>
-                        Comprehensive service delivery encompassing web application development and maintenance
+                        {{_('GD-code - Freelance')}} <br>
+                        {{_("""Comprehensive service delivery encompassing web application development and maintenance
                         using Flask and Django, as well as the creation of desktop applications in Python.
                         I also design and develop REST APIs using Flask and AWS Lambda, and I am involved in
                         creating embedded hardware solutions. This experience provides me with a holistic perspective
-                        in delivering technology projects spanning a variety of platforms and technologies.
+                        in delivering technology projects spanning a variety of platforms and technologies.""")}}
                     </div>
                     <!-- <div class="resume-more">
-                        <a href="https://www.espressive.com/" class="text-link" target="_blank">Learn More</a>
+                        <a href="#!" class="text-link" target="_blank">{{_('Learn More')}}</a>
                     </div> -->
                 </div>
                 <!-- End Resume Item -->
@@ -175,17 +175,17 @@
                     <div class="pb-3 d-flex align-items-center resume-icon">
                         <img src="{{url_for('static', filename='assets/img/malinalli_logo.png')}}" />
                     </div>
-                    <h3 class="resume-title">Computer Teacher</h3>
+                    <h3 class="resume-title">{{_('Computer Teacher')}}</h3>
                     <span class="date"><i class="fa fa-calendar"></i><span
-                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;Jan/2018 - May/2018</span>
+                            class="sr-only"></span>&nbsp;&nbsp;&nbsp;{{_('Jan/2018 - May/2018')}}</span>
                     <div class="resume-descr">
-                        Malinalli <br>
-                        I supervised and taught a total of nine groups, consisting of six elementary school groups and
+                        {{_('Malinalli')}} <br>
+                        {{_("""I supervised and taught a total of nine groups, consisting of six elementary school groups and
                         three preschool groups. My responsibilities included planning and implementing educational
-                        programs tailored to various age levels.
+                        programs tailored to various age levels.""")}}
                     </div>
                     <!-- <div class="resume-more">
-                        <a href="https://www.espressive.com/" class="text-link" target="_blank">Learn More</a>
+                        <a href="https://www.espressive.com/" class="text-link" target="_blank">{{_('Learn More')}}</a>
                     </div> -->
                 </div>
                 <!-- End Resume Item -->
@@ -225,21 +225,21 @@
     <div class="container relative">
         <div class="row wow animate__animated animate__fadeInUpShort">
             <div class="col-lg-6">
-                <h3 class="text-center call-action-1-heading">Feeling interested?</h3>
+                <h3 class="text-center call-action-1-heading">{{_('Feeling interested?')}}</h3>
                 <div class="text-center call-action-1-decription mb-0 pb-md-20">
-                    Download my CV in PDF
+                    {{_('View or download my CV in PDF')}}
                 </div>
             </div>
             <div class="col-lg-2 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
                     <a href="{{ pdf_urls['cv_url_preview'] }}"
-                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 lightbox-gallery-1 mfp-iframe" download="File.pdf">View</a>
+                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 lightbox-gallery-1 mfp-iframe" download="File.pdf">{{_('View')}}</a>
                 </div>
             </div>
             <div class="col-lg-2 pt-10 text-lg-end text-center">
                 <div class="local-scroll">
                     <a href="{{ pdf_urls['cv_url_download'] }}"
-                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 btn-round" download="File.pdf">Download</a>
+                        class="btn btn-mod btn-w btn-medium btn-round mx-md-1 btn-round" download="File.pdf">{{_('Download')}}</a>
                 </div>
             </div>
         </div>

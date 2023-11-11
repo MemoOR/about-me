@@ -1,5 +1,7 @@
 from os.path import abspath, dirname, join
 
+LANGUAGES = ['en', 'es']
+BABEL_DEFAULT_LOCALE = "en"
 
 # Define the application directory
 BASE_DIR = dirname(dirname(abspath(__file__)))

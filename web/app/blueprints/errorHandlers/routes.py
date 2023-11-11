@@ -15,9 +15,9 @@ except Exception as exception:
 def error404(e):
     return render_template(
         "error.html",
-        pageTitle="Not Found",
+        pageTitle=_("Not Found"),
         error_code="404",
-        error_msg="The page you were looking for could not be found.",
+        error_msg=_("The page you were looking for could not be found."),
     )
 
 
@@ -25,9 +25,9 @@ def error404(e):
 def error404(e):
     return render_template(
         "error.html",
-        pageTitle="Not Allowed",
+        pageTitle=_("Not Allowed"),
         error_code="405",
-        error_msg="You shouldn't try to do that.",
+        error_msg=_("You shouldn't try to do that."),
     )
 
 

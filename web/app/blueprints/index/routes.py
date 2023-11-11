@@ -29,7 +29,7 @@ def index():
 
     return render_template(
         "index.html",
-        pageTitle="Guillermo Ortega",
+        pageTitle="Guillermo Ortega Romo",
         icon_files=icon_files,
         pdf_urls=pdf_urls_filtered,
         certificate_urls=certificate_urls,

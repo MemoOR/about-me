@@ -6,29 +6,27 @@
             <div class="row section-text">
 
                 <div class="col-md-12 col-lg-4 mb-md-50 mb-xs-30 d-flex justify-content-center align-items-center">
-                    <div class="lead-alt wow animate__linesAnimIn" data-splitting="lines"
-                        data-wow-delay="1.3s">
-                        About Me
+                    <div class="lead-alt wow animate__linesAnimIn" data-splitting="lines" data-wow-delay="1.3s">
+                        {{_('About Me')}}
                     </div>
                 </div>
 
-                <div style="text-align: justify;"
-                    class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__linesAnimIn"
+                <div style="text-align: justify;" class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__linesAnimIn"
                     data-splitting="lines" data-wow-delay="1.3s">
-                    I hold a degree in Mechatronics Engineering from Universidad Iberoamericana, where I gained a strong
-                    foundation in interdisciplinary engineering principles. I seamlessly integrate hardware and software
-                    solutions to create innovative, multifaceted systems. I bring a wealth of expertise in Python
-                    programming, AWS cloud infrastructure, and efficient code deployment practices to my work.
+                    {{_("""I hold a degree in Mechatronics Engineering from Universidad Iberoamericana, where I gained a
+                    strong foundation in interdisciplinary engineering principles. I seamlessly integrate hardware and
+                    software solutions to create innovative, multifaceted systems. I bring a wealth of expertise in
+                    Python programming, AWS cloud infrastructure, and efficient code deployment practices to my
+                    work.""")}}
                 </div>
 
-                <div style="text-align: justify;"
-                    class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__linesAnimIn"
+                <div style="text-align: justify;" class="col-md-6 col-lg-4 mb-sm-50 mb-xs-30 wow animate__linesAnimIn"
                     data-splitting="lines" data-wow-delay="1.3s">
-                    My passion lies in merging machine learning with automotive technology, specifically focusing on
+                    {{_("""My passion lies in merging machine learning with automotive technology, specifically focusing on
                     enhancing autonomous vehicles. When I'm not immersed in my technical pursuits, I find tranquility in
                     playing the piano and crafting with wood, balancing creativity and precision in my hobbies. Whether
                     I'm exploring melodies on the piano or creating handmade furniture, I'm dedicated to continuous
-                    personal and professional growth.
+                    personal and professional growth.""")}}
                 </div>
 
             </div>
@@ -51,17 +49,17 @@
                             <img src="{{url_for('static', filename='assets/img/me.png')}}" alt="" />
                             <div class="team-item-detail">
                                 <p class="team-item-detail-title">
-                                    Where to find me
+                                    {{_("Where to find me")}}
                                 </p>
                                 <p>
-                                    Feel free to visit my LinkedIn and GitHub profiles to learn a little more about me
+                                    {{_("Feel free to visit my LinkedIn and GitHub profiles to learn a little more about
+                                    me")}}
                                 </p>
                                 <div class="team-social-links">
                                     <a href="https://github.com/MemoOR" target="_blank"><i
-                                            class="fab fa-github"></i><span class="sr-only">Github profile</span></a>
+                                            class="fab fa-github"></i><span class="sr-only">{{_("Github profile")}}</span></a>
                                     <a href="https://www.linkedin.com/in/guillermo-or" target="_blank"><i
-                                            class="fab fa-linkedin"></i><span class="sr-only">LinkedIn
-                                            profile</span></a>
+                                            class="fab fa-linkedin"></i><span class="sr-only">{{_("LinkedIn profile")}}</span></a>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block content %}
-<p id="instructions">Collect stars. <br>Avoid bombs. <br>Spacebar, mousedown or touch to climb</p>
+<p id="instructions">{{_('Collect stars.')}} <br>{{_('Avoid bombs.')}} <br>{{_('Spacebar, mousedown or touch to climb')}}</p>
 <div id="info">
     <div id="life">
         <img src="{{url_for('static', filename= '/assets/models/plane/plane-icon.png')}}" />
@@ -15,8 +15,8 @@
         <div id="score">0</div><img src="{{url_for('static', filename= '/assets/models/plane/star-icon.png')}}" />
     </div>
 </div>
-<p id="gameover">Game over</p>
-<button id="playBtn">PLAY</button>
+<p id="gameover">{{_(Game over)}}</p>
+<button id="playBtn">{{_('PLAY')}}</button>
 <canvas class="webgl"></canvas>
 
 <script type="module">

@@ -3,9 +3,9 @@
     <div class="container relative">
 
         <div class="text-center mb-80 mb-sm-50">
-            <h2 class="section-title">Contact Me</h2>
+            <h2 class="section-title">{{_('Contact Me')}}</h2>
             <p class="section-title-descr">
-                Hire me or get in touch with me if you need a project developed
+                {{_('Hire me or get in touch with me if you need a project developed')}}
             </p>
         </div>
 
@@ -28,7 +28,7 @@
                                 memo.or99@gmail.com
                             </div>
                             <div class="ci-link">
-                                <a href="mailto:memo.or99@gmail.com" target="_blank">Get in touch</a>
+                                <a href="mailto:memo.or99@gmail.com" target="_blank">{{_('Get in touch')}}</a>
                             </div>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                                 memo.or99@hotmail.com
                             </div>
                             <div class="ci-link">
-                                <a href="mailto:memo.or99@hotmail.com" target="_blank">Get in touch</a>
+                                <a href="mailto:memo.or99@hotmail.com" target="_blank">{{_('Get in touch')}}</a>
                             </div>
                         </div>
                     </div>
@@ -70,30 +70,30 @@
                         <div class="col-md-6">
                             <!-- Name -->
                             <div class="form-group">
-                                <label for="name">Name</label>
+                                <label for="name">{{_('Name')}}</label>
                                 <input type="text" name="name" id="name" class="input-lg round form-control"
-                                    placeholder="Enter your name" pattern=".{3,100}" required aria-required="true">
+                                    placeholder={{_("Enter your name")}} pattern=".{3,100}" required aria-required="true">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <!-- Email -->
                             <div class="form-group">
-                                <label for="email">Email</label>
+                                <label for="email">{{_('Email')}}</label>
                                 <input type="email" name="email" id="email" class="input-lg round form-control"
-                                    placeholder="Enter your email" pattern=".{5,100}" required aria-required="true">
+                                    placeholder={{_("Enter your email")}} pattern=".{5,100}" required aria-required="true">
                             </div>
                         </div>
                     </div>
 
                     <!-- Message -->
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message">{{_('Message')}}</label>
                         <textarea name="message" id="message" class="input-lg round form-control" style="height: 130px;"
-                            placeholder="Enter your message"></textarea>
+                            placeholder={{_("Enter your message")}}></textarea>
                         <div class="form-tip pt-20 pt-sm-0 mb-sm-20">
-                            This site is protected by reCAPTCHA and the Google
-                            <a href="https://policies.google.com/privacy">Privacy Policy</a> and
-                            <a href="https://policies.google.com/terms">Terms of Service</a> apply.
+                            {{_('This site is protected by reCAPTCHA and the Google')}}
+                            <a href="https://policies.google.com/privacy">{{_('Privacy Policy')}}</a> {{_('and')}}
+                            <a href="https://policies.google.com/terms">{{_('Terms of Service')}}</a> {{_('apply.')}}
                         </div>
                     </div>
 
@@ -101,7 +101,7 @@
                         <div class="col-sm-6">
                             <!-- Inform Tip -->
                             <div class="form-tip pt-20 pt-sm-0 mb-sm-20">
-                                All the fields are required
+                                {{_('All the fields are required')}}
                             </div>
                         </div>
                         <div class="col-sm-6">
@@ -109,7 +109,7 @@
                             <div class="text-end pt-10">
                                 <button class="g-recaptcha submit_btn btn btn-w btn-mod btn-large btn-round"
                                     id="submit_btn" aria-controls="result">
-                                    Submit Message
+                                    {{_('Submit Message')}}
                                 </button>
                             </div>
                         </div>

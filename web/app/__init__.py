@@ -4,8 +4,9 @@ try:
     import datetime as dt
     from logging.handlers import SMTPHandler
 
-    from flask import Flask
+    from flask import Flask, request, g
     from flask_mail import Mail
+    from flask_babel import Babel
 
     from app.blueprints.common.filters import format_datetime
 except ImportError as error:
@@ -14,6 +15,7 @@ except Exception as exception:
     sys.exit("Error in:" + __file__ + exception)
 
 mail = Mail()
+babel = Babel()
 
 
 def create_app(settings_module):
@@ -31,6 +33,10 @@ def create_app(settings_module):
     configure_logging(app)
 
     mail.init_app(app)
+    babel.init_app(app, locale_selector=get_locale)
+
+    # Babel
+    get_locale(app)
 
     # Filters
     register_filters(app)
@@ -41,18 +47,22 @@ def create_app(settings_module):
     # Blueprints
     # # Main Page
     from app.blueprints.index import index_bp
+
     app.register_blueprint(index_bp)
 
     # # 3d Page
     from app.blueprints.appThreejs import appthreejs_bp
+
     app.register_blueprint(appthreejs_bp)
 
     # # Email
     from app.blueprints.email import email_bp
+
     app.register_blueprint(email_bp)
 
     # # Error handlers
     from app.blueprints.errorHandlers import errors_bp
+
     app.register_blueprint(errors_bp)
 
     return app
@@ -62,6 +72,13 @@ def register_context_processor(app):
     @app.context_processor
     def dateNow():
         return {"now": dt.datetime.utcnow()}
+
+
+def get_locale(app):
+    with app.app_context():
+        if not g.get("lang_code", None):
+            g.lang_code = request.accept_languages.best_match(app.config["LANGUAGES"])
+        return g.lang_code
 
 
 def register_filters(app):

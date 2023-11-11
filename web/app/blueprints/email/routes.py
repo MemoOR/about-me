@@ -23,7 +23,7 @@ def send_email():
     ).json()
 
     if verify_response["success"] == False or verify_response["score"] < 0.5:
-        response = {"text": "You didn't passed the captcha, try again", "type": "error"}
+        response = {"text": _("You didn't passed the captcha, try again"), "type": "error"}
         return jsonify(response)
 
     proceed, message = validate_mail_fields(user_name, user_email, user_message)
@@ -42,11 +42,11 @@ def send_email():
         )
 
         response = {
-            "text": "I got your message and will contact you soon!",
+            "text": _("I got your message and will contact you soon!"),
             "type": "success",
         }
     except Exception as e:
-        response = {"text": "Something went wrong", "type": "error"}
+        response = {"text": _("Something went wrong"), "type": "error"}
         print(e)
 
     return jsonify(response)

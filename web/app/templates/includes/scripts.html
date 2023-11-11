@@ -18,7 +18,7 @@
 <script src="{{url_for('static', filename='js/wow.min.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Morphext/2.4.4/morphext.min.js"></script>
 <script src="{{url_for('static', filename='js/typed.min.js')}}"></script>
-<script src="{{url_for('static', filename='js/dark_mode.js')}}"></script>
+{% include "includes/dark_mode.html" %}
 <script src="{{url_for('static', filename='js/all.js')}}"></script>
 <script src="https://www.google.com/recaptcha/api.js?render={{ captcha_key }}"></script>
 {% include "includes/contact-form.html" %}

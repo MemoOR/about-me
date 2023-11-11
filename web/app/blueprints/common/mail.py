@@ -37,7 +37,7 @@ def validate_mail_fields(user_name, user_email, user_message):
 
     email_regex = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"
     if not re.match(email_regex, user_email):
-        return False, "The email you entered is not valid"
+        return False, _("The email you entered is not valid")
 
     return True, "Validation success"
 
