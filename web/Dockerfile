@@ -6,16 +6,13 @@ RUN mkdir -p /opt/app
 WORKDIR /opt/app
 
 # install
-COPY requirements.txt ./
+COPY . /opt/app/
 RUN pip install --progress-bar off --no-cache-dir -r requirements.txt
 
-# copy app
-COPY app /opt/app
-COPY about-me.py /opt/app
-COPY gunicorn.conf.py /opt/app
-COPY instance /opt/app
+RUN pybabel compile -d app/translations
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout instance/privateKey.pem -out instance/certificate.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
 
 EXPOSE 7168
 
-WORKDIR /opt/app/app
+WORKDIR /opt/app
 CMD ["gunicorn", "about-me:app"]

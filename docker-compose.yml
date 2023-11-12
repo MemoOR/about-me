@@ -12,16 +12,18 @@ version: "3.7"
 services:
 
   appweb:
-    image: memoor_appweb:latest
+    build:
+      context: web
+    restart: always
     ports:
       - "7168:7168"
 
   router:
-    image: memoor_router:latesr
+    build:
+      context: router
+    restart: always
     ports:
       - "80:80"
       - "443:443"
     depends_on:
       - appweb
-
-  

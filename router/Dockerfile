@@ -6,16 +6,22 @@ LABEL maintainer="memo.or99@hotmail.com"
 
 # Define working directory.
 WORKDIR /etc/nginx
-
-# Define default command.
-CMD ["nginx"]
+RUN mkdir /etc/ssl || true
 
 # Get upstream updates
 RUN apk upgrade --no-cache 
+RUN apk add openssl
 
 # Expose ports.
 EXPOSE 80 443
 
 COPY _template/ /etc/nginx/_template/
 COPY nginx.conf /etc/nginx/nginx.conf
-COPY nginx.crt nginx.key /etc/ssl/
+
+WORKDIR /etc/ssl
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout nginx.key -out nginx.crt -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
+
+# COPY nginx.crt nginx.key /etc/ssl/
+
+# Define default command.
+CMD ["nginx"]
