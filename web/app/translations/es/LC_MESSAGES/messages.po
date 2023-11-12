@@ -257,10 +257,6 @@ msgid "Explore the page"
 msgstr "Explora la página"
 
 #: app/templates/includes/home.html:27
-msgid "#about"
-msgstr "#acerca"
-
-#: app/templates/includes/home.html:27
 msgid "Scroll to the next section"
 msgstr "Desplázate a la siguiente sección"
 
