@@ -4,7 +4,7 @@ try:
     import datetime as dt
     from logging.handlers import SMTPHandler
 
-    from flask import Flask, request, g, current_app
+    from flask import Flask, request, g, current_app, redirect, url_for
     from flask_mail import Mail
     from flask_babel import Babel
 

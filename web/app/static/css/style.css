@@ -2265,6 +2265,18 @@ a.logo:hover {
 
 /* Menu sub */
 
+.mn-flag-icon {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    position: relative;
+    top: 0.2em;
+    opacity: .9;
+    margin-right: 5px;
+   -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+
 .mn-has-sub-icon {
     display: inline-block;
     width: 9px;
@@ -2311,12 +2323,12 @@ a.logo:hover {
     top: 100%;
     left: 0;
     padding: 0;
-    background: rgba(35, 35, 35, .9927);
+    background: rgba(35, 35, 35, 0.7);
     border-radius: 0 0 3px 3px;
 }
 
 .light-content .mn-sub {
-    background: rgba(50, 50, 50, .9927);
+    background: rgba(50, 50, 50, 0.7);
 }
 
 .transparent .mn-sub,

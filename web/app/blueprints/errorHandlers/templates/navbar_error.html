@@ -21,6 +21,18 @@
             <ul class="clearlist scroll-nav local-scroll">
                 <li class="active"><a href="#home">{{_('Home')}}</a></li>
                 <li><a id="DarkLightToggle" href="#!" onclick="DarkLightToggle(); return false;">{{_('Dark view')}}</a></li>
+                <!-- Languages -->
+                <li>
+                    <a href="#" class="mn-has-sub">
+                        <div class="mn-flag-icon">{% include lang_icon %}</div>
+                        <i class="mn-has-sub-icon"></i>
+                    </a>
+                    <ul class="mn-sub">
+                        <li><a href="{{ url_for("index.index", lang_code='en') }}">{{_('English')}}</a></li>
+                        <li><a href="{{ url_for("index.index", lang_code='es') }}">{{_('Spanish')}}</a></li>
+                    </ul>
+                </li>
+                <!-- End Languages -->
             </ul>
         </div>
         <!-- End Main Menu -->

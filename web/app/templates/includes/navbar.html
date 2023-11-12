@@ -5,8 +5,10 @@
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
             <a href="/" class="logo">
-                <img src="{{url_for('static', filename= 'assets/img/name_white.png')}}" alt="Company logo" width="188" height="37" class="logo-white" />
-                <img src="{{url_for('static', filename= 'assets/img/name_black.png')}}" alt="Company logo" width="188" height="37" class="logo-dark" />
+                <img src="{{url_for('static', filename= 'assets/img/name_white.png')}}" alt="Company logo" width="188"
+                    height="37" class="logo-white" />
+                <img src="{{url_for('static', filename= 'assets/img/name_black.png')}}" alt="Company logo" width="188"
+                    height="37" class="logo-dark" />
             </a>
         </div>
 
@@ -24,7 +26,20 @@
                 <li><a href="#resume">{{_('Resume')}}</a></li>
                 <li><a href="#portfolio">{{_('Portfolio')}}</a></li>
                 <li><a href="#contact">{{_('Contact')}}</a></li>
-                <li><a id="DarkLightToggle" href="#!" onclick="DarkLightToggle(); return false;">{{_('Dark view')}}</a></li>
+                <li><a id="DarkLightToggle" href="#!" onclick="DarkLightToggle(); return false;">{{_('Dark view')}}</a>
+                </li>
+                <!-- Languages -->
+                <li>
+                    <a href="#" class="mn-has-sub">
+                        <div class="mn-flag-icon">{% include lang_icon %}</div>
+                        <i class="mn-has-sub-icon"></i>
+                    </a>
+                    <ul class="mn-sub">
+                        <li><a href="{{ url_for(request.endpoint, lang_code='en') }}">{{_('English')}}</a></li>
+                        <li><a href="{{ url_for(request.endpoint, lang_code='es') }}">{{_('Spanish')}}</a></li>
+                    </ul>
+                </li>
+                <!-- End Languages -->
             </ul>
         </div>
         <!-- End Main Menu -->
