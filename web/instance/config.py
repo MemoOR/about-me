@@ -1,0 +1,14 @@
+import os
+
+# App config
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+# Mail Configs
+MAIL_USERNAME = os.getenv("MAIL_USERNAME")
+MAIL_PASSWORD = os.getenv("MAIL_PASSWORD")
+MAIL_DEFAULT_SENDER = os.getenv("MAIL_DEFAULT_SENDER")
+
+# Captcha configs
+RECAPTCHA_VERIFY_URL = os.getenv("RECAPTCHA_VERIFY_URL")
+RECAPTCHA_SITE_KEY = os.getenv("RECAPTCHA_SITE_KEY")
+RECAPTCHA_PRIVATE_KEY = os.getenv("RECAPTCHA_PRIVATE_KEY")

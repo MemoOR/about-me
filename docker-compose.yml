@@ -17,6 +17,8 @@ services:
     restart: always
     ports:
       - "7168:7168"
+    env_file:
+      - web.env
 
   router:
     build:
@@ -27,3 +29,9 @@ services:
       - "443:443"
     depends_on:
       - appweb
+
+  certbot:
+    image: certbot/certbot:latest
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
