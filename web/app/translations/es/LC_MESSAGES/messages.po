@@ -616,3 +616,12 @@ msgstr "Descargar"
 msgid "Skip to Content"
 msgstr "Ir al Contenido"
 
+#: app/blueprints/errorHandlers/templates/navbar_error.html:31
+#: app/templates/includes/navbar.html:38
+msgid "English"
+msgstr "English"
+
+#: app/blueprints/errorHandlers/templates/navbar_error.html:32
+#: app/templates/includes/navbar.html:39
+msgid "Español"
+msgstr "Español"
