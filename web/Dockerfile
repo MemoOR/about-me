@@ -13,6 +13,7 @@ RUN pip install --progress-bar off --no-cache-dir -r requirements.txt
 COPY app /opt/app
 COPY about-me.py /opt/app
 COPY gunicorn.conf.py /opt/app
+COPY instance /opt/app
 
 EXPOSE 7168
 

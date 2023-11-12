@@ -5,7 +5,7 @@ try:
     import sys
     from flask import redirect, request, url_for, current_app
     from app import create_app
-    # from app.config import ssl_context
+    from app.config import ssl_context
 except ImportError as error:
     sys.exit("Error in:" + __file__ + " " + error.__class__.__name__ + ": " + error.msg)
 except Exception as exception:
@@ -26,7 +26,7 @@ if __name__ == "__main__":
         app.run(
             host="0.0.0.0",
             port=os.getenv("APP_PORT", 7168),
-            # ssl_context=ssl_context,
+            ssl_context=ssl_context,
             debug=True,
         )
     except KeyboardInterrupt:
