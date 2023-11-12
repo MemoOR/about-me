@@ -3,7 +3,8 @@
 try:
     import os
     import sys
-    from app import create_app, redirect, request, url_for, g
+    from flask import redirect, request, url_for, current_app
+    from app import create_app
     # from app.config import ssl_context
 except ImportError as error:
     sys.exit("Error in:" + __file__ + " " + error.__class__.__name__ + ": " + error.msg)
@@ -15,8 +16,9 @@ app = create_app(settings_module)
 
 @app.route('/')
 def home():
-    g.lang_code = request.accept_languages.best_match(app.config['LANGUAGES'])
-    return redirect(url_for('index.index'))
+    with app.app_context():
+        current_app.config['lang_code'] = request.accept_languages.best_match(app.config['LANGUAGES'])
+        return redirect(url_for('index.index'))
 
 #-------------------------------Execute----------------------------------------#
 if __name__ == "__main__":

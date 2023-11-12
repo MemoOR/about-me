@@ -2,7 +2,7 @@ try:
     import os
     import sys
     import random
-    from flask import abort, current_app, request, redirect, render_template, g, url_for
+    from flask import abort, current_app, request, redirect, render_template, url_for
     from flask_babel import _
     from instance import pdf_urls, certificate_urls
 
@@ -15,7 +15,7 @@ except Exception as exception:
 
 @index_bp.before_request
 def before_request():
-    if g.lang_code not in current_app.config['LANGUAGES']:
+    if current_app.config['lang_code'] not in current_app.config['LANGUAGES']:
         adapter = current_app.url_map.bind('')
         try:
             endpoint, args = adapter.match('/en' + request.full_path.rstrip('/ ?'))
@@ -31,12 +31,12 @@ def before_request():
 
 @index_bp.url_defaults
 def add_language_code(endpoint, values):
-    values.setdefault("lang_code", g.lang_code)
+    values.setdefault("lang_code", current_app.config['lang_code'])
 
 
 @index_bp.url_value_preprocessor
 def pull_lang_code(endpoint, values):
-    g.lang_code = values.pop("lang_code")
+    current_app.config['lang_code'] = values.pop("lang_code")
 
 @index_bp.route("/")
 @index_bp.route("/index")
@@ -47,14 +47,14 @@ def index():
     icon_files = [f for f in os.listdir(icon_folder) if f.endswith(".html")]
     random.shuffle(icon_files)
 
-    if g.lang_code == "en":
+    if current_app.config['lang_code'] == "en":
         lang_icon = "icons/us_flag.html"
         pdf_urls_filtered = {
             "ielts_certificate_url": pdf_urls["ielts_certificate_url"],
             "cv_url_preview": pdf_urls["english_cv_url_preview"],
             "cv_url_download": pdf_urls["english_cv_url_download"],
         }
-    elif g.lang_code == "es":
+    elif current_app.config['lang_code'] == "es":
         lang_icon = "icons/mx_flag.html"
         pdf_urls_filtered = {
             "ielts_certificate_url": pdf_urls["ielts_certificate_url"],

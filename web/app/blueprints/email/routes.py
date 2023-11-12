@@ -1,7 +1,7 @@
 try:
     import sys
     import requests
-    from flask import current_app, request, jsonify, abort
+    from flask import current_app, request, jsonify
     from flask_babel import _
 
     from app.blueprints.common.mail import send_mail, validate_mail_fields

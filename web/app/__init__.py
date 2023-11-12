@@ -4,7 +4,7 @@ try:
     import datetime as dt
     from logging.handlers import SMTPHandler
 
-    from flask import Flask, request, g, current_app, redirect, url_for
+    from flask import Flask, request, current_app
     from flask_mail import Mail
     from flask_babel import Babel
 
@@ -72,9 +72,9 @@ def register_context_processor(app):
 
 
 def get_locale():
-    if not g.get("lang_code", None):
-        g.lang_code = request.accept_languages.best_match(current_app.config["LANGUAGES"])
-    return g.lang_code
+    if not current_app.config.get("lang_code", None):
+        current_app.config['lang_code'] = request.accept_languages.best_match(current_app.config["LANGUAGES"])
+    return current_app.config['lang_code']
 
 
 def register_filters(app):

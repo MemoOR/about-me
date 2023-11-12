@@ -16,7 +16,7 @@
 #       range.
 #
 
-bind = '127.0.0.1:7168'
+bind = '0.0.0.0:7168'
 backlog = 64
 
 #
@@ -213,5 +213,5 @@ def worker_int(worker):
 def worker_abort(worker):
     worker.log.info("worker received SIGABRT signal")
 
-certfile = 'app/instance/certificate.pem'
-keyfile = 'app/instance/privateKey.pem'
+certfile = 'instance/certificate.pem'
+keyfile = 'instance/privateKey.pem'

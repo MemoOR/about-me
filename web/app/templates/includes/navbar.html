@@ -4,7 +4,7 @@
 
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
-            <a href="/" class="logo">
+            <a href="{{ url_for('index.index') }}" class="logo">
                 <img src="{{url_for('static', filename= 'assets/img/name_white.png')}}" alt="Company logo" width="188"
                     height="37" class="logo-white" />
                 <img src="{{url_for('static', filename= 'assets/img/name_black.png')}}" alt="Company logo" width="188"
