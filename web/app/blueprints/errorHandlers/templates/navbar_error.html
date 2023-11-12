@@ -24,12 +24,11 @@
                 <!-- Languages -->
                 <li>
                     <a href="#" class="mn-has-sub">
-                        <div class="mn-flag-icon">{% include lang_icon %}</div>
                         <i class="mn-has-sub-icon"></i>
                     </a>
                     <ul class="mn-sub">
-                        <li><a href="{{ url_for("index.index", lang_code='en') }}">{{_('English')}}</a></li>
-                        <li><a href="{{ url_for("index.index", lang_code='es') }}">{{_('Spanish')}}</a></li>
+                        <li><a href="{{ url_for("index.index", lang_code='en') }}">{{_('English')}}<div class="mn-flag-icon">{% include 'icons/us_flag.html' %}</div></a></li>
+                        <li><a href="{{ url_for("index.index", lang_code='es') }}">{{_('Spanish')}}<div class="mn-flag-icon">{% include 'icons/mx_flag.html' %}</div></a></li>
                     </ul>
                 </li>
                 <!-- End Languages -->

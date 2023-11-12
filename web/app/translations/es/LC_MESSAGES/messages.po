@@ -23,7 +23,7 @@ msgstr ""
 msgid "/3dworld"
 msgstr "/mundo3d"
 
-#: app/blueprints/common/mail.py:40
+#: app/blueprints/common/mail.py:41
 msgid "The email you entered is not valid"
 msgstr "El correo electrónico que ingresaste no es válido"
 
@@ -31,27 +31,27 @@ msgstr "El correo electrónico que ingresaste no es válido"
 msgid "You didn't pass the captcha, try again"
 msgstr "No pasaste la prueba captcha, inténtalo de nuevo"
 
-#: app/blueprints/email/routes.py:45
-msgid "I received your message and will contact you soon!"
+#: app/blueprints/email/routes.py:46
+msgid "I got your message and will contact you soon!"
 msgstr "Recibí tu mensaje y me pondré en contacto contigo pronto"
 
-#: app/blueprints/email/routes.py:49
+#: app/blueprints/email/routes.py:50
 msgid "Something went wrong"
 msgstr "Algo salió mal"
 
-#: app/blueprints/errorHandlers/routes.py:18
+#: app/blueprints/errorHandlers/routes.py:23
 msgid "Not Found"
 msgstr "No encontrado"
 
-#: app/blueprints/errorHandlers/routes.py:20
+#: app/blueprints/errorHandlers/routes.py:26
 msgid "The page you were looking for could not be found."
 msgstr "La página que buscabas no se pudo encontrar"
 
-#: app/blueprints/errorHandlers/routes.py:28
+#: app/blueprints/errorHandlers/routes.py:38
 msgid "Not Allowed"
 msgstr "No permitido"
 
-#: app/blueprints/errorHandlers/routes.py:30
+#: app/blueprints/errorHandlers/routes.py:41
 msgid "You shouldn't try to do that."
 msgstr "No deberías intentar hacer eso"
 
@@ -231,6 +231,26 @@ msgstr "Ingeniero DevOps"
 #: app/templates/includes/home.html:15 app/templates/includes/home.html:16
 msgid "Play a game"
 msgstr "Juega un juego"
+
+#: app/blueprints/appThreejs/templates/view.html:18
+msgid "Game over"
+msgstr "Fin del juego"
+
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Collect stars."
+msgstr "Obtén estrellas."
+
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Avoid bombs."
+msgstr "Esquiva las bombas."
+
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Spacebar, mousedown or touch to climb"
+msgstr "Espacio, click o touch para subir"
+
+#: app/blueprints/appThreejs/templates/view.html:19
+msgid "PLAY"
+msgstr "JUGAR"
 
 #: app/templates/includes/home.html:23
 msgid "Explore the page"

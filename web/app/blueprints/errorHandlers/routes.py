@@ -1,6 +1,6 @@
 try:
     import sys
-    from flask import render_template, g
+    from flask import render_template, g, current_app, request, abort, redirect, url_for
     from flask_babel import _
 
     from . import errors_bp
@@ -14,30 +14,20 @@ except Exception as exception:
 
 @errors_bp.app_errorhandler(404)
 def error404(e):
-    if g.lang_code == "en":
-        lang_icon = "icons/us_flag.html"
-    elif g.lang_code == "es":
-        lang_icon = "icons/mx_flag.html"
     return render_template(
         "error.html",
         pageTitle=_("Not Found"),
         error_code="404",
-        lang_icon=lang_icon,
         error_msg=_("The page you were looking for could not be found."),
     )
 
 
 @errors_bp.app_errorhandler(405)
 def error404(e):
-    if g.lang_code == "en":
-        lang_icon = "icons/us_flag.html"
-    elif g.lang_code == "es":
-        lang_icon = "icons/mx_flag.html"
     return render_template(
         "error.html",
         pageTitle=_("Not Allowed"),
         error_code="405",
-        lang_icon=lang_icon,
         error_msg=_("You shouldn't try to do that."),
     )
 
