@@ -18,7 +18,10 @@ services:
     ports:
       - "7168:7168"
     env_file:
-      - web.env
+      - app.env
+    networks:
+      - frontend
+      - backend
 
   router:
     build:
@@ -29,9 +32,19 @@ services:
       - "443:443"
     depends_on:
       - appweb
+    networks:
+      - frontend
 
   certbot:
     image: certbot/certbot:latest
+    deploy:
+      replicas: 0
     volumes:
       - ./certbot/www/:/var/www/certbot/:rw
       - ./certbot/conf/:/etc/letsencrypt/:rw
+
+networks:
+  frontend:
+    driver: bridge
+  backend:
+    driver: bridge

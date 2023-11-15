@@ -67,3 +67,18 @@ def error_405():
 def error405(e):
     return redirect(url_for("error.error_405"))
 
+
+@errors_bp.route("/502")
+def error_502():
+    return render_template(
+        "error.html",
+        pageTitle=_("Server error"),
+        error_code="502",
+        error_msg=_("Nothing is working right now"),
+    )
+
+
+@errors_bp.app_errorhandler(502)
+def error502(e):
+    return redirect(url_for("error.error_502"))
+

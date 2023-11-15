@@ -11,6 +11,7 @@ help:
 	@echo "${RED}Popular Make Targets:${NOP}"
 	@echo "   ${YLW}build${NOP}                   - build containers"
 	@echo "   ${YLW}start${NOP}                   - start the app"
+	@echo "   ${YLW}start-follow${NOP}            - start the app without detatching"
 	@echo "   ${YLW}test${NOP}                    - start the app without nginx"
 	@echo "   ${YLW}stop${NOP}                    - stop the app"
 	@echo "   ${YLW}delete${NOP}                  - delete containers"
@@ -26,6 +27,9 @@ build: stop delete
 start:
 	@docker-compose up --build -d;
 
+start-follow:
+	@docker-compose up --build;
+
 stop:
 	@docker-compose stop;
 
@@ -37,4 +41,3 @@ deploy: stop build
 
 test: stop build ## Start docker for local dev (w/o nginx)
 	@docker-compose up --scale router=0;
-

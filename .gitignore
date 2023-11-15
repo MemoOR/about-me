@@ -1,5 +1,13 @@
+# dev/local stuff
 .vscode
 .DS_Store
+
+# Terraform stuff
+about_me_id_rsa
+terraform.tfstate*
+terraform.plan*
+.terraform
+.terraform.lock.hcl
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
