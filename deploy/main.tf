@@ -9,6 +9,11 @@ resource "digitalocean_ssh_key" "default" {
   public_key = file("./about_me_id_rsa.pub")
 }
 
+resource "digitalocean_domain" "my_domain" {
+  name       = "guillermoortega.me"
+  ip_address = digitalocean_droplet.droplet.ipv4_address
+}
+
 resource "digitalocean_droplet" "droplet" {
   name              = "${var.project_name}-pod"
   size              = "s-1vcpu-512mb-10gb"
