@@ -8,5 +8,5 @@ terraform {
 }
 
 provider "digitalocean" {
-  token = local.envs["do_token"]
+  token = local.tf_envs["tf_do_token"]
 }
