@@ -7,7 +7,7 @@ about_me_id_rsa
 terraform.tfstate*
 terraform.plan*
 .terraform
-.terraform.lock.hcl
+.terraform.lock.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

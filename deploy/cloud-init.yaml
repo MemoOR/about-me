@@ -25,11 +25,13 @@ packages:
   - unattended-upgrades
   - git
   - make
+  - awk
 
 write_files:
 - path: /opt/app/mail.txt
   owner: 'leaf:docker'
   permissions: "0644"
+  defer: true
   content: |
     From: ${from_email}
     To: ${to_email}
@@ -40,12 +42,14 @@ write_files:
 runcmd:
   - mkdir -r /opt/app
   - cd /opt/app
-  - echo '${env_txt}' > /opt/app/app.env
-  - source /opt/app/app.env
-  - env > /opt/app/envtest.txt
   - git clone https://github.com/MemoOR/about-me.git
   - cd about-me
+  - echo '${env_txt}' > app_env.txt
+  - awk -v RS='"[^"]*"' '{gsub(/ /,"\n"); ORS = RT} 1' app_env.txt > app.env
+  - source app.env
+  - env > envtest.txt
   - make deploy
-  - unset $(grep -v '^#' /opt/app.env | sed -E 's/([^=]+)=.*/\1/' | xargs)
+  - unset $(grep -v '^#' app.env | sed -E 's/([^=]+)=.*/\1/' | xargs)
+  - rm app_env.txt
   - curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from '${from_email}' --mail-rcpt '${to_email}' --user '${from_email}:${app_password}' --upload-file /opt/app/mail.txt
   - rm /opt/app/mail.txt
