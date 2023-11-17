@@ -25,6 +25,7 @@ resource "digitalocean_droplet" "droplet" {
   backups           = false
   graceful_shutdown = false
   ipv6              = true
+  monitoring        = true
   user_data = templatefile(
     "${path.module}/cloud-init.yaml",
     {
