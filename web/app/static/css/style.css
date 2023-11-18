@@ -2082,14 +2082,16 @@ html:not(.mobile) .wow-p {
 .nav-logo-wrap .logo {
     display: flex;
     align-items: center;
-    max-width: 188px;
-    height: 85px;
+    justify-content: center;
+    margin-top: 20px;
+    width: 200px;
+    height: 40px;
     -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
 .nav-logo-wrap .logo img {
-    width: auto;
+    width: 100%;
     max-height: 100%;
 }
 
@@ -2133,6 +2135,11 @@ a.logo:hover {
 
 .small-height {
     height: 65px !important;
+}
+
+.nav-logo-wrap .logo.small-height {
+    height: 40px !important;
+    margin-top: 10px;
 }
 
 .small-height .inner-nav ul li a,
@@ -2476,6 +2483,16 @@ a.logo:hover {
 /*
  * Mobile nav
  */
+
+.mobile-on .nav-logo-wrap .logo {
+    margin-top: 10px;
+    height: 40px !important;
+}
+
+.mobile-on .nav-logo-wrap .logo.small-height {
+    margin-top: 15px;
+    height: 40px !important;
+}
 
 .mobile-on .desktop-nav {
     display: none;

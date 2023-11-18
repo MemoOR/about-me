@@ -938,7 +938,7 @@ function initPageSliders() {
 		});
 
 		// Item carousel
-		var owl = $(".item-carousel").owlCarousel({
+		$(".item-carousel").owlCarousel({
 			loop: true,
 			mouseDrad: true,
 			touchDrag: true,
@@ -1490,15 +1490,15 @@ function init() {
 	 * focus.
 	 */
 	function addInitialPointerMoveListeners() {
-		document.addEventListener("mousemove", onInitialPointerMove);
-		document.addEventListener("mousedown", onInitialPointerMove);
-		document.addEventListener("mouseup", onInitialPointerMove);
-		document.addEventListener("pointermove", onInitialPointerMove);
-		document.addEventListener("pointerdown", onInitialPointerMove);
-		document.addEventListener("pointerup", onInitialPointerMove);
-		document.addEventListener("touchmove", onInitialPointerMove);
-		document.addEventListener("touchstart", onInitialPointerMove);
-		document.addEventListener("touchend", onInitialPointerMove);
+		document.addEventListener("mousemove", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("mousedown", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("mouseup", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("pointermove", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("pointerdown", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("pointerup", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("touchmove", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("touchstart", onInitialPointerMove, passiveSupported ? { passive: true } : false);
+		document.addEventListener("touchend", onInitialPointerMove, passiveSupported ? { passive: true } : false);
 	}
 
 	function removeInitialPointerMoveListeners() {
@@ -1531,13 +1531,13 @@ function init() {
 		removeInitialPointerMoveListeners();
 	}
 
-	document.addEventListener("keydown", onKeyDown, true);
-	document.addEventListener("mousedown", onPointerDown, true);
-	document.addEventListener("pointerdown", onPointerDown, true);
-	document.addEventListener("touchstart", onPointerDown, true);
-	document.addEventListener("focus", onFocus, true);
-	document.addEventListener("blur", onBlur, true);
-	document.addEventListener("visibilitychange", onVisibilityChange, true);
+	document.addEventListener("keydown", onKeyDown, passiveSupported ? { passive: true } : false);
+	document.addEventListener("mousedown", onPointerDown, passiveSupported ? { passive: true } : false);
+	document.addEventListener("pointerdown", onPointerDown, passiveSupported ? { passive: true } : false);
+	document.addEventListener("touchstart", onPointerDown, passiveSupported ? { passive: true } : false);
+	document.addEventListener("focus", onFocus, passiveSupported ? { passive: true } : false);
+	document.addEventListener("blur", onBlur, passiveSupported ? { passive: true } : false);
+	document.addEventListener("visibilitychange", onVisibilityChange, passiveSupported ? { passive: true } : false);
 	addInitialPointerMoveListeners();
 
 	document.body.classList.add("js-focus-visible");

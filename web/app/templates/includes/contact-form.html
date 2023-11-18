@@ -2,81 +2,82 @@
 Contact form
 --------------------------------------------- -->
 <script type="text/javascript">
-	$(document).ready(function () {
-		$("#submit_btn").click(function (token) {
-			//get input field values
-			var user_name = $("input[name=name]").val();
-			var user_email = $("input[name=email]").val();
-			var user_message = $("textarea[name=message]").val();
+	document.getElementById("submit_btn").addEventListener("click", function (token) {
+		//get input field values
+		var user_name = $("input[name=name]").val();
+		var user_email = $("input[name=email]").val();
+		var user_message = $("textarea[name=message]").val();
 
-			//simple validation at client's end
-			//we simply change border color to red if empty field using .css()
-			var proceed = true;
-			if (user_name == "") {
-				$("input[name=name]").css("border-color", "#e41919");
-				$("input[name=name]").css("border-width", ".3em");
-				proceed = false;
-			}
-			if (user_email == "") {
-				$("input[name=email]").css("border-color", "#e41919");
-				$("input[name=email]").css("border-width", ".3em");
-				proceed = false;
-			}
+		//simple validation at client's end
+		//we simply change border color to red if empty field using .css()
+		var proceed = true;
+		if (user_name == "") {
+			$("input[name=name]").css("border-color", "#e41919");
+			$("input[name=name]").css("border-width", ".3em");
+			proceed = false;
+		}
+		if (user_email == "") {
+			$("input[name=email]").css("border-color", "#e41919");
+			$("input[name=email]").css("border-width", ".3em");
+			proceed = false;
+		}
 
-			if (user_message == "") {
-				$("textarea[name=message]").css("border-color", "#e41919");
-				$("textarea[name=message]").css("border-width", ".3em");
-				proceed = false;
-			}
+		if (user_message == "") {
+			$("textarea[name=message]").css("border-color", "#e41919");
+			$("textarea[name=message]").css("border-width", ".3em");
+			proceed = false;
+		}
 
-			//everything looks good! proceed...
-			if (proceed) {
-				grecaptcha.ready(function () {
-					grecaptcha.execute("{{captcha_key}}", { action: 'submit' }).then(function (token) {
-						post_data = {
-							'userName': user_name,
-							'userEmail': user_email,
-							'userMessage': user_message,
-							'g-recaptcha-response': token
-						};
+		//everything looks good! proceed...
+		if (proceed) {
+			grecaptcha.ready(function () {
+				grecaptcha.execute("{{captcha_key}}", { action: 'submit' }).then(function (token) {
+					post_data = {
+						'userName': user_name,
+						'userEmail': user_email,
+						'userMessage': user_message,
+						'g-recaptcha-response': token
+					};
 
-						//Ajax post data to server
-						$.post(
-							"/send_email",
-							post_data,
-							function (response) {
-								//load json data from server and output message
-								if (response.type == "error") {
-									output =
-										'<div class="error">' + response.text + "</div>";
-								} else {
-									output =
-										'<div class="success">' + response.text + "</div>";
+					//Ajax post data to server
+					$.post(
+						"/send_email",
+						post_data,
+						function (response) {
+							//load json data from server and output message
+							if (response.type == "error") {
+								output =
+									'<div class="error">' + response.text + "</div>";
+							} else {
+								output =
+									'<div class="success">' + response.text + "</div>";
 
-									//reset values in all input fields
-									$("#contact_form input").val("");
-									$("#contact_form textarea").val("");
-								}
+								//reset values in all input fields
+								$("#contact_form input").val("");
+								$("#contact_form textarea").val("");
+							}
 
-								$("#result").hide().html(output).slideDown();
-							},
-							"json"
-						);
-					});
+							$("#result").hide().html(output).slideDown();
+						},
+						"json"
+					);
 				});
-				//data to be sent to server
-			}
+			});
+			//data to be sent to server
+		}
 
-			return false;
-		});
+		return false;
+	}, passiveSupported ? { passive: true } : false);
 
-		//reset previously set border colors and hide all message on .keyup()
-		$("#contact_form input, #contact_form textarea").keyup(function () {
-			$("#contact_form input, #contact_form textarea").css(
-				"border-color",
-				""
-			);
-			$("#result").slideUp();
+	//reset previously set border colors and hide all message on .keyup()
+	var formElements = document.querySelectorAll("#contact_form input, #contact_form textarea");
+	formElements.forEach(function (element) {
+		element.addEventListener("keyup", function () {
+			// Restablece el color del borde a su valor predeterminado
+			element.style.borderColor = "";
+
+			// Oculta el elemento con id "result"
+			document.getElementById("result").style.display = "none";
 		});
-	});
+	}, passiveSupported ? { passive: true } : false);
 </script>

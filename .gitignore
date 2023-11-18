@@ -1,6 +1,7 @@
 # dev/local stuff
 .vscode
 .DS_Store
+*.pem
 
 # Terraform stuff
 about_me_id_rsa

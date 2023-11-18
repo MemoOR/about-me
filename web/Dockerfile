@@ -7,7 +7,8 @@ WORKDIR /opt/app
 
 # install
 COPY . /opt/app/
-RUN pip install --progress-bar off --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip
+RUN pip install --progress-bar off -r requirements.txt
 
 RUN pybabel compile -d app/translations
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout instance/privateKey.pem -out instance/certificate.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"

@@ -2,10 +2,10 @@ import os
 
 pdf_urls = {
     "ielts_certificate_url": os.getenv("IELTS_CERTIFICATE_URL"),
-    "spanish_cv_url_preview": os.getenv("CV_URL_PREVIEW"),
-    "spanish_cv_url_download": os.getenv("CV_URL_DOWNLOAD"),
-    "english_cv_url_preview": os.getenv("CV_URL_PREVIEW"),
-    "english_cv_url_download": os.getenv("CV_URL_DOWNLOAD")
+    "spanish_cv_url_preview": os.getenv("SPANISH_CV_URL_PREVIEW"),
+    "spanish_cv_url_download": os.getenv("SPANISH_CV_URL_DOWNLOAD"),
+    "english_cv_url_preview": os.getenv("ENGLISH_CV_URL_PREVIEW"),
+    "english_cv_url_download": os.getenv("ENGLISH_CV_URL_DOWNLOAD")
 }
 
 certificate_urls = {
