@@ -22,3 +22,60 @@
 ## In this repo lives the code for my personal website.
 
 ## In there you can learn more about me
+
+
+### How to deploy
+
+have the 3 needed private files, app.env, terraform.tfstate, about_me_id_rsa
+
+the repo should look like this
+```
+.
+├── Makefile
+├── Readme.md
+├── app.env                  # .env file containing configurations for the app
+├── assets
+│   └── GDLogo.png
+├── deploy
+│   ├── Makefile
+│   ├── about_me_id_rsa      # private ssh key to connect to droplet
+│   ├── about_me_id_rsa.pub
+│   ├── cloud-init.yaml
+│   ├── main.tf
+│   ├── outputs.tf
+│   ├── terraform.tfstate    # terraform state file stored in local to save costs
+│   ├── vars.tf
+│   └── versions.tf
+├── docker-compose.yml
+├── router
+│   ├── Dockerfile
+│   ├── _template
+│   │   ├── ...
+│   ├── down.html
+│   └── nginx.conf
+└── web
+    ├── Dockerfile
+    ├── about-me.py
+    ├── app
+    │   ├── ...
+    ├── babel.cfg
+    ├── gunicorn.conf.py
+    ├── instance
+    │   ├── ...
+    └── requirements.txt
+```
+
+after havinf those files
+
+```
+cd about-me/deploy
+make planout
+make apply
+```
+
+wait to receive email notification when page is running
+
+
+### Steps to update certbot certificate
+
+### soon
