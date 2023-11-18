@@ -17,7 +17,7 @@
 #
 
 bind = '0.0.0.0:7168'
-backlog = 64
+backlog = 512
 
 #
 # Worker processes
@@ -144,7 +144,7 @@ tmp_upload_dir = None
 #
 
 errorlog = '-'
-loglevel = 'info'
+loglevel = 'debug'
 accesslog = '-'
 access_log_format = '%(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"'
 

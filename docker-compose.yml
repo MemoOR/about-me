@@ -12,10 +12,11 @@ version: "3.7"
 services:
 
   appweb:
+    container_name: appweb
     build:
       context: web
     restart: always
-    ports:
+    expose:
       - "7168:7168"
     env_file:
       - app.env
@@ -24,6 +25,7 @@ services:
       - backend
 
   router:
+    container_name: router
     build:
       context: router
     restart: always
@@ -36,6 +38,7 @@ services:
       - frontend
 
   certbot:
+    container_name: certbot
     image: certbot/certbot:latest
     deploy:
       replicas: 0
