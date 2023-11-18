@@ -16,6 +16,17 @@
     } catch (err) {
         passiveSupported = false;
     }
+
+    let mobileTest;
+	if (
+		/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+	) {
+		mobileTest = true;
+		document.documentElement.classList.add("mobile");
+	} else {
+		mobileTest = false;
+		document.documentElement.classList.add("no-mobile");
+	}
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>

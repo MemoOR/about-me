@@ -66,16 +66,6 @@
      Platform detect
      --------------------------------------------- */
 
-	var mobileTest;
-	if (
-		/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
-	) {
-		mobileTest = true;
-		$("html").addClass("mobile");
-	} else {
-		mobileTest = false;
-		$("html").addClass("no-mobile");
-	}
 	var mozillaTest;
 	if (/mozilla/.test(navigator.userAgent)) {
 		mozillaTest = true;
@@ -1261,6 +1251,29 @@ function init_wow() {
 			wow_p.init();
 		} else {
 			$(".wow-p").css("opacity", "1");
+		}
+
+		if ($("body").hasClass("appear-animate")) {
+			$(".wow-a").addClass("animate__no-animate");
+			var wow_a = new WOW({
+				boxClass: "wow-a",
+				animateClass: "animate__animated",
+				offset: 100,
+				mobile: false,
+				live: true,
+				callback: function (box) {
+					setInterval(function () {
+						$(box).removeClass("animate__no-animate");
+					}, 1500);
+				},
+			});
+		}
+
+		if ($("body").hasClass("appear-animate") &&
+			mobileTest == false) {
+			wow_a.init();
+		} else {
+			$(".wow-a").css("opacity", "1");
 		}
 
 		/* Wow for menu bar init */
