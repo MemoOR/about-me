@@ -8,6 +8,7 @@ terraform.tfstate*
 terraform.plan*
 .terraform
 .terraform.lock.*
+.terraform.tfstate.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

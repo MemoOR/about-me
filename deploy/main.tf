@@ -36,4 +36,14 @@ resource "digitalocean_droplet" "droplet" {
       env_txt             = local.envs_string
     }
   )
+
+  lifecycle {
+    replace_triggered_by = [null_resource.version_replace]
+  }
+}
+
+resource "null_resource" "version_replace" {
+  triggers = {
+    subnet = var.app_version
+  }
 }
