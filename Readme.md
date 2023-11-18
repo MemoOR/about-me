@@ -24,9 +24,15 @@
 ## In there you can learn more about me
 
 
-### How to deploy
+### Provisioning. How to deploy the first time.
 
-have the 3 needed private files, app.env, terraform.tfstate, about_me_id_rsa
+The Domain was purchased from Hostinger.
+
+It is required to first point the Domain to use digitalocean nameservers to allow managing it with terraform. This step is done inside Hostinger web app.
+
+This setup will create a digitalocean droplet, point the domain to its ip, trigger the setup inside cloud-init.yaml
+
+It is necessary to have the 3 needed private files, app.env, terraform.tfstate, about_me_id_rsa
 
 the repo should look like this
 ```
@@ -65,7 +71,7 @@ the repo should look like this
     └── requirements.txt
 ```
 
-after havinf those files
+after having those files
 
 ```
 cd about-me/deploy
@@ -75,6 +81,14 @@ make apply
 
 wait to receive email notification when page is running
 
+This initial setup will ideally deploy a functional app and nothing else is required.
+
+### Deploy after
+
+To avoid deleting and creating a lot of droplets, and to avoid changing the domain records every time, another steps are to be followed to deploy the app once the droplet is in place
+
+I will create a script to execute commands inside the droplet automatically to avoid having to loging manually and run the update commands
+### soon
 
 ### Steps to update certbot certificate
 
