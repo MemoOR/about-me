@@ -14,6 +14,10 @@
 
 		if (mobileTest == true) {
 			$(".mobile-play").removeAttr("hidden")
+			$(".animate__linesAnimIn").addClass("animate__fadeInUp")
+			$(".animate__linesAnimIn").attr("data-wow-offset", "0")
+			$(".animate__linesAnimIn").attr("data-wow-delay", "0")
+			$(".animate__fadeInUp").removeClass("animate__linesAnimIn")
 		} else {
 			$(".desktop-play").removeAttr("hidden")
 		}
@@ -1251,29 +1255,6 @@ function init_wow() {
 			wow_p.init();
 		} else {
 			$(".wow-p").css("opacity", "1");
-		}
-
-		if ($("body").hasClass("appear-animate")) {
-			$(".wow-a").addClass("animate__no-animate");
-			var wow_a = new WOW({
-				boxClass: "wow-a",
-				animateClass: "animate__animated",
-				offset: 100,
-				mobile: false,
-				live: true,
-				callback: function (box) {
-					setInterval(function () {
-						$(box).removeClass("animate__no-animate");
-					}, 1500);
-				},
-			});
-		}
-
-		if ($("body").hasClass("appear-animate") &&
-			mobileTest == false) {
-			wow_a.init();
-		} else {
-			$(".wow-a").css("opacity", "1");
 		}
 
 		/* Wow for menu bar init */
