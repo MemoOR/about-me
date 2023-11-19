@@ -6,7 +6,7 @@ resource "digitalocean_vpc" "main_vpc" {
 
 resource "digitalocean_ssh_key" "my_key" {
   name       = var.project_name
-  public_key = file("./about_me_id_rsa.pub")
+  public_key = file("${path.module}/../about_me_id_rsa.pub")
 }
 
 resource "digitalocean_domain" "my_domain" {

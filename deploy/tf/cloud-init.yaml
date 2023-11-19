@@ -8,7 +8,7 @@ groups:
   - docker
 
 users:
-  - name: leaf
+  - name: memoor
     lock_passwd: true
     shell: /bin/bash
     ssh_authorized_keys:
@@ -27,7 +27,7 @@ packages:
 
 write_files:
 - path: /opt/app/mail.txt
-  owner: 'leaf:docker'
+  owner: 'memoor:docker'
   permissions: "0644"
   defer: true
   content: |
