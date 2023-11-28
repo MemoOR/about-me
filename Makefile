@@ -43,7 +43,7 @@ test: stop build ## Start docker for local dev (w/o nginx)
 	@docker-compose up --scale router=0;
 
 create-cert:
-	@docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d guillermoortega.me -n -m memo.or99@hotmail.com --agree-tos
+	@docker compose run --rm certbot sh -c "rm -r /etc/letsencrypt/live; certonly --webroot --webroot-path /var/www/certbot/ -d guillermoortega.me -n -m memo.or99@hotmail.com --agree-tos"
 
 renew-cert:
 	@docker compose run --rm certbot renew
