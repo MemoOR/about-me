@@ -24,4 +24,5 @@ RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout nginx.key -out 
 WORKDIR /opt/app
 COPY start-nginx.sh /opt/app/start-nginx.sh
 RUN chmod +x /opt/app/start-nginx.sh
-CMD ["start-nginx.sh"]
+
+CMD ["/opt/app/start-nginx.sh"]
