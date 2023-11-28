@@ -41,7 +41,7 @@ deploy: stop build
 	@docker-compose exec -T router sh -c '/opt/app/ssl-nginx.sh && nginx -s reload'
 
 test: stop build ## Start docker for local dev (w/o nginx)
-	@docker-compose up --scale router=0;
+	@docker-compose up --scale router=0 certbot=0;
 
 create-cert:
 	@docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d guillermoortega.me -n -m memo.or99@hotmail.com --agree-tos
