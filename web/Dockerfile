@@ -11,7 +11,7 @@ RUN pip install --upgrade pip
 RUN pip install --progress-bar off -r requirements.txt
 
 RUN pybabel compile -d app/translations
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout instance/privateKey.pem -out instance/certificate.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
+RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout instance/privateKey.pem -out instance/certificate.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
 
 EXPOSE 7168
 

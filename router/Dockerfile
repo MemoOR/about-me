@@ -10,7 +10,9 @@ RUN apk add openssl
 
 # Generate SSL certificates
 WORKDIR /etc/nginx/ssl/live/guillermoortega.me/
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privkey.pem -out fullchain.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
+RUN pwd
+RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout privkey.pem -out fullchain.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
+RUN ls -la
 
 # Copy NGINX configuration and other files
 WORKDIR /etc/nginx/
