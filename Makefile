@@ -17,7 +17,7 @@ help:
 	@echo "   ${YLW}delete${NOP}                  - delete containers"
 	@echo "${RED}Here Be Dragons:${NOP}"
 	@echo "   ${YLW}deploy${NOP}                  - build from zero and start running"
-	@echo "   ${YLW}renew${NOP}                   - to renew ssl certificates"
+	@echo "   ${YLW}renew-cert${NOP}              - to renew ssl certificates"
 	@echo ""
 
 
@@ -41,3 +41,9 @@ deploy: stop build
 
 test: stop build ## Start docker for local dev (w/o nginx)
 	@docker-compose up --scale router=0;
+
+create-cert:
+	@docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d guillermoortega.me
+
+renew-cert:
+	@docker compose run --rm certbot renew

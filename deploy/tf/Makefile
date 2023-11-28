@@ -1,7 +1,5 @@
 default: help
 
-ROOT_DIR=..
-
 RED:=$(shell tput setaf 1)
 YLW:=$(shell tput setaf 3)
 GRN:=$(shell tput setaf 2)
@@ -19,9 +17,7 @@ help:
 	@echo "   ${RED}refresh${YLW}                  - refresh TF state without making changes${NOP}"
 	@echo ""
 	@echo "The TARGET variable can be used for more detailed updates"
-	@echo "  - To run the KOPS builder: ${GRN}TARGET=module.k8s_cluster.null_resource.kops_builder make planout${NOP}"
-	@echo "  - To tear down the whole cluster: ${GRN}TARGET=\"module.k8s_cluster -destroy\" make planout${NOP}"
-
+	@echo "  - ${GRN}TARGET=module.xxx,module.yyy make planout${NOP}"
 
 ifdef TARGET
 space := $(subst ,, )

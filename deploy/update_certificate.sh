@@ -2,4 +2,4 @@
 
 cd /opt/app/about-me
 git pull
-make deploy
+make renew-cert

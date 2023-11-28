@@ -39,19 +39,14 @@ the repo should look like this
 .
 ├── Makefile
 ├── Readme.md
-├── app.env                  # .env file containing configurations for the app
+├── app.env                      # .env file containing configurations for the app
 ├── assets
 │   └── GDLogo.png
 ├── deploy
+│   ├── tf
+│   │   └── terraform.tfstate    # terraform state file stored in local to save costs
 │   ├── Makefile
-│   ├── about_me_id_rsa      # private ssh key to connect to droplet
-│   ├── about_me_id_rsa.pub
-│   ├── cloud-init.yaml
-│   ├── main.tf
-│   ├── outputs.tf
-│   ├── terraform.tfstate    # terraform state file stored in local to save costs
-│   ├── vars.tf
-│   └── versions.tf
+│   └── about_me_id_rsa          # private ssh key to connect to droplet
 ├── docker-compose.yml
 ├── router
 │   ├── Dockerfile
@@ -79,17 +74,27 @@ make planout
 make apply
 ```
 
-wait to receive email notification when page is running
+wait to receive email notification that initial setup is done
+
+```
+cd deploy/
+ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < create_certificate.sh
+```
 
 This initial setup will ideally deploy a functional app and nothing else is required.
 
 ### Deploy after
 
-To avoid deleting and creating a lot of droplets, and to avoid changing the domain records every time, another steps are to be followed to deploy the app once the droplet is in place
+To avoid deleting and creating a lot of droplets, and to avoid changing the domain records every time, another steps are to be followed to deploy a new version of the app once the droplet is in place
 
-I will create a script to execute commands inside the droplet automatically to avoid having to loging manually and run the update commands
-### soon
+```
+cd deploy/
+ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < deploy.sh
+```
 
 ### Steps to update certbot certificate
 
-### soon
+```
+cd deploy/
+ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < update_certificate.sh
+```
