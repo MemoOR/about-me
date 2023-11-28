@@ -29,22 +29,18 @@ services:
       - frontend
     volumes:
       - ./nginx/conf/:/etc/nginx/conf.d/:ro
-      - certbot-www:/var/www/certbot/:ro
-      - certbot-conf:/etc/nginx/ssl/:rw
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
 
   certbot:
     container_name: certbot
     image: certbot/certbot:latest
     volumes:
-      - certbot-www:/var/www/certbot/:rw
-      - certbot-conf:/etc/letsencrypt/:rw
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
 
 networks:
   frontend:
     driver: bridge
   backend:
     driver: bridge
-
-volumes:
-  certbot-conf:
-  certbot-www:
