@@ -10,5 +10,3 @@ else
     sed -i '1s/.*/ssl_certificate /etc/ssl/nginx.crt;/' "$ssl_file"
     sed -i '2s/.*/ssl_certificate_key /etc/ssl/nginx.key;/' "$ssl_file"
 fi
-
-nginx
