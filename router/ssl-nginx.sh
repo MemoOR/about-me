@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 certbot_file="/etc/nginx/ssl/live/guillermoortega.me/fullchain.pem"
 ssl_file="/etc/nginx/_template/ssl.conf"

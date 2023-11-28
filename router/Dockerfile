@@ -20,10 +20,11 @@ COPY down.html /usr/share/nginx/html/down.html
 WORKDIR /etc/ssl
 RUN openssl req -x509 -nodes -days 3650 -newkey rsa:2048 -keyout nginx.key -out nginx.crt -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
 
-# Define default command.
-WORKDIR /opt/app
 COPY ssl-nginx.sh /opt/app/ssl-nginx.sh
 RUN chmod +x /opt/app/ssl-nginx.sh
+
+WORKDIR /opt/app
 RUN ./ssl-nginx.sh
 
+# Define default command.
 CMD ["nginx"]
