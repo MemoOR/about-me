@@ -2080,19 +2080,21 @@ html:not(.mobile) .wow-p {
 }
 
 .nav-logo-wrap .logo {
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 20px;
     width: 200px;
-    height: 40px;
+    height: 50px;
     -webkit-transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
     transition: all 0.2s cubic-bezier(0.000, 0.000, 0.580, 1.000);
 }
 
-.nav-logo-wrap .logo img {
+.nav-logo-wrap .logo svg {
     width: 100%;
-    max-height: 100%;
+    max-height: 50px;
+    position:absolute;
 }
 
 .nav-logo-wrap .logo:before,

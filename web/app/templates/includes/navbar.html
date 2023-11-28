@@ -5,8 +5,8 @@
         <!-- Logo ( * your text or image into link tag *) -->
         <div class="nav-logo-wrap local-scroll">
             <a href="{{ url_for('index.index') }}" class="logo">
-                <img src="{{url_for('static', filename= 'assets/img/name_white.svg')}}" alt="Company logo" class="logo-white" />
-                <img src="{{url_for('static', filename= 'assets/img/name_black.svg')}}" alt="Company logo" class="logo-dark" />
+                {% include "icons/name_white.html" %}
+                {% include "icons/name_black.html" %}
             </a>
         </div>
 
