@@ -38,6 +38,7 @@ delete: stop
 
 deploy: stop build
 	@docker-compose up -d;
+	@docker-compose exec router sh -c '/opt/app/ssl-nginx.sh && nginx -s reload'
 
 test: stop build ## Start docker for local dev (w/o nginx)
 	@docker-compose up --scale router=0;

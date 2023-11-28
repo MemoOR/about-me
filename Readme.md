@@ -79,6 +79,7 @@ wait to receive email notification that initial setup is done
 ```
 cd deploy/
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < create_certificate.sh
+ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 ```
 
 This initial setup will ideally deploy a functional app and nothing else is required.
