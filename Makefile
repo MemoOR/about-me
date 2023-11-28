@@ -22,7 +22,7 @@ help:
 
 
 build: stop delete
-	@docker-compose build;
+	@docker-compose build --no-cache;
 
 start:
 	@docker-compose up --build -d;
