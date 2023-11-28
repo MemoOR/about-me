@@ -78,7 +78,7 @@ wait to receive email notification that initial setup is done
 
 ```
 cd deploy/
-ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < create_certificate.sh
+ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < create_certificate.sh
 ```
 
 This initial setup will ideally deploy a functional app and nothing else is required.
@@ -89,12 +89,12 @@ To avoid deleting and creating a lot of droplets, and to avoid changing the doma
 
 ```
 cd deploy/
-ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < deploy.sh
+ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 ```
 
 ### Steps to update certbot certificate
 
 ```
 cd deploy/
-ssh -i ./about_me_id_rsa memoor@@ip_of_droplet 'bash -s' < update_certificate.sh
+ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < update_certificate.sh
 ```

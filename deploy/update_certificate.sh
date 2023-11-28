@@ -1,5 +1,5 @@
 #!/bin/bash
 
 cd /opt/app/about-me
-git pull
+sudo git pull
 make renew-cert

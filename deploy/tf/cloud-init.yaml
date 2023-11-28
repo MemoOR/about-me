@@ -51,6 +51,7 @@ runcmd:
   - cd /opt/app
   - git clone https://github.com/MemoOR/about-me.git
   - cd about-me
+  - git config --global --add safe.directory /opt/app/about-me # to allow git pull
   - echo '${env_txt}' > app_env.txt
   - awk -v RS='"[^"]*"' '{gsub(/ /,"\n"); ORS = RT} 1' app_env.txt > app.env
   - source app.env
