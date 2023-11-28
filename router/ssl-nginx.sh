@@ -7,6 +7,8 @@ if [ -e "$certbot_file" ]; then
     echo "Certbot certificate found"
 else
     echo "No certbot certificate found, using self signed"
+    echo sed -i '1s/.*/ssl_certificate /etc/ssl/nginx.crt;/' "$ssl_file"
+    echo sed -i '2s/.*/ssl_certificate_key /etc/ssl/nginx.key;/' "$ssl_file"
     sed -i '1s/.*/ssl_certificate /etc/ssl/nginx.crt;/' "$ssl_file"
     sed -i '2s/.*/ssl_certificate_key /etc/ssl/nginx.key;/' "$ssl_file"
 fi
