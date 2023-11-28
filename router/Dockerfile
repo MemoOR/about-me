@@ -6,7 +6,7 @@ LABEL maintainer="memo.or99@hotmail.com"
 
 # Define working directory.
 WORKDIR /etc/nginx
-RUN mkdir -p /etc/nginx/ssl/live/guillermoortega.me
+RUN mkdir -p ssl/live/guillermoortega.me/
 
 # Get upstream updates
 RUN apk upgrade --no-cache 
@@ -16,7 +16,7 @@ COPY _template/ /etc/nginx/_template/
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY down.html /usr/share/nginx/html/down.html
 
-WORKDIR /etc/nginx/ssl/live/guillermoortega.me
+WORKDIR /etc/nginx/ssl/live/guillermoortega.me/
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout privkey.pem -out fullchain.pem -subj "/C=MX/ST=CDMX/L=Cuajimalpa/O=MemoOR/OU=MemoOR/CN=memo.or99@hotmail.com"
 
 # Expose ports.
