@@ -14,6 +14,13 @@ resource "digitalocean_domain" "my_domain" {
   ip_address = digitalocean_droplet.droplet.ipv4_address
 }
 
+resource "digitalocean_record" "google" {
+  domain = digitalocean_domain.my_domain.id
+  type   = "TXT"
+  name   = "@"
+  value  = local.tf_envs["tf_google_txt_record"]
+}
+
 resource "digitalocean_droplet" "droplet" {
   name              = "${var.project_name}-pod"
   size              = "s-1vcpu-512mb-10gb"
