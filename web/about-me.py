@@ -22,6 +22,9 @@ def home():
             current_app.config['lang_code'] = request.accept_languages.best_match(app.config['LANGUAGES'])
         except:
             current_app.config['lang_code'] = app.config['LANGUAGES'][0]
+        print("-----------------------------------")
+        print(current_app.config['lang_code'])
+        print("-----------------------------------")
         return redirect(url_for('index.index'))
 
 # For SEO
