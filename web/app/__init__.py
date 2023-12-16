@@ -7,6 +7,7 @@ try:
     from flask import Flask, request, current_app
     from flask_mail import Mail
     from flask_babel import Babel
+    from flask_compress import Compress
 
     from app.blueprints.common.filters import format_datetime
 except ImportError as error:
@@ -16,7 +17,7 @@ except Exception as exception:
 
 mail = Mail()
 babel = Babel()
-
+compress = Compress()
 
 def create_app(settings_module):
     app = Flask(__name__, instance_relative_config=True)
@@ -58,6 +59,8 @@ def create_app(settings_module):
     from app.blueprints.errorHandlers import errors_bp
 
     app.register_blueprint(errors_bp)
+
+    compress.init_app(app)
 
     return app
 
