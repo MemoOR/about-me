@@ -1218,7 +1218,7 @@ function init_wow() {
 			boxClass: "wow",
 			animateClass: "animate__animated",
 			offset: 100,
-			mobile: true,
+			mobile: false,
 			live: true,
 			callback: function (box) {
 				setInterval(function () {
@@ -1241,7 +1241,7 @@ function init_wow() {
 				boxClass: "wow-p",
 				animateClass: "animate__animated",
 				offset: 100,
-				mobile: true,
+				mobile: false,
 				live: true,
 				callback: function (box) {
 					setInterval(function () {
