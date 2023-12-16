@@ -1318,7 +1318,7 @@ a.btn-mod:focus {
 
 .handdrawn-arrow:before {
     content: '';
-    background-image: url("/static/assets/img/arrow.png");
+    background-image: url("/static/assets/img/arrow.webp");
     width: 200px;
     height: 150px;
     position: absolute;
@@ -1339,7 +1339,7 @@ a.btn-mod:focus {
 
 .handdrawn-arrow-2:before {
     content: '';
-    background-image: url("/static/assets/img/arrow-2.png");
+    background-image: url("/static/assets/img/arrow-2.webp");
     width: 150px;
     height: 150px;
     position: absolute;
