@@ -17,18 +17,10 @@ app = create_app(settings_module)
 # To handle lang redirections
 @app.route('/')
 def home():
-    print("--------------request---------------")
-    print(request)
-    print('-------------------------------------')
     with app.app_context():
-        try:
-            current_app.config['lang_code'] = request.accept_languages.best_match(app.config['LANGUAGES'])
-        except:
+        current_app.config['lang_code'] = request.accept_languages.best_match(app.config['LANGUAGES'])
+        if not current_app.config['lang_code']:
             current_app.config['lang_code'] = app.config['LANGUAGES'][0]
-        print("-----------------------------------")
-        print(current_app.config['lang_code'])
-        print(app.config['LANGUAGES'][0])
-        print("-----------------------------------")
         return redirect(url_for('index.index'))
 
 # For SEO
