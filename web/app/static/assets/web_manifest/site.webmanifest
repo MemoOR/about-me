@@ -1,0 +1,41 @@
+{
+    "name": "Guillermo Ortega Romo",
+    "short_name": "MemoOR",
+    "icons": [
+        {
+            "src": "android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "theme_color": "#0b348b",
+    "background_color": "#284ba2",
+    "display": "standalone",
+    "description": "Guillermo Ortega Romo presentation page",
+    "screenshots": [
+        {
+            "src": "Screenshot1.png",
+            "type": "image/png",
+            "sizes": "3456x2160",
+            "form_factor": "wide"
+        },
+        {
+            "src": "Screenshot2.png",
+            "type": "image/png",
+            "sizes": "430x932",
+            "form_factor": "narrow"
+        }
+    ]
+}

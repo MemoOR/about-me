@@ -492,8 +492,18 @@ msgstr "Licenciatura"
 msgid "Universidad Iberoamericana"
 msgstr "Universidad Iberoamericana"
 
-#: app/templates/includes/resume.html:93 app/templates/includes/resume.html:122
+#: app/templates/includes/resume.html:93
+msgid "Ibero Webpage"
+msgstr "Página web de Ibero"
+
+#: app/templates/includes/resume.html:122
+msgid "Espressive Webpage"
+msgstr "Página web de Espressive"
+
 #: app/templates/includes/resume.html:144
+msgid "INIAT Webpage"
+msgstr "Página web de INIAT"
+
 #: app/templates/includes/resume.html:167
 #: app/templates/includes/resume.html:188
 msgid "Learn More"
