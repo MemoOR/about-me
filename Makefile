@@ -35,7 +35,7 @@ stop:
 
 delete: stop
 	@docker-compose rm -f -s -v;
-	@docker system prune -a
+	@docker system prune -af
 
 deploy: stop build
 	@docker-compose up -d;
