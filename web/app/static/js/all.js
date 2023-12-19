@@ -53,7 +53,9 @@
 		init_services();
 		init_map();
 		init_bg_video();
-		Splitting();
+		if (mobileTest == false) {
+			Splitting();
+		}
 		init_shortcodes();
 		init_tooltips();
 		init_masonry();
