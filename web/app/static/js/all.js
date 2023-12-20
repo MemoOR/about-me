@@ -32,6 +32,16 @@
 		init_wow();
 		init_parallax();
 		initPageSliders();
+		$('.lazy').Lazy({
+			scrollDirection: 'vertical',
+			effect: 'fadeIn',
+			visibleOnly: true,
+		});
+		$('.lazy-p').Lazy({
+			scrollDirection: 'vertical',
+			effect: 'fadeIn',
+			visibleOnly: true,
+		});
 
 		//Go through each carousel on the page
 		$(".owl-carousel").each(function () {

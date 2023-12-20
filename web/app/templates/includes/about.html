@@ -46,7 +46,7 @@
 
                     <div class="team-item wow animate__animated animate__fadeInDown">
                         <div class="team-item-image">
-                            <img src="{{url_for('static', filename='assets/img/me.webp')}}" alt="My photo" />
+                            <img class="lazy" data-src="{{url_for('static', filename='assets/img/me.webp')}}" alt="My photo" />
                             <div class="team-item-detail">
                                 <p class="team-item-detail-title">
                                     {{_("Where to find me")}}
