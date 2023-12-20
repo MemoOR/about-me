@@ -18,15 +18,15 @@
     }
 
     let mobileTest;
-	if (
-		/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
-	) {
-		mobileTest = true;
-		document.documentElement.classList.add("mobile");
-	} else {
-		mobileTest = false;
-		document.documentElement.classList.add("no-mobile");
-	}
+    if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+    ) {
+        mobileTest = true;
+        document.documentElement.classList.add("mobile");
+    } else {
+        mobileTest = false;
+        document.documentElement.classList.add("no-mobile");
+    }
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" defer></script>
@@ -56,3 +56,25 @@
 {% include "includes/contact-form.html" %}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxchimp/1.3.0/jquery.ajaxchimp.min.js" defer></script>
 <script src="{{url_for('static', filename='js/objectFitPolyfill.min.js')}}" defer></script>
+<script>
+    jQuery.event.special.touchstart = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.touchmove = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.wheel = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("wheel", handle, { passive: true });
+        }
+    };
+    jQuery.event.special.mousewheel = {
+        setup: function (_, ns, handle) {
+            this.addEventListener("mousewheel", handle, { passive: true });
+        }
+    };
+</script>
