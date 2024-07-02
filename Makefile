@@ -22,27 +22,27 @@ help:
 
 
 build: stop delete
-	@docker-compose build --no-cache;
+	@docker compose build --no-cache;
 
 start:
-	@docker-compose up --build -d;
+	@docker compose up --build -d;
 
 start-follow:
-	@docker-compose up --build;
+	@docker compose up --build;
 
 stop:
-	@docker-compose stop;
+	@docker compose stop;
 
 delete: stop
-	@docker-compose rm -f -s -v;
+	@docker compose rm -f -s -v;
 	@docker system prune -af
 
 deploy: stop build
-	@docker-compose up -d;
-	@docker-compose exec -T router sh -c '/opt/app/ssl-nginx.sh && nginx -s reload'
+	@docker compose up -d;
+	@docker compose exec -T router sh -c '/opt/app/ssl-nginx.sh && nginx -s reload'
 
 test: stop build ## Start docker for local dev (w/o nginx)
-	@docker-compose up --scale router=0 certbot=0;
+	@docker compose up --scale router=0 certbot=0;
 
 create-cert:
 	@docker compose run --rm certbot certonly --webroot --webroot-path /var/www/certbot/ -d guillermoortega.me -n -m memo.or99@hotmail.com --agree-tos

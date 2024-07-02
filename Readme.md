@@ -99,3 +99,22 @@ ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 cd deploy/
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < update_certificate.sh
 ```
+
+### Steps to handle babel
+
+#### Update .po file after making code changes
+
+```
+cd web/
+pybabel update -i app/translations/messages.pot -d app/translations
+# fill new translations if needed
+# git push
+# deploy
+```
+
+### to test in local with new translations after updating .po file
+```
+cd web/
+pybabel compile -d app/translations
+run app
+```

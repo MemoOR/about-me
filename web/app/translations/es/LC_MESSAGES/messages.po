@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: memo.or99@hotmail.com\n"
-"POT-Creation-Date: 2023-11-11 04:39-0600\n"
+"POT-Creation-Date: 2024-06-21 13:46-0600\n"
 "PO-Revision-Date: 2023-11-11 04:39-0600\n"
 "Last-Translator: Guillermo Ortega Romo memo.or99@hotmail.com\n"
 "Language: es\n"
@@ -18,16 +18,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.13.1\n"
 
-#: app/templates/includes/home.html:15
-#: app/templates/includes/home.html:16
-msgid "/3dworld"
-msgstr "/mundo3d"
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Collect stars."
+msgstr "Obtén estrellas."
+
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Avoid bombs."
+msgstr "Esquiva las bombas."
+
+#: app/blueprints/appThreejs/templates/view.html:8
+msgid "Spacebar, mousedown or touch to climb"
+msgstr "Espacio, click o touch para subir"
+
+#: app/blueprints/appThreejs/templates/view.html:18
+msgid "Game over"
+msgstr "Fin del juego"
+
+#: app/blueprints/appThreejs/templates/view.html:19
+msgid "PLAY"
+msgstr "JUGAR"
 
 #: app/blueprints/common/mail.py:41
 msgid "The email you entered is not valid"
 msgstr "El correo electrónico que ingresaste no es válido"
 
-#: app/blueprints/email/routes.py:26
+#: app/blueprints/email/routes.py:27
 msgid "You didn't pass the captcha, try again"
 msgstr "No pasaste la prueba captcha, inténtalo de nuevo"
 
@@ -39,21 +54,29 @@ msgstr "Recibí tu mensaje y me pondré en contacto contigo pronto"
 msgid "Something went wrong"
 msgstr "Algo salió mal"
 
-#: app/blueprints/errorHandlers/routes.py:23
+#: app/blueprints/errorHandlers/routes.py:45
 msgid "Not Found"
 msgstr "No encontrado"
 
-#: app/blueprints/errorHandlers/routes.py:26
+#: app/blueprints/errorHandlers/routes.py:47
 msgid "The page you were looking for could not be found."
 msgstr "La página que buscabas no se pudo encontrar"
 
-#: app/blueprints/errorHandlers/routes.py:38
+#: app/blueprints/errorHandlers/routes.py:60
 msgid "Not Allowed"
 msgstr "No permitido"
 
-#: app/blueprints/errorHandlers/routes.py:41
+#: app/blueprints/errorHandlers/routes.py:62
 msgid "You shouldn't try to do that."
 msgstr "No deberías intentar hacer eso"
+
+#: app/blueprints/errorHandlers/routes.py:75
+msgid "Server error"
+msgstr "Error de servidor"
+
+#: app/blueprints/errorHandlers/routes.py:77
+msgid "Nothing is working right now"
+msgstr "Parece que nada esta funcionando por ahora"
 
 #: app/blueprints/errorHandlers/templates/error.html:32
 msgid "Back To Home Page"
@@ -74,10 +97,19 @@ msgstr "Inicio"
 msgid "Dark view"
 msgstr "Vista oscura"
 
+#: app/blueprints/errorHandlers/templates/navbar_error.html:30
+#: app/templates/includes/navbar.html:36
+msgid "English"
+msgstr "English"
+
+#: app/blueprints/errorHandlers/templates/navbar_error.html:31
+#: app/templates/includes/navbar.html:37
+msgid "Español"
+msgstr "Español"
+
 #: app/templates/includes/about.html:10
 msgid "About Me"
 msgstr "Acerca de mí"
-
 
 #: app/templates/includes/about.html:16
 msgid ""
@@ -93,12 +125,12 @@ msgid ""
 msgstr ""
 "Soy ingeniero en mecatrónica graduado de la Universidad Iberoamericana, "
 "donde adquirí una\n"
-"                    sólida base en principios de ingeniería interdisciplinaria."
-" Integro de manera fluida soluciones de hardware y\n"
-"                    software para crear sistemas innovadores y multifacéticos. "
-"Aporto una gran experiencia en\n"
-"                    programación en Python, infraestructura en la nube de AWS y "
-"prácticas eficientes de implementación de código a mi\n"
+"                    sólida base en principios de ingeniería "
+"interdisciplinaria. Integro de manera fluida soluciones de hardware y\n"
+"                    software para crear sistemas innovadores y "
+"multifacéticos. Aporto una gran experiencia en\n"
+"                    programación en Python, infraestructura en la nube de"
+" AWS y prácticas eficientes de implementación de código a mi\n"
 "                    trabajo."
 
 #: app/templates/includes/about.html:25
@@ -115,12 +147,12 @@ msgid ""
 msgstr ""
 "Mi pasión se centra en fusionar el machine learning con la tecnología "
 "automotriz, centrándome específicamente en\n"
-"                    mejorar los vehículos autónomos. Cuando no estoy inmerso en "
-"mis actividades técnicas, encuentro tranquilidad en\n"
+"                    mejorar los vehículos autónomos. Cuando no estoy "
+"inmerso en mis actividades técnicas, encuentro tranquilidad en\n"
 "                    tocar el piano y trabajar la madera, equilibrando la "
 "creatividad y la precisión en mis pasatiempos. Ya sea\n"
-"                    explorando melodías en el piano o creando muebles hechos a "
-"mano, me dedico al crecimiento continuo\n"
+"                    explorando melodías en el piano o creando muebles "
+"hechos a mano, me dedico al crecimiento continuo\n"
 "                    personal y profesional."
 
 #: app/templates/includes/about.html:52
@@ -132,7 +164,9 @@ msgid ""
 "Feel free to visit my LinkedIn and GitHub profiles to learn a little more"
 " about\n"
 "                                    me"
-msgstr "Siéntete libre de visitar mis perfiles de LinkedIn y GitHub para conocer un poco más acerca de mí"
+msgstr ""
+"Siéntete libre de visitar mis perfiles de LinkedIn y GitHub para conocer "
+"un poco más acerca de mí"
 
 #: app/templates/includes/about.html:60 app/templates/includes/footer.html:12
 msgid "Github profile"
@@ -148,7 +182,9 @@ msgstr "Contáctame"
 
 #: app/templates/includes/contact.html:8
 msgid "Hire me or get in touch with me if you need a project developed"
-msgstr "Contrátame o ponte en contacto conmigo si necesitas desarrollar un proyecto"
+msgstr ""
+"Contrátame o ponte en contacto conmigo si necesitas desarrollar un "
+"proyecto"
 
 #: app/templates/includes/contact.html:31
 #: app/templates/includes/contact.html:51
@@ -224,33 +260,17 @@ msgstr "Todos los derechos reservados"
 msgid "Scroll to top"
 msgstr "Desplazarse hasta arriba"
 
-#: app/templates/includes/home.html:8 app/templates/includes/resume.html:110
+#: app/templates/includes/home.html:8 app/templates/includes/resume.html:216
 msgid "DevOps Engineer"
 msgstr "Ingeniero DevOps"
 
 #: app/templates/includes/home.html:15 app/templates/includes/home.html:16
+msgid "/3dworld"
+msgstr "/mundo3d"
+
+#: app/templates/includes/home.html:15 app/templates/includes/home.html:16
 msgid "Play a game"
 msgstr "Juega un juego"
-
-#: app/blueprints/appThreejs/templates/view.html:18
-msgid "Game over"
-msgstr "Fin del juego"
-
-#: app/blueprints/appThreejs/templates/view.html:8
-msgid "Collect stars."
-msgstr "Obtén estrellas."
-
-#: app/blueprints/appThreejs/templates/view.html:8
-msgid "Avoid bombs."
-msgstr "Esquiva las bombas."
-
-#: app/blueprints/appThreejs/templates/view.html:8
-msgid "Spacebar, mousedown or touch to climb"
-msgstr "Espacio, click o touch para subir"
-
-#: app/blueprints/appThreejs/templates/view.html:19
-msgid "PLAY"
-msgstr "JUGAR"
 
 #: app/templates/includes/home.html:23
 msgid "Explore the page"
@@ -268,7 +288,7 @@ msgstr "Cargando..."
 msgid "About"
 msgstr "Acerca de mí"
 
-#: app/templates/includes/navbar.html:24 app/templates/includes/resume.html:6
+#: app/templates/includes/navbar.html:24 app/templates/includes/resume.html:9
 msgid "Resume"
 msgstr "Currículum"
 
@@ -328,8 +348,8 @@ msgid ""
 "Used trajectory generation algorithms programmed in python to move the "
 "DJI robomaster across multiple fields with obstacles."
 msgstr ""
-"Utilicé algoritmos de generación de trayectorias programados en Python para "
-"mover el Robomaster de DJI a través de varios campos con obstáculos."
+"Utilicé algoritmos de generación de trayectorias programados en Python "
+"para mover el Robomaster de DJI a través de varios campos con obstáculos."
 
 #: app/templates/includes/portfolio.html:82
 msgid "Smart Blinds"
@@ -340,15 +360,15 @@ msgid ""
 "I designed, developed and built an IoT device compatible with Alexa, "
 "enabling precise control of my bedroom blinds."
 msgstr ""
-"Diseñé, desarrollé y construí un dispositivo IoT compatible con Alexa, que "
-"permite el control preciso de las persianas de mi habitación."
+"Diseñé, desarrollé y construí un dispositivo IoT compatible con Alexa, "
+"que permite el control preciso de las persianas de mi habitación."
 
 #: app/templates/includes/portfolio.html:105
 msgid "GD-code web page"
 msgstr "Página web de GD-code"
 
 #: app/templates/includes/portfolio.html:108
-msgid "Comming Soon"
+msgid "Comming soon"
 msgstr "Próximamente"
 
 #: app/templates/includes/portfolio.html:125
@@ -357,7 +377,9 @@ msgstr "Casa4U"
 
 #: app/templates/includes/portfolio.html:128
 msgid "A real state web app to help people find their dream home, rent or sales."
-msgstr "Una aplicación web de bienes raíces para ayudar a las personas a encontrar la casa de sus sueños, renta o venta."
+msgstr ""
+"Una aplicación web de bienes raíces para ayudar a las personas a "
+"encontrar la casa de sus sueños, renta o venta."
 
 #: app/templates/includes/portfolio.html:131
 msgid "Comming Soon"
@@ -406,10 +428,10 @@ msgid ""
 "30-minute downtime during updates into zero\n"
 "                        downtime."
 msgstr ""
-"Implementé una estrategia Blue-Green para endpoints "
-"de AWS SageMaker que alojan modelos de\n"
-"machine learning, logrando eliminar completamente un tiempo de inactividad de 30 minutos "
-"en el servicio durante las actualizaciones."
+"Implementé una estrategia Blue-Green para endpoints de AWS SageMaker que "
+"alojan modelos de\n"
+"machine learning, logrando eliminar completamente un tiempo de "
+"inactividad de 30 minutos en el servicio durante las actualizaciones."
 
 #: app/templates/includes/portfolio.html:202
 msgid "Baby crawling aid"
@@ -422,219 +444,269 @@ msgid ""
 "                        intellectual disabilities in their crawling "
 "journey."
 msgstr ""
-"Colaboré con un compañero para diseñar y construir un dispositivo destinado "
-"a ayudar a niños con discapacidades intelectuales en su proceso de gateo."
+"Colaboré con un compañero para diseñar y construir un dispositivo "
+"destinado a ayudar a niños con discapacidades intelectuales en su proceso"
+" de gateo."
 
-#: app/templates/includes/resume.html:8
+#: app/templates/includes/resume.html:11
 msgid "Education and professional experience"
 msgstr "Educación y experiencia profesional"
 
-#: app/templates/includes/resume.html:16
+#: app/templates/includes/resume.html:19
 msgid "Education"
 msgstr "Educación"
 
-#: app/templates/includes/resume.html:25
+#: app/templates/includes/resume.html:34
 msgid "DevOps Beginners to Advanced with Projects"
 msgstr "DevOps Beginners to Advanced with Projects"
 
-#: app/templates/includes/resume.html:29 app/templates/includes/resume.html:50
+#: app/templates/includes/resume.html:42 app/templates/includes/resume.html:79
 msgid "Udemy Certification"
 msgstr "Certificación de Udemy"
 
-#: app/templates/includes/resume.html:30
+#: app/templates/includes/resume.html:43
 msgid ""
-"Completed a DevOps course with a focus on AWS and Kubernetes, "
-"significantly improving my skills\n"
-"                        and deepening my understanding of industry best "
-"practices."
+"Completed a DevOps course with a focus on AWS and\n"
+"\t\t\t\t\t\tKubernetes, significantly improving my skills and\n"
+"\t\t\t\t\t\tdeepening my understanding of industry best\n"
+"\t\t\t\t\t\tpractices."
 msgstr ""
 "Completé un curso de DevOps con enfoque en AWS y Kubernetes, mejorando "
-"significativamente mis habilidades y profundizando mi comprensión de las mejores prácticas de la industria."
+"significativamente mis habilidades y profundizando mi comprensión de las "
+"mejores prácticas de la industria."
 
-#: app/templates/includes/resume.html:35 app/templates/includes/resume.html:55
-#: app/templates/includes/resume.html:74
+#: app/templates/includes/resume.html:52 app/templates/includes/resume.html:87
+#: app/templates/includes/resume.html:119
 msgid "Certificate"
 msgstr "Certificado"
 
-#: app/templates/includes/resume.html:46
-msgid "The Beginners Guide to 3D Web Game Development with Three.JS"
+#: app/templates/includes/resume.html:70
+msgid ""
+"The Beginners Guide to 3D Web Game Development with\n"
+"\t\t\t\t\t\tThree.JS"
 msgstr "The Beginners Guide to 3D Web Game Development with Three.JS"
 
-#: app/templates/includes/resume.html:51
+#: app/templates/includes/resume.html:80
 msgid ""
-"Learned how to write JavaScript code to create 3D games using the WebGL "
-"library, Three JS."
+"Learned how to write JavaScript code to create 3D\n"
+"\t\t\t\t\t\tgames using the WebGL library, Three JS."
 msgstr ""
 "Aprendí a escribir código JavaScript para crear juegos 3D utilizando la "
 "biblioteca WebGL, Three JS."
 
-#: app/templates/includes/resume.html:66
+#: app/templates/includes/resume.html:105
 msgid "IELTS English Certification - C1"
 msgstr "Certificación de Inglés IELTS - C1"
 
-#: app/templates/includes/resume.html:70
+#: app/templates/includes/resume.html:113
 msgid "English level: Full professional proficiency"
 msgstr "Nivel de inglés: Competencia profesional completa"
 
-#: app/templates/includes/resume.html:85
+#: app/templates/includes/resume.html:138
 msgid "Mechatronics Engineering"
 msgstr "Ingeniería en Mecatrónica y producción"
 
-#: app/templates/includes/resume.html:87
+#: app/templates/includes/resume.html:143
 msgid "Aug/2017 - Dec/2022"
 msgstr "Ago/2017 - Dic/2022"
 
-#: app/templates/includes/resume.html:89
+#: app/templates/includes/resume.html:146
 msgid "Bachelor's Degree"
 msgstr "Licenciatura"
 
-#: app/templates/includes/resume.html:90
+#: app/templates/includes/resume.html:147
 msgid "Universidad Iberoamericana"
 msgstr "Universidad Iberoamericana"
 
-#: app/templates/includes/resume.html:93
+#: app/templates/includes/resume.html:154
 msgid "Ibero Webpage"
 msgstr "Página web de Ibero"
 
-#: app/templates/includes/resume.html:122
-msgid "Espressive Webpage"
-msgstr "Página web de Espressive"
-
-#: app/templates/includes/resume.html:144
-msgid "INIAT Webpage"
-msgstr "Página web de INIAT"
-
-#: app/templates/includes/resume.html:167
-#: app/templates/includes/resume.html:188
-msgid "Learn More"
-msgstr "Más información"
-
-#: app/templates/includes/resume.html:101
+#: app/templates/includes/resume.html:163
 msgid "Experience"
 msgstr "Experiencia"
 
-#: app/templates/includes/resume.html:112
-msgid "Sep/2022 - Present"
-msgstr "Sep/2022 - Actualidad"
+#: app/templates/includes/resume.html:177
+msgid "Senior Cloud Engineer"
+msgstr "Ingeniero de nube Senior"
 
-#: app/templates/includes/resume.html:114
+#: app/templates/includes/resume.html:181
+msgid "Apr/2024 - Present"
+msgstr "May/2020 - Actualidad"
+
+#: app/templates/includes/resume.html:184
+msgid "Thomson Reuters"
+msgstr "Thomson Reuters"
+
+#: app/templates/includes/resume.html:185
+msgid ""
+"As a Senior Cloud Engineer, I automate the\n"
+"\t\t\t\t\t\tcreation and management of Amazon Machine Images (AMIs)\n"
+"\t\t\t\t\t\tfor internal use, develop internal applications, and\n"
+"\t\t\t\t\t\tbuild automation solutions to enhance employee\n"
+"\t\t\t\t\t\tproductivity. I utilize tools like AWS, Azure,\n"
+"\t\t\t\t\t\tCloudformation, Bicep, Terraform, and Python to\n"
+"\t\t\t\t\t\tstreamline processes, manage cloud infrastructure, and\n"
+"\t\t\t\t\t\timprove operational efficiency."
+msgstr ""
+"Como ingeniero senior de la nube, automatizo la creación y gestión de "
+"Amazon Machine Images AMIs para uso interno, desarrollo aplicaciones "
+"internas y construyo soluciones de automatización para mejorar la "
+"productividad de los empleados. Utilizo herramientas como AWS, Azure, "
+"Cloudformation, Bicep, Terraform y Python para agilizar procesos, "
+"gestionar la infraestructura de la nube y mejorar la eficiencia "
+"operativa."
+
+#: app/templates/includes/resume.html:199
+msgid "Thomson Reuters Webpage"
+msgstr "Página web de Thomson Reuters"
+
+#: app/templates/includes/resume.html:220
+msgid "Sep/2022 - Apr/2024"
+msgstr "Sep/2022 - Abr/2024"
+
+#: app/templates/includes/resume.html:223
 msgid "Espressive Inc."
 msgstr "Espressive Inc."
 
-#: app/templates/includes/resume.html:115
+#: app/templates/includes/resume.html:224
 msgid ""
-"As a DevOps engineer, I develop tools to automate company processes using"
-" Python and Bash.\n"
-"                        I also create infrastructure for new development "
-"and production environments with Terraform,\n"
-"                        update automation scripts for technologies like "
-"Kubernetes, Docker, AWS, and Django, and\n"
-"                        integrate third-party services via APIs. My work "
-"enhances resource management and streamlines\n"
-"                        application deployment in our organization."
+"As a DevOps engineer, I develop tools to automate\n"
+"\t\t\t\t\t\tcompany processes using Python and Bash. I also create\n"
+"\t\t\t\t\t\tinfrastructure for new development and production\n"
+"\t\t\t\t\t\tenvironments with Terraform, update automation scripts\n"
+"\t\t\t\t\t\tfor technologies like Kubernetes, Docker, AWS, and\n"
+"\t\t\t\t\t\tDjango, and integrate third-party services via APIs. My\n"
+"\t\t\t\t\t\twork enhances resource management and streamlines\n"
+"\t\t\t\t\t\tapplication deployment in our organization."
 msgstr ""
 "Como ingeniero DevOps, desarrollo herramientas para automatizar procesos "
 "empresariales utilizando Python y Bash.\n"
-"También creo infraestructura para nuevos entornos de desarrollo y producción con Terraform,\n"
-"actualizo scripts de automatización para tecnologías como Kubernetes, Docker, AWS y Django, e\n"
-"integro servicios de terceros a través de APIs. Mi trabajo mejora la gestión de recursos y optimiza\n"
+"También creo infraestructura para nuevos entornos de desarrollo y "
+"producción con Terraform,\n"
+"actualizo scripts de automatización para tecnologías como Kubernetes, "
+"Docker, AWS y Django, e\n"
+"integro servicios de terceros a través de APIs. Mi trabajo mejora la "
+"gestión de recursos y optimiza\n"
 "la implementación de aplicaciones en nuestra organización."
 
-#: app/templates/includes/resume.html:133
+#: app/templates/includes/resume.html:238
+msgid "Espressive Webpage"
+msgstr "Página web de Espressive"
+
+#: app/templates/includes/resume.html:256
 msgid "Control Systems python developer"
 msgstr "Desarrollador de Python para Sistemas de Control"
 
-#: app/templates/includes/resume.html:135
+#: app/templates/includes/resume.html:261
 msgid "Aug/2021 - Jan/2023"
 msgstr "Ago/2021 - Ene/2023"
 
-#: app/templates/includes/resume.html:137
+#: app/templates/includes/resume.html:264
 msgid "INIAT"
 msgstr "INIAT"
 
-#: app/templates/includes/resume.html:138
+#: app/templates/includes/resume.html:265
 msgid ""
-"I took the lead in designing and developing a self-driving two-wheeled "
-"vehicle, using Python,\n"
-"                        ROS 2, and C++ to implement artificial "
-"intelligence. This project involved integrating hardware\n"
-"                        and software systems and crafting control and "
-"navigation algorithms, marking a notable\n"
-"                        achievement in the field of robotics."
+"I took the lead in designing and developing a\n"
+"\t\t\t\t\t\tself-driving two-wheeled vehicle, using Python, ROS 2,\n"
+"\t\t\t\t\t\tand C++ to implement artificial intelligence. This\n"
+"\t\t\t\t\t\tproject involved integrating hardware and software\n"
+"\t\t\t\t\t\tsystems and crafting control and navigation algorithms,\n"
+"\t\t\t\t\t\tmarking a notable achievement in the field of\n"
+"\t\t\t\t\t\trobotics."
 msgstr ""
-"Me encargué de diseñar y desarrollar un vehículo autónomo de dos ruedas, utilizando Python,\n"
-"ROS 2 y C++, para implementar inteligencia artificial. Este proyecto involucró la integración de hardware\n"
-"y sistemas de software, así como la creación de algoritmos de control y navegación, marcando un logro notable\n"
+"Me encargué de diseñar y desarrollar un vehículo autónomo de dos ruedas, "
+"utilizando Python,\n"
+"ROS 2 y C++, para implementar inteligencia artificial. Este proyecto "
+"involucró la integración de hardware\n"
+"y sistemas de software, así como la creación de algoritmos de control y "
+"navegación, marcando un logro notable\n"
 "en el campo de la robótica."
 
-#: app/templates/includes/resume.html:155
+#: app/templates/includes/resume.html:278
+msgid "INIAT Webpage"
+msgstr "Página web de INIAT"
+
+#: app/templates/includes/resume.html:298
 msgid "Software and Hardware Developer"
 msgstr "Desarrollador de Software y Hardware"
 
-#: app/templates/includes/resume.html:157
+#: app/templates/includes/resume.html:303
 msgid "May/2020 - Present"
 msgstr "May/2020 - Actualidad"
 
-#: app/templates/includes/resume.html:159
+#: app/templates/includes/resume.html:306
 msgid "GD-code - Freelance"
 msgstr "GD-code - Freelance"
 
-#: app/templates/includes/resume.html:160
+#: app/templates/includes/resume.html:307
 msgid ""
-"Comprehensive service delivery encompassing web application development "
-"and maintenance\n"
-"                        using Flask and Django, as well as the creation "
-"of desktop applications in Python.\n"
-"                        I also design and develop REST APIs using Flask "
-"and AWS Lambda, and I am involved in\n"
-"                        creating embedded hardware solutions. This "
-"experience provides me with a holistic perspective\n"
-"                        in delivering technology projects spanning a "
-"variety of platforms and technologies."
+"Comprehensive service delivery encompassing web\n"
+"\t\t\t\t\t\tapplication development and maintenance using Flask and\n"
+"\t\t\t\t\t\tDjango, as well as the creation of desktop applications\n"
+"\t\t\t\t\t\tin Python. I also design and develop REST APIs using\n"
+"\t\t\t\t\t\tFlask and AWS Lambda, and I am involved in creating\n"
+"\t\t\t\t\t\tembedded hardware solutions. This experience provides me\n"
+"\t\t\t\t\t\twith a holistic perspective in delivering technology\n"
+"\t\t\t\t\t\tprojects spanning a variety of platforms and\n"
+"\t\t\t\t\t\ttechnologies."
 msgstr ""
-"Ofrezco servicios integrales que abarcan el desarrollo y mantenimiento de aplicaciones web\n"
-"utilizando Flask y Django, así como la creación de aplicaciones de escritorio en Python.\n"
-"También diseño y desarrollo APIs REST utilizando Flask y AWS Lambda, y estoy involucrado en\n"
-"la creación de soluciones de hardware integrado. Esta experiencia me proporciona una perspectiva holística\n"
-"en la entrega de proyectos tecnológicos que abarcan una variedad de plataformas y tecnologías."
+"Ofrezco servicios integrales que abarcan el desarrollo y mantenimiento de"
+" aplicaciones web\n"
+"utilizando Flask y Django, así como la creación de aplicaciones de "
+"escritorio en Python.\n"
+"También diseño y desarrollo APIs REST utilizando Flask y AWS Lambda, y "
+"estoy involucrado en\n"
+"la creación de soluciones de hardware integrado. Esta experiencia me "
+"proporciona una perspectiva holística\n"
+"en la entrega de proyectos tecnológicos que abarcan una variedad de "
+"plataformas y tecnologías."
 
-#: app/templates/includes/resume.html:178
+#: app/templates/includes/resume.html:318
+#: app/templates/includes/resume.html:351
+msgid "Learn More"
+msgstr "Más información"
+
+#: app/templates/includes/resume.html:336
 msgid "Computer Teacher"
 msgstr "Profesor de Informática"
 
-#: app/templates/includes/resume.html:180
+#: app/templates/includes/resume.html:340
 msgid "Jan/2018 - May/2018"
 msgstr "Ene/2018 - May/2018"
 
-#: app/templates/includes/resume.html:182
+#: app/templates/includes/resume.html:343
 msgid "Malinalli"
 msgstr "Malinalli"
 
-#: app/templates/includes/resume.html:183
+#: app/templates/includes/resume.html:344
 msgid ""
-"I supervised and taught a total of nine groups, consisting of six "
-"elementary school groups and\n"
-"                        three preschool groups. My responsibilities "
-"included planning and implementing educational\n"
-"                        programs tailored to various age levels."
+"I supervised and taught a total of nine groups,\n"
+"\t\t\t\t\t\tconsisting of six elementary school groups and three\n"
+"\t\t\t\t\t\tpreschool groups. My responsibilities included planning\n"
+"\t\t\t\t\t\tand implementing educational programs tailored to\n"
+"\t\t\t\t\t\tvarious age levels."
 msgstr ""
-"Supervisé y enseñé un total de nueve grupos, que consistían en seis grupos de escuela primaria y\n"
-"tres grupos de preescolar. Mis responsabilidades incluyeron la planificación e implementación de programas educativos\n"
+"Supervisé y enseñé a un total de nueve grupos, que consistían en seis "
+"grupos de escuela primaria y\n"
+"tres grupos de preescolar. Mis responsabilidades incluyeron la "
+"planificación e implementación de programas educativos\n"
 "adaptados a diversos niveles de edad."
 
-#: app/templates/includes/resume.html:228
+#: app/templates/includes/resume.html:391
 msgid "Feeling interested?"
 msgstr "¿Interesado?"
 
-#: app/templates/includes/resume.html:230
+#: app/templates/includes/resume.html:394
 msgid "View or download my CV in PDF"
 msgstr "Ve o descarga mi CV en PDF"
 
-#: app/templates/includes/resume.html:236
+#: app/templates/includes/resume.html:403
 msgid "View"
 msgstr "Ver"
 
-#: app/templates/includes/resume.html:242
+#: app/templates/includes/resume.html:413
 msgid "Download"
 msgstr "Descargar"
 
@@ -642,12 +714,3 @@ msgstr "Descargar"
 msgid "Skip to Content"
 msgstr "Ir al Contenido"
 
-#: app/blueprints/errorHandlers/templates/navbar_error.html:31
-#: app/templates/includes/navbar.html:38
-msgid "English"
-msgstr "English"
-
-#: app/blueprints/errorHandlers/templates/navbar_error.html:32
-#: app/templates/includes/navbar.html:39
-msgid "Español"
-msgstr "Español"
