@@ -532,7 +532,7 @@ msgstr "Ingeniero de nube Senior"
 
 #: app/templates/includes/resume.html:181
 msgid "Apr/2024 - Present"
-msgstr "May/2020 - Actualidad"
+msgstr "Abr/2020 - Actualidad"
 
 #: app/templates/includes/resume.html:184
 msgid "Thomson Reuters"
