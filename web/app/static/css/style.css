@@ -3551,7 +3551,7 @@ a.logo:hover {
 }
 
 .light-content .resume-icon.icon-light .icon-fill {
-    fill: rgb(200, 200, 200);
+    fill: #fff;
 }
 
 .resume-title {

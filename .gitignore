@@ -2,6 +2,8 @@
 .vscode
 .DS_Store
 *.pem
+certbot
+nginx
 
 # Terraform stuff
 about_me_id_rsa
