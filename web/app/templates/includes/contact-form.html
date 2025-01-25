@@ -2,7 +2,9 @@
 Contact form
 --------------------------------------------- -->
 <script type="text/javascript">
-	document.getElementById("submit_btn").addEventListener("click", function (token) {
+	document.getElementById("submit_btn").addEventListener("click", function (event) {
+		event.preventDefault();
+
 		//get input field values
 		var user_name = $("input[name=name]").val();
 		var user_email = $("input[name=email]").val();
@@ -67,7 +69,7 @@ Contact form
 		}
 
 		return false;
-	}, passiveSupported ? { passive: true } : false);
+	});
 
 	//reset previously set border colors and hide all message on .keyup()
 	var formElements = document.querySelectorAll("#contact_form input, #contact_form textarea");
