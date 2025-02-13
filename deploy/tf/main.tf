@@ -10,8 +10,15 @@ resource "digitalocean_ssh_key" "my_key" {
 }
 
 resource "digitalocean_domain" "my_domain" {
-  name       = "guillermoortega.me"
-  ip_address = digitalocean_droplet.droplet.ipv4_address
+  name = "guillermoortega.me"
+}
+
+resource "digitalocean_record" "droplet" {
+  domain = digitalocean_domain.my_domain.id
+  type   = "A"
+  name   = "@"
+  value  = digitalocean_droplet.droplet.ipv4_address
+  ttl    = "300"
 }
 
 resource "digitalocean_record" "google" {
@@ -19,6 +26,15 @@ resource "digitalocean_record" "google" {
   type   = "TXT"
   name   = "@"
   value  = local.tf_envs["tf_google_txt_record"]
+  ttl    = "300"
+}
+
+resource "digitalocean_record" "www_redirection" {
+  domain = digitalocean_domain.my_domain.id
+  type   = "CNAME"
+  name   = "www.guillermoortega.me."
+  value  = "guillermoortega.me."
+  ttl    = "300"
 }
 
 resource "digitalocean_droplet" "droplet" {
@@ -41,6 +57,8 @@ resource "digitalocean_droplet" "droplet" {
       to_email            = local.tf_envs["tf_to_email"],
       app_password        = local.tf_envs["tf_app_password"],
       env_txt             = local.envs_string
+      docker_username     = local.tf_envs["tf_docker_username"]
+      docker_password     = local.tf_envs["tf_docker_password"]
     }
   )
 

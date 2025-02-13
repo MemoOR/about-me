@@ -78,8 +78,8 @@ wait to receive email notification that initial setup is done
 
 ```
 cd deploy/
+cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < create_certificate.sh
-ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 ```
 
 This initial setup will ideally deploy a functional app and nothing else is required.
@@ -90,6 +90,7 @@ To avoid deleting and creating a lot of droplets, and to avoid changing the doma
 
 ```
 cd deploy/
+cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 ```
 
@@ -97,6 +98,7 @@ ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 
 ```
 cd deploy/
+cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < update_certificate.sh
 ```
 

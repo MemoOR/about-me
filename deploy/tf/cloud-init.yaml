@@ -33,9 +33,9 @@ write_files:
   content: |
     From: ${from_email}
     To: ${to_email}
-    Subject: Deploy ready
+    Subject: Droplet for guillermoortega.me is ready
 
-    Deploy finished
+    Initial deploy finished
 
 runcmd:
   - sudo apt-get update
@@ -52,6 +52,7 @@ runcmd:
   - git clone https://github.com/MemoOR/about-me.git
   - cd about-me
   - git config --global --add safe.directory /opt/app/about-me # to allow git pull
+  - echo "${docker_password}" | docker login -u ${docker_username} --password-stdin
   - echo '${env_txt}' > app_env.txt
   - awk -v RS='"[^"]*"' '{gsub(/ /,"\n"); ORS = RT} 1' app_env.txt > app.env
   - source app.env
@@ -59,5 +60,7 @@ runcmd:
   - make deploy
   - unset $(grep -v '^#' app.env | sed -E 's/([^=]+)=.*/\1/' | xargs)
   - rm app_env.txt
+  - rm envtest.txt
+  - rm app.env
   - curl --url 'smtps://smtp.gmail.com:465' --ssl-reqd --mail-from '${from_email}' --mail-rcpt '${to_email}' --user '${from_email}:${app_password}' --upload-file /opt/app/mail.txt
   - rm /opt/app/mail.txt
