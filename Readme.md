@@ -1,40 +1,105 @@
 <p align="center">
   <img align="center" width="200" src="https://github.com/MemoOR/about-me/blob/master/assets/GDLogo.png">
   <h1 align="center" style="margin: 0 auto 0 auto;">Guillermo Ortega Romo</h1>
-  <h5 align="center" style="margin: 0 auto 0 auto;">About me</h5>
+  <h3 align="center" style="margin: 0 auto 0 auto;">Personal Portfolio Website</h3>
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/github/last-commit/MemoOR/about-me">
-    <img src="https://img.shields.io/github/issues/MemoOR/about-me?label=issues">
-    <img src="https://img.shields.io/github/stars/MemoOR/about-me?color=purple&">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MemoOR/about-me?color=purple">
+  <a href="https://github.com/GuillermoOrtegaTR" target="_blank">
+    <img src="https://img.shields.io/badge/🚀_Work_GitHub-GuillermoOrtegaTR-blue?style=for-the-badge&logo=github&logoColor=white" alt="Work GitHub Profile">
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/MemoOR/about-me?color=purple">
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MemoOR/about-me?color=purple">
-  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/MemoOR/about-me?color=purple&label=total%20lines%20in%20repo">
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/MemoOR/about-me?color=purple">
+  <strong>👆 Check out my professional work account for real-world contributions! 👆</strong>
 </p>
 
+---
 
-## In this repo lives the code for my personal website.
+<p align="center">
+    <img src="https://img.shields.io/github/last-commit/MemoOR/about-me?style=flat-square">
+    <img src="https://img.shields.io/github/issues/MemoOR/about-me?label=issues&style=flat-square">
+    <img src="https://img.shields.io/github/stars/MemoOR/about-me?color=purple&style=flat-square">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MemoOR/about-me?color=purple&style=flat-square">
+</p>
 
-## In there you can learn more about me
+<p align="center">
+  <img src="https://img.shields.io/github/languages/code-size/MemoOR/about-me?color=purple&style=flat-square">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/MemoOR/about-me?color=purple&style=flat-square">
+  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/MemoOR/about-me?color=purple&label=total%20lines&style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/MemoOR/about-me?color=purple&style=flat-square">
+</p>
+
+---
+
+## 🌐 About This Project
+
+This repository contains the source code for my personal portfolio website. Built with modern web technologies, it showcases my professional experience, skills, and projects in an interactive and visually appealing way.
+
+**🔗 Live Site:** [guillermoortega.me](https://guillermoortega.me)
+
+> **Note:** This is my personal account. For my professional contributions and day-to-day work, please visit my work account: **[@GuillermoOrtegaTR](https://github.com/GuillermoOrtegaTR)**
+
+## 🛠️ Tech Stack
+
+- **Backend:** Python Flask
+- **Frontend:** HTML, CSS, JavaScript, Three.js
+- **Server:** Gunicorn, Nginx
+- **Containerization:** Docker, Docker Compose
+- **Infrastructure:** Terraform, DigitalOcean
+- **SSL:** Let's Encrypt (Certbot)
+- **Internationalization:** Babel (ES/EN)
 
 
-### Provisioning. How to deploy the first time.
+## 📁 Project Structure
 
-The Domain was purchased from Hostinger.
+```
+about-me/
+├── web/              # Flask application
+├── router/           # Nginx reverse proxy
+├── deploy/           # Terraform & deployment scripts
+├── certbot/          # SSL certificates
+└── docker-compose.yml
+```
 
-It is required to first point the Domain to use digitalocean nameservers to allow managing it with terraform. This step is done inside Hostinger web app.
+---
 
-This setup will create a digitalocean droplet, point the domain to its ip, trigger the setup inside cloud-init.yaml
+## 🚀 Quick Start
 
-It is necessary to have the 3 needed private files, app.env, terraform.tfstate, about_me_id_rsa
+### Local Development
 
-the repo should look like this
+```bash
+# Build and start services
+make build
+make start
+
+# Test without nginx
+make test
+
+# Stop services
+make stop
+```
+
+### Environment Setup
+
+Create an `app.env` file based on `.env.template` with your configuration.
+
+---
+
+## 📦 Deployment
+
+### Initial Provisioning
+
+The domain was purchased from Hostinger and configured to use DigitalOcean nameservers for Terraform management.
+
+This setup creates a DigitalOcean droplet, configures DNS, and triggers cloud-init provisioning.
+
+**Required private files:**
+- `app.env` - Application configuration
+- `terraform.tfstate` - Terraform state
+- `about_me_id_rsa` - SSH private key
+
+**Repository structure for deployment:**
 ```
 .
 ├── Makefile
@@ -66,57 +131,80 @@ the repo should look like this
     └── requirements.txt
 ```
 
-after having those files
+**Initial deployment:**
 
-```
+```bash
 cd about-me/deploy
 make planout
 make apply
 ```
 
-wait to receive email notification that initial setup is done
+Wait for email notification that initial setup is complete, then:
 
-```
+```bash
 cd deploy/
 cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < create_certificate.sh
 ```
 
-This initial setup will ideally deploy a functional app and nothing else is required.
+### Subsequent Deployments
 
-### Deploy after
+To deploy updates without recreating infrastructure:
 
-To avoid deleting and creating a lot of droplets, and to avoid changing the domain records every time, another steps are to be followed to deploy a new version of the app once the droplet is in place
-
-```
+```bash
 cd deploy/
 cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < deploy.sh
 ```
 
-### Steps to update certbot certificate
+### SSL Certificate Management
 
-```
+Update SSL certificates:
+
+```bash
 cd deploy/
 cat ../app.env | ssh -i ./about_me_id_rsa memoor@guillermoortega.me "sudo tee -a /opt/app/about-me/app.env"
 ssh -i ./about_me_id_rsa memoor@guillermoortega.me 'bash -s' < update_certificate.sh
 ```
 
-### Steps to handle babel
+Or use the Makefile:
 
-#### Update .po file after making code changes
-
+```bash
+make renew-cert
 ```
+
+---
+
+## 🌍 Internationalization (Babel)
+
+### Update translations after code changes:
+
+```bash
 cd web/
 pybabel update -i app/translations/messages.pot -d app/translations
-# fill new translations if needed
-# git push
-# deploy
+# Add new translations to .po files
 ```
 
-### to test in local with new translations after updating .po file
-```
+### Test translations locally:
+
+```bash
 cd web/
 pybabel compile -d app/translations
-run app
+# Run the app
 ```
+
+---
+
+## 📞 Contact
+
+- **Website:** [guillermoortega.me](https://guillermoortega.me)
+- **Work GitHub:** [@GuillermoOrtegaTR](https://github.com/GuillermoOrtegaTR)
+- **Personal GitHub:** [@MemoOR](https://github.com/MemoOR)
+
+---
+
+<p align="center">
+  <strong>💼 For my professional work and contributions, visit <a href="https://github.com/GuillermoOrtegaTR">@GuillermoOrtegaTR</a></strong>
+</p>
+
+<p align="center">Made with ❤️ by Guillermo Ortega Romo</p>
