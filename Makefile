@@ -49,3 +49,4 @@ create-cert:
 
 renew-cert:
 	@docker compose run --rm certbot renew
+	@docker compose exec router sh -c '/opt/app/ssl-nginx.sh && nginx -s reload'
