@@ -38,6 +38,8 @@ def add_language_code(endpoint, values):
 def pull_lang_code(endpoint, values):
     current_app.config['lang_code'] = values.pop("lang_code")
 
+SITE_URL = "https://guillermoortega.me"
+
 @index_bp.route("/")
 @index_bp.route("/index")
 def index():
@@ -47,14 +49,16 @@ def index():
     icon_files = [f for f in os.listdir(icon_folder) if f.endswith(".html")]
     random.shuffle(icon_files)
 
-    if current_app.config['lang_code'] == "en":
+    lang_code = current_app.config['lang_code']
+
+    if lang_code == "en":
         lang_icon = "icons/us_flag.html"
         pdf_urls_filtered = {
             "ielts_certificate_url": pdf_urls["ielts_certificate_url"],
             "cv_url_preview": pdf_urls["english_cv_url_preview"],
             "cv_url_download": pdf_urls["english_cv_url_download"],
         }
-    elif current_app.config['lang_code'] == "es":
+    elif lang_code == "es":
         lang_icon = "icons/mx_flag.html"
         pdf_urls_filtered = {
             "ielts_certificate_url": pdf_urls["ielts_certificate_url"],
@@ -70,4 +74,9 @@ def index():
         pdf_urls=pdf_urls_filtered,
         certificate_urls=certificate_urls,
         captcha_key=current_app.config["RECAPTCHA_SITE_KEY"],
+        lang_code=lang_code,
+        canonical_url=f"{SITE_URL}/{lang_code}/",
+        alt_en_url=f"{SITE_URL}/en/",
+        alt_es_url=f"{SITE_URL}/es/",
+        og_image_url=f"{SITE_URL}/static/assets/web_manifest/android-chrome-512x512.png",
     )

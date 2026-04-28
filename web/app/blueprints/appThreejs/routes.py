@@ -36,7 +36,18 @@ def pull_lang_code(endpoint, values):
     current_app.config['lang_code'] = values.pop("lang_code")
 
 
+SITE_URL = "https://guillermoortega.me"
+
 @appthreejs_bp.route("/3dworld", defaults={"lang_code": "en"})
 @appthreejs_bp.route("/mundo3d", defaults={"lang_code": "es"})
 def appthreejs():
-    return render_template("view.html", pageTitle="Guillermo Ortega Romo")
+    lang_code = current_app.config['lang_code']
+    return render_template(
+        "view.html",
+        pageTitle="Guillermo Ortega Romo",
+        lang_code=lang_code,
+        canonical_url=f"{SITE_URL}/{lang_code}/{'3dworld' if lang_code == 'en' else 'mundo3d'}",
+        alt_en_url=f"{SITE_URL}/en/3dworld",
+        alt_es_url=f"{SITE_URL}/es/mundo3d",
+        og_image_url=f"{SITE_URL}/static/assets/web_manifest/android-chrome-512x512.png",
+    )

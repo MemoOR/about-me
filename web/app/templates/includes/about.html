@@ -46,7 +46,7 @@
 
                     <div class="team-item wow animate__animated animate__fadeInDown">
                         <div class="team-item-image">
-                            <img class="lazy" data-src="{{url_for('static', filename='assets/img/me.webp')}}" alt="My photo" />
+                            <img class="lazy" data-src="{{url_for('static', filename='assets/img/me.webp')}}" alt="My photo" loading="lazy" />
                             <div class="team-item-detail">
                                 <p class="team-item-detail-title">
                                     {{_("Where to find me")}}
@@ -56,9 +56,9 @@
                                     me")}}
                                 </p>
                                 <div class="team-social-links">
-                                    <a href="https://github.com/MemoOR" target="_blank"><i
+                                    <a href="https://github.com/MemoOR" target="_blank" rel="noopener noreferrer"><i
                                             class="fab fa-github"></i><span class="sr-only">{{_("Github profile")}}</span></a>
-                                    <a href="https://www.linkedin.com/in/guillermo-or" target="_blank"><i
+                                    <a href="https://www.linkedin.com/in/guillermo-or" target="_blank" rel="noopener noreferrer"><i
                                             class="fab fa-linkedin"></i><span class="sr-only">{{_("LinkedIn profile")}}</span></a>
                                 </div>
                             </div>

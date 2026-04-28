@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: memo.or99@hotmail.com\n"
-"POT-Creation-Date: 2026-04-27 20:09-0600\n"
+"POT-Creation-Date: 2026-04-27 21:11-0600\n"
 "PO-Revision-Date: 2023-11-11 04:39-0600\n"
 "Last-Translator: Guillermo Ortega Romo memo.or99@hotmail.com\n"
 "Language: es\n"
 "Language-Team: es <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.13.1\n"
+"Generated-By: Babel 2.8.0\n"
 
 #: app/blueprints/appThreejs/templates/view.html:8
 msgid "Collect stars."
@@ -107,6 +107,24 @@ msgstr "English"
 msgid "Español"
 msgstr "Español"
 
+#: app/templates/layout.html:9
+msgid ""
+"Guillermo Ortega Romo — Senior Cloud Engineer & Full Stack Developer. "
+"AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portfolio, resume & "
+"contact."
+msgstr ""
+"Guillermo Ortega Romo — Ingeniero Senior de Nube y Desarrollador Full "
+"Stack. AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portafolio, "
+"currículum y contacto."
+
+#: app/templates/layout.html:21 app/templates/layout.html:31
+msgid ""
+"Full Stack Engineer & Senior Cloud Engineer. AWS, Azure, GCP, OCI. "
+"Python, Terraform, Bicep. Portfolio & Resume."
+msgstr ""
+"Ingeniero Full Stack e Ingeniero Senior de Nube. AWS, Azure, GCP, OCI. "
+"Python, Terraform, Bicep. Portafolio y Currículum."
+
 #: app/templates/includes/about.html:10
 msgid "About Me"
 msgstr "Acerca de mí"
@@ -162,11 +180,11 @@ msgstr ""
 "Siéntete libre de visitar mis perfiles de LinkedIn y GitHub para conocer "
 "un poco más acerca de mí"
 
-#: app/templates/includes/about.html:60 app/templates/includes/footer.html:12
+#: app/templates/includes/about.html:60 app/templates/includes/footer.html:10
 msgid "Github profile"
 msgstr "Perfil de GitHub"
 
-#: app/templates/includes/about.html:62 app/templates/includes/footer.html:14
+#: app/templates/includes/about.html:62 app/templates/includes/footer.html:12
 msgid "LinkedIn profile"
 msgstr "Perfil de LinkedIn"
 
@@ -246,11 +264,11 @@ msgstr "\"Vista clara\""
 msgid "\"Dark view\""
 msgstr "\"Vista oscura\""
 
-#: app/templates/includes/footer.html:23
+#: app/templates/includes/footer.html:21
 msgid "All rights reserved"
 msgstr "Todos los derechos reservados"
 
-#: app/templates/includes/footer.html:37
+#: app/templates/includes/footer.html:35
 msgid "Scroll to top"
 msgstr "Desplazarse hasta arriba"
 
@@ -316,12 +334,12 @@ msgid "Espressive"
 msgstr "Espressive"
 
 #: app/templates/includes/portfolio.html:20
-#: app/templates/includes/resume.html:184
+#: app/templates/includes/resume.html:185
 msgid "Thomson Reuters"
 msgstr "Thomson Reuters"
 
 #: app/templates/includes/portfolio.html:37
-#: app/templates/includes/portfolio.html:310
+#: app/templates/includes/portfolio.html:309
 msgid "Self-Service Image Factory"
 msgstr "Fábrica de Imágenes Self-Service"
 
@@ -340,17 +358,17 @@ msgstr ""
 "infraestructura en un 40%%."
 
 #: app/templates/includes/portfolio.html:43
-#: app/templates/includes/portfolio.html:66
-#: app/templates/includes/portfolio.html:88
+#: app/templates/includes/portfolio.html:65
+#: app/templates/includes/portfolio.html:87
 msgid "Click to view architecture overview"
 msgstr "Haz clic para ver el diagrama de arquitectura"
 
-#: app/templates/includes/portfolio.html:60
-#: app/templates/includes/portfolio.html:532
+#: app/templates/includes/portfolio.html:59
+#: app/templates/includes/portfolio.html:531
 msgid "Image Factory AI Agent"
 msgstr "Agente IA de Image Factory"
 
-#: app/templates/includes/portfolio.html:63
+#: app/templates/includes/portfolio.html:62
 msgid ""
 "Built an AI agent powered by AWS Bedrock AgentCore with multimodal "
 "capabilities — processing files and media via Gemini for RAG stored in "
@@ -365,12 +383,12 @@ msgstr ""
 "troubleshooting automatizado y monitoreo de recuperación ante desastres "
 "con acciones completamente auditables y trazables."
 
-#: app/templates/includes/portfolio.html:82
-#: app/templates/includes/portfolio.html:423
+#: app/templates/includes/portfolio.html:81
+#: app/templates/includes/portfolio.html:422
 msgid "DNS Management Platform"
 msgstr "Plataforma de Gestión DNS"
 
-#: app/templates/includes/portfolio.html:85
+#: app/templates/includes/portfolio.html:84
 #, python-format
 msgid ""
 "Designed the architecture for an enterprise DNS management application "
@@ -383,11 +401,11 @@ msgstr ""
 "integración de propiedad y planes de failover. Construida serverless en "
 "Azure con 100%% de IaC mediante Bicep."
 
-#: app/templates/includes/portfolio.html:105
+#: app/templates/includes/portfolio.html:104
 msgid "Colegio Malinalli"
 msgstr "Colegio Malinalli"
 
-#: app/templates/includes/portfolio.html:108
+#: app/templates/includes/portfolio.html:107
 msgid ""
 "Designed and developed a responsive institutional website for Colegio "
 "Malinalli, delivering a modern web presence to enhance enrollment and "
@@ -397,15 +415,15 @@ msgstr ""
 " Malinalli, ofreciendo una presencia web moderna para impulsar la "
 "inscripción y el acercamiento con la comunidad."
 
-#: app/templates/includes/portfolio.html:111
+#: app/templates/includes/portfolio.html:110
 msgid "Click to visit the site"
 msgstr "Haz clic para visitar el sitio"
 
-#: app/templates/includes/portfolio.html:126
+#: app/templates/includes/portfolio.html:125
 msgid "Crypto Trading Platform"
 msgstr "Plataforma de Trading Crypto"
 
-#: app/templates/includes/portfolio.html:129
+#: app/templates/includes/portfolio.html:128
 msgid ""
 "Built a collaborative crypto trading platform featuring a pooling system "
 "where multiple\n"
@@ -421,11 +439,11 @@ msgstr ""
 "ganancias proporcionalmente según la participación de cada usuario. "
 "Acceso restringido por VPN privada."
 
-#: app/templates/includes/portfolio.html:146
+#: app/templates/includes/portfolio.html:145
 msgid "Smart Terra"
 msgstr "Smart Terra"
 
-#: app/templates/includes/portfolio.html:149
+#: app/templates/includes/portfolio.html:148
 msgid ""
 "Co-developed a full-stack IoT application for automated terrarium climate"
 " control, integrating real-time sensor data with a responsive dashboard "
@@ -435,17 +453,17 @@ msgstr ""
 "automatizado de terrarios, integrando datos de sensores en tiempo real "
 "con un panel de control responsivo para monitoreo remoto."
 
-#: app/templates/includes/portfolio.html:152
-#: app/templates/includes/portfolio.html:251
-#: app/templates/includes/portfolio.html:273
+#: app/templates/includes/portfolio.html:151
+#: app/templates/includes/portfolio.html:250
+#: app/templates/includes/portfolio.html:272
 msgid "Click to learn more"
 msgstr "Haz clic para obtener más información"
 
-#: app/templates/includes/portfolio.html:167
+#: app/templates/includes/portfolio.html:166
 msgid "1Password Secrets Library"
 msgstr "Biblioteca de Secretos 1Password"
 
-#: app/templates/includes/portfolio.html:170
+#: app/templates/includes/portfolio.html:169
 msgid ""
 "Built an internal Python library for secure secrets management via the "
 "1Password API,\n"
@@ -459,11 +477,11 @@ msgstr ""
 "y reduciendo el manejo manual de secretos en toda la organización de "
 "ingeniería."
 
-#: app/templates/includes/portfolio.html:186
+#: app/templates/includes/portfolio.html:185
 msgid "Data Warehouse"
 msgstr "Almacén de Datos"
 
-#: app/templates/includes/portfolio.html:189
+#: app/templates/includes/portfolio.html:188
 msgid ""
 "Architected and automated the provisioning of an AWS Redshift data "
 "warehouse using\n"
@@ -477,11 +495,11 @@ msgstr ""
 "como Código con cumplimiento total de las políticas de seguridad "
 "empresariales."
 
-#: app/templates/includes/portfolio.html:205
+#: app/templates/includes/portfolio.html:204
 msgid "MLOps Pipeline"
 msgstr "Pipeline de MLOps"
 
-#: app/templates/includes/portfolio.html:208
+#: app/templates/includes/portfolio.html:207
 msgid ""
 "Engineered a Blue-Green deployment pipeline for AWS SageMaker ML "
 "endpoints, achieving\n"
@@ -494,19 +512,19 @@ msgstr ""
 "actualizaciones de modelos sin tiempo de inactividad y eliminando la "
 "interrupción previa de 30 minutos durante los despliegues a producción."
 
-#: app/templates/includes/portfolio.html:225
+#: app/templates/includes/portfolio.html:224
 msgid "GD-code Website"
 msgstr "Sitio Web de GD-code"
 
-#: app/templates/includes/portfolio.html:228
+#: app/templates/includes/portfolio.html:227
 msgid "Coming soon"
 msgstr "Próximamente"
 
-#: app/templates/includes/portfolio.html:245
+#: app/templates/includes/portfolio.html:244
 msgid "Robomaster Autonomous Navigation"
 msgstr "Navegación Autónoma Robomaster"
 
-#: app/templates/includes/portfolio.html:248
+#: app/templates/includes/portfolio.html:247
 msgid ""
 "Developed path-planning and trajectory generation algorithms in Python "
 "for the DJI Robomaster, enabling autonomous navigation through complex "
@@ -516,11 +534,11 @@ msgstr ""
 "trayectorias en Python para el DJI Robomaster, habilitando la navegación "
 "autónoma a través de circuitos de obstáculos complejos."
 
-#: app/templates/includes/portfolio.html:267
+#: app/templates/includes/portfolio.html:266
 msgid "Smart Blinds"
 msgstr "Persianas Inteligentes"
 
-#: app/templates/includes/portfolio.html:270
+#: app/templates/includes/portfolio.html:269
 msgid ""
 "Designed and built a custom IoT home automation device with WiFi "
 "connectivity and Alexa voice integration, enabling remote and voice-"
@@ -530,11 +548,11 @@ msgstr ""
 "conectividad WiFi e integración de voz con Alexa, permitiendo el control "
 "remoto y por voz de persianas."
 
-#: app/templates/includes/portfolio.html:288
+#: app/templates/includes/portfolio.html:287
 msgid "Assistive Crawling Device"
 msgstr "Dispositivo Asistivo para Gateo"
 
-#: app/templates/includes/portfolio.html:291
+#: app/templates/includes/portfolio.html:290
 msgid ""
 "Co-designed and fabricated an assistive mobility device for children with"
 " developmental\n"
@@ -547,195 +565,195 @@ msgstr ""
 "combinando ingeniería mecatrónica con diseño centrado en accesibilidad "
 "para apoyar el desarrollo temprano de habilidades motoras."
 
-#: app/templates/includes/portfolio.html:313
+#: app/templates/includes/portfolio.html:312
 msgid "Serverless Multicloud Golden Image Platform — Thomson Reuters"
 msgstr "Plataforma Serverless Multicloud de Golden Images — Thomson Reuters"
 
-#: app/templates/includes/portfolio.html:319
-#: app/templates/includes/portfolio.html:432
-#: app/templates/includes/portfolio.html:541
+#: app/templates/includes/portfolio.html:318
+#: app/templates/includes/portfolio.html:431
+#: app/templates/includes/portfolio.html:540
 msgid "CORPORATE VPN + SSO"
 msgstr "VPN CORPORATIVA + SSO"
 
-#: app/templates/includes/portfolio.html:326
-#: app/templates/includes/portfolio.html:439
+#: app/templates/includes/portfolio.html:325
+#: app/templates/includes/portfolio.html:438
 msgid "Web UI"
 msgstr "Web UI"
 
-#: app/templates/includes/portfolio.html:332
+#: app/templates/includes/portfolio.html:331
 msgid "CLI"
 msgstr "CLI"
 
-#: app/templates/includes/portfolio.html:334
+#: app/templates/includes/portfolio.html:333
 msgid "Cross-platform"
 msgstr "Multiplataforma"
 
-#: app/templates/includes/portfolio.html:338
+#: app/templates/includes/portfolio.html:337
 msgid "API"
 msgstr "API"
 
-#: app/templates/includes/portfolio.html:340
+#: app/templates/includes/portfolio.html:339
 msgid "Serverless"
 msgstr "Serverless"
 
-#: app/templates/includes/portfolio.html:349
+#: app/templates/includes/portfolio.html:348
 msgid "Factory Orchestrator"
 msgstr "Orquestador de Fábrica"
 
-#: app/templates/includes/portfolio.html:350
+#: app/templates/includes/portfolio.html:349
 msgid "Manages the full image lifecycle via simple YML definitions"
 msgstr ""
 "Gestiona el ciclo de vida completo de imágenes mediante definiciones YML "
 "simples"
 
-#: app/templates/includes/portfolio.html:399
+#: app/templates/includes/portfolio.html:398
 msgid "Golden Images"
 msgstr "Golden Images"
 
-#: app/templates/includes/portfolio.html:403
+#: app/templates/includes/portfolio.html:402
 msgid "Cost Reduction"
 msgstr "Reducción de Costos"
 
-#: app/templates/includes/portfolio.html:407
+#: app/templates/includes/portfolio.html:406
 msgid "Faster Releases"
 msgstr "Lanzamientos más Rápidos"
 
-#: app/templates/includes/portfolio.html:426
+#: app/templates/includes/portfolio.html:425
 msgid "Enterprise DNS Record Management — Thomson Reuters"
 msgstr "Gestión Empresarial de Registros DNS — Thomson Reuters"
 
-#: app/templates/includes/portfolio.html:450
+#: app/templates/includes/portfolio.html:449
 msgid "Application Gateway"
 msgstr "Application Gateway"
 
-#: app/templates/includes/portfolio.html:451
+#: app/templates/includes/portfolio.html:450
 msgid "Load balancing, WAF, and SSL termination"
 msgstr "Balanceo de carga, WAF y terminación SSL"
 
-#: app/templates/includes/portfolio.html:461
+#: app/templates/includes/portfolio.html:460
 msgid "Backend API"
 msgstr "API Backend"
 
-#: app/templates/includes/portfolio.html:474
+#: app/templates/includes/portfolio.html:473
 msgid "Database"
 msgstr "Base de Datos"
 
-#: app/templates/includes/portfolio.html:485
-#: app/templates/includes/portfolio.html:633
+#: app/templates/includes/portfolio.html:484
+#: app/templates/includes/portfolio.html:632
 msgid "Audit Trail"
 msgstr "Auditoría"
 
-#: app/templates/includes/portfolio.html:490
+#: app/templates/includes/portfolio.html:489
 msgid "Ownership"
 msgstr "Propiedad"
 
-#: app/templates/includes/portfolio.html:495
+#: app/templates/includes/portfolio.html:494
 msgid "Failover"
 msgstr "Failover"
 
-#: app/templates/includes/portfolio.html:508
+#: app/templates/includes/portfolio.html:507
 msgid "Domains"
 msgstr "Dominios"
 
-#: app/templates/includes/portfolio.html:512
+#: app/templates/includes/portfolio.html:511
 msgid "DNS Records"
 msgstr "Registros DNS"
 
-#: app/templates/includes/portfolio.html:516
+#: app/templates/includes/portfolio.html:515
 msgid "IaC with Bicep"
 msgstr "IaC con Bicep"
 
-#: app/templates/includes/portfolio.html:535
+#: app/templates/includes/portfolio.html:534
 msgid "Intelligent Operations Assistant — Thomson Reuters"
 msgstr "Asistente Inteligente de Operaciones — Thomson Reuters"
 
-#: app/templates/includes/portfolio.html:548
+#: app/templates/includes/portfolio.html:547
 msgid "Chat UI"
 msgstr "Chat"
 
-#: app/templates/includes/portfolio.html:549
+#: app/templates/includes/portfolio.html:548
 msgid "Web UI Integration"
 msgstr "Integración Web UI"
 
-#: app/templates/includes/portfolio.html:550
+#: app/templates/includes/portfolio.html:549
 msgid "Image Factory Web App"
 msgstr "Web App de Image Factory"
 
-#: app/templates/includes/portfolio.html:554
+#: app/templates/includes/portfolio.html:553
 msgid "Automation"
 msgstr "Automatización"
 
-#: app/templates/includes/portfolio.html:555
+#: app/templates/includes/portfolio.html:554
 msgid "Monitor & DR"
 msgstr "Monitoreo y DR"
 
-#: app/templates/includes/portfolio.html:556
+#: app/templates/includes/portfolio.html:555
 msgid "Scheduled & Event-driven"
 msgstr "Programado y por eventos"
 
-#: app/templates/includes/portfolio.html:567
+#: app/templates/includes/portfolio.html:566
 msgid "Media/Files"
 msgstr "Medios/Archivos"
 
-#: app/templates/includes/portfolio.html:577
+#: app/templates/includes/portfolio.html:576
 msgid "RAG → S3"
 msgstr "RAG → S3"
 
-#: app/templates/includes/portfolio.html:591
+#: app/templates/includes/portfolio.html:590
 msgid "AWS Bedrock AgentCore"
 msgstr "AWS Bedrock AgentCore"
 
-#: app/templates/includes/portfolio.html:592
+#: app/templates/includes/portfolio.html:591
 msgid "Refined system prompt, custom skills & tools for Image Factory operations"
 msgstr ""
 "Prompt de sistema refinado, habilidades y herramientas personalizadas "
 "para operaciones de Image Factory"
 
-#: app/templates/includes/portfolio.html:602
+#: app/templates/includes/portfolio.html:601
 msgid "Log Access"
 msgstr "Acceso a Logs"
 
-#: app/templates/includes/portfolio.html:607
+#: app/templates/includes/portfolio.html:606
 msgid "DB Queries"
 msgstr "Consultas a BD"
 
-#: app/templates/includes/portfolio.html:612
+#: app/templates/includes/portfolio.html:611
 msgid "API Actions"
 msgstr "Acciones API"
 
-#: app/templates/includes/portfolio.html:617
+#: app/templates/includes/portfolio.html:616
 msgid "Troubleshoot"
 msgstr "Troubleshoot"
 
-#: app/templates/includes/portfolio.html:622
+#: app/templates/includes/portfolio.html:621
 msgid "Disaster Recovery"
 msgstr "Recuperación ante Desastres"
 
-#: app/templates/includes/portfolio.html:634
+#: app/templates/includes/portfolio.html:633
 msgid "All actions logged"
 msgstr "Todas las acciones registradas"
 
-#: app/templates/includes/portfolio.html:635
+#: app/templates/includes/portfolio.html:634
 msgid "Traceable & Queryable"
 msgstr "Trazable y Consultable"
 
-#: app/templates/includes/portfolio.html:639
+#: app/templates/includes/portfolio.html:638
 msgid "Image Factory API"
 msgstr "API de Image Factory"
 
-#: app/templates/includes/portfolio.html:640
+#: app/templates/includes/portfolio.html:639
 msgid "Full API capabilities"
 msgstr "Capacidades completas de la API"
 
-#: app/templates/includes/portfolio.html:650
+#: app/templates/includes/portfolio.html:649
 msgid "Autonomous Ops"
 msgstr "Operaciones Autónomas"
 
-#: app/templates/includes/portfolio.html:654
+#: app/templates/includes/portfolio.html:653
 msgid "Engineering Cycles Freed"
 msgstr "Ciclos de Ingeniería Liberados"
 
-#: app/templates/includes/portfolio.html:658
+#: app/templates/includes/portfolio.html:657
 msgid "Auditable Actions"
 msgstr "Acciones Auditables"
 
@@ -809,23 +827,23 @@ msgstr "Licenciatura"
 msgid "Universidad Iberoamericana"
 msgstr "Universidad Iberoamericana"
 
-#: app/templates/includes/resume.html:154
+#: app/templates/includes/resume.html:155
 msgid "Ibero Webpage"
 msgstr "Página web de Ibero"
 
-#: app/templates/includes/resume.html:163
+#: app/templates/includes/resume.html:164
 msgid "Experience"
 msgstr "Experiencia"
 
-#: app/templates/includes/resume.html:177
+#: app/templates/includes/resume.html:178
 msgid "Senior Cloud Engineer"
 msgstr "Ingeniero de nube Senior"
 
-#: app/templates/includes/resume.html:181
+#: app/templates/includes/resume.html:182
 msgid "Apr/2024 - Present"
 msgstr "Abr/2020 - Actualidad"
 
-#: app/templates/includes/resume.html:185
+#: app/templates/includes/resume.html:186
 #, python-format
 msgid ""
 "Architected a serverless multicloud Image Factory\n"
@@ -843,23 +861,23 @@ msgstr ""
 "Azure. Reduje costos de infraestructura en un 40%% mediante "
 "automatización con Terraform, Bicep, CloudFormation y Python."
 
-#: app/templates/includes/resume.html:198
+#: app/templates/includes/resume.html:200
 msgid "Thomson Reuters Webpage"
 msgstr "Página web de Thomson Reuters"
 
-#: app/templates/includes/resume.html:215
+#: app/templates/includes/resume.html:217
 msgid "DevOps Engineer"
 msgstr "Ingeniero DevOps"
 
-#: app/templates/includes/resume.html:219
+#: app/templates/includes/resume.html:221
 msgid "Sep/2022 - Apr/2024"
 msgstr "Sep/2022 - Abr/2024"
 
-#: app/templates/includes/resume.html:222
+#: app/templates/includes/resume.html:224
 msgid "Espressive Inc."
 msgstr "Espressive Inc."
 
-#: app/templates/includes/resume.html:223
+#: app/templates/includes/resume.html:225
 msgid ""
 "Engineered a zero-downtime Blue-Green deployment\n"
 "\t\t\t\t\t\tpipeline for AWS SageMaker ML endpoints, eliminating\n"
@@ -876,23 +894,23 @@ msgstr ""
 "gestión de secretos con 1Password adoptada en pipelines CI/CD, reduciendo"
 " el manejo manual de credenciales en toda la organización."
 
-#: app/templates/includes/resume.html:236
+#: app/templates/includes/resume.html:239
 msgid "Espressive Webpage"
 msgstr "Página web de Espressive"
 
-#: app/templates/includes/resume.html:254
+#: app/templates/includes/resume.html:257
 msgid "Robotics & Controls Developer"
 msgstr "Desarrollador de Robótica y Control"
 
-#: app/templates/includes/resume.html:259
+#: app/templates/includes/resume.html:262
 msgid "Aug/2021 - Jan/2023"
 msgstr "Ago/2021 - Ene/2023"
 
-#: app/templates/includes/resume.html:262
+#: app/templates/includes/resume.html:265
 msgid "INIAT"
 msgstr "INIAT"
 
-#: app/templates/includes/resume.html:263
+#: app/templates/includes/resume.html:266
 msgid ""
 "Led the design and development of an autonomous\n"
 "\t\t\t\t\t\ttwo-wheeled vehicle using Python, ROS 2, and C++.\n"
@@ -905,23 +923,23 @@ msgstr ""
 "navegación basados en IA, integrando hardware de sensores con sistemas de"
 " software en tiempo real para operación autónoma."
 
-#: app/templates/includes/resume.html:274
+#: app/templates/includes/resume.html:278
 msgid "INIAT Webpage"
 msgstr "Página web de INIAT"
 
-#: app/templates/includes/resume.html:294
+#: app/templates/includes/resume.html:299
 msgid "Full Stack Developer"
 msgstr "Desarrollador Full Stack"
 
-#: app/templates/includes/resume.html:299
+#: app/templates/includes/resume.html:304
 msgid "May/2020 - Present"
 msgstr "May/2020 - Actualidad"
 
-#: app/templates/includes/resume.html:302
+#: app/templates/includes/resume.html:307
 msgid "GD-code - Freelance"
 msgstr "GD-code - Freelance"
 
-#: app/templates/includes/resume.html:303
+#: app/templates/includes/resume.html:308
 msgid ""
 "Delivering end-to-end solutions for clients: responsive\n"
 "\t\t\t\t\t\tweb applications with Flask and Django, serverless REST\n"
@@ -935,24 +953,24 @@ msgstr ""
 "Responsabilidad total desde la arquitectura hasta el despliegue en "
 "diversas plataformas y tecnologías."
 
-#: app/templates/includes/resume.html:310
-#: app/templates/includes/resume.html:341
+#: app/templates/includes/resume.html:315
+#: app/templates/includes/resume.html:347
 msgid "Learn More"
 msgstr "Más información"
 
-#: app/templates/includes/resume.html:328
+#: app/templates/includes/resume.html:334
 msgid "Computer Teacher"
 msgstr "Profesor de Informática"
 
-#: app/templates/includes/resume.html:332
+#: app/templates/includes/resume.html:338
 msgid "Jan/2018 - May/2018"
 msgstr "Ene/2018 - May/2018"
 
-#: app/templates/includes/resume.html:335
+#: app/templates/includes/resume.html:341
 msgid "Malinalli"
 msgstr "Malinalli"
 
-#: app/templates/includes/resume.html:336
+#: app/templates/includes/resume.html:342
 msgid ""
 "Supervised and taught nine groups across elementary and\n"
 "\t\t\t\t\t\tpreschool levels, planning and delivering educational\n"
@@ -962,19 +980,19 @@ msgstr ""
 "planificando e impartiendo programas educativos adaptados a diferentes "
 "grupos de edad."
 
-#: app/templates/includes/resume.html:381
+#: app/templates/includes/resume.html:387
 msgid "Feeling interested?"
 msgstr "¿Interesado?"
 
-#: app/templates/includes/resume.html:384
+#: app/templates/includes/resume.html:390
 msgid "View or download my CV in PDF"
 msgstr "Ve o descarga mi CV en PDF"
 
-#: app/templates/includes/resume.html:393
+#: app/templates/includes/resume.html:399
 msgid "View"
 msgstr "Ver"
 
-#: app/templates/includes/resume.html:403
+#: app/templates/includes/resume.html:409
 msgid "Download"
 msgstr "Descargar"
 

@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /send_email/
+
+Sitemap: https://guillermoortega.me/sitemap.xml
