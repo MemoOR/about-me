@@ -4,8 +4,8 @@ function setDarkMode() {
     let button_text = {{_("\"Light view\"")}}
     $("#DarkLightToggle").text(button_text);
     $(".page").addClass("bg-dark light-content")
-    $(".home-section, .small-section, .main-footer-div").removeClass("bg-dark-alfa-50")
-    $(".home-section, .small-section, .main-footer-div").addClass("bg-dark-alfa-70")
+    $(".home-section, .small-section, .main-footer").removeClass("bg-dark-alfa-50")
+    $(".home-section, .small-section, .main-footer").addClass("bg-dark-alfa-70")
     $(".main-nav").removeClass("light-after-scroll")
     $(".divider").addClass("white")
     $(".page-section").addClass("bg-dark light-content")
@@ -19,8 +19,8 @@ function setLightMode() {
     let button_text = {{_("\"Dark view\"")}}
     $("#DarkLightToggle").text(button_text);
     $(".page").removeClass("bg-dark light-content")
-    $(".home-section, .small-section, .main-footer-div").removeClass("bg-dark-alfa-70")
-    $(".home-section, .small-section, .main-footer-div").addClass("bg-dark-alfa-50")
+    $(".home-section, .small-section, .main-footer").removeClass("bg-dark-alfa-70")
+    $(".home-section, .small-section, .main-footer").addClass("bg-dark-alfa-50")
     $(".main-nav").addClass("light-after-scroll")
     $(".divider").removeClass("white")
     $(".page-section").removeClass("bg-dark light-content")

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: memo.or99@hotmail.com\n"
-"POT-Creation-Date: 2024-06-21 13:46-0600\n"
+"POT-Creation-Date: 2026-04-27 20:09-0600\n"
 "PO-Revision-Date: 2023-11-11 04:39-0600\n"
 "Last-Translator: Guillermo Ortega Romo memo.or99@hotmail.com\n"
 "Language: es\n"
@@ -113,47 +113,41 @@ msgstr "Acerca de mí"
 
 #: app/templates/includes/about.html:16
 msgid ""
-"I hold a degree in Mechatronics Engineering from Universidad "
-"Iberoamericana, where I gained a\n"
-"                    strong foundation in interdisciplinary engineering "
-"principles. I seamlessly integrate hardware and\n"
-"                    software solutions to create innovative, multifaceted"
-" systems. I bring a wealth of expertise in\n"
-"                    Python programming, AWS cloud infrastructure, and "
-"efficient code deployment practices to my\n"
-"                    work."
+"Senior Cloud Engineer with a Mechatronics Engineering degree from "
+"Universidad\n"
+"                    Iberoamericana. I design and build serverless "
+"platforms, cloud infrastructure, and internal\n"
+"                    tooling across AWS, Azure, GCP, and OCI. Proficient "
+"in Python, Terraform, Bicep, and\n"
+"                    CloudFormation, I deliver scalable Infrastructure as "
+"Code solutions that reduce costs and\n"
+"                    accelerate release cycles."
 msgstr ""
-"Soy ingeniero en mecatrónica graduado de la Universidad Iberoamericana, "
-"donde adquirí una\n"
-"                    sólida base en principios de ingeniería "
-"interdisciplinaria. Integro de manera fluida soluciones de hardware y\n"
-"                    software para crear sistemas innovadores y "
-"multifacéticos. Aporto una gran experiencia en\n"
-"                    programación en Python, infraestructura en la nube de"
-" AWS y prácticas eficientes de implementación de código a mi\n"
-"                    trabajo."
+"Ingeniero Senior de Nube con título en Ingeniería Mecatrónica de la "
+"Universidad Iberoamericana. Diseño y construyo plataformas serverless, "
+"infraestructura en la nube y herramientas internas en AWS, Azure, GCP y "
+"OCI. Con dominio de Python, Terraform, Bicep y CloudFormation, entrego "
+"soluciones escalables de Infraestructura como Código que reducen costos y"
+" aceleran los ciclos de entrega."
 
 #: app/templates/includes/about.html:25
 msgid ""
-"My passion lies in merging machine learning with automotive technology, "
-"specifically focusing on\n"
-"                    enhancing autonomous vehicles. When I'm not immersed "
-"in my technical pursuits, I find tranquility in\n"
-"                    playing the piano and crafting with wood, balancing "
-"creativity and precision in my hobbies. Whether\n"
-"                    I'm exploring melodies on the piano or creating "
-"handmade furniture, I'm dedicated to continuous\n"
-"                    personal and professional growth."
+"My mechatronics background gives me a unique edge bridging hardware and "
+"software,\n"
+"                    from IoT embedded systems to full-stack web "
+"applications. I'm passionate about automation,\n"
+"                    DevOps best practices, and building tools that make "
+"engineering teams more productive. Outside\n"
+"                    of work, I enjoy playing the piano and woodworking, "
+"balancing creativity and precision in\n"
+"                    everything I do."
 msgstr ""
-"Mi pasión se centra en fusionar el machine learning con la tecnología "
-"automotriz, centrándome específicamente en\n"
-"                    mejorar los vehículos autónomos. Cuando no estoy "
-"inmerso en mis actividades técnicas, encuentro tranquilidad en\n"
-"                    tocar el piano y trabajar la madera, equilibrando la "
-"creatividad y la precisión en mis pasatiempos. Ya sea\n"
-"                    explorando melodías en el piano o creando muebles "
-"hechos a mano, me dedico al crecimiento continuo\n"
-"                    personal y profesional."
+"Mi formación en mecatrónica me da una ventaja única conectando hardware y"
+" software, desde sistemas embebidos IoT hasta aplicaciones web full-"
+"stack. Me apasiona la automatización, las mejores prácticas de DevOps y "
+"construir herramientas que hagan más productivos a los equipos de "
+"ingeniería. Fuera del trabajo, disfruto tocar el piano y la carpintería, "
+"equilibrando creatividad y precisión en todo lo que hago."
 
 #: app/templates/includes/about.html:52
 msgid "Where to find me"
@@ -260,9 +254,9 @@ msgstr "Todos los derechos reservados"
 msgid "Scroll to top"
 msgstr "Desplazarse hasta arriba"
 
-#: app/templates/includes/home.html:8 app/templates/includes/resume.html:216
-msgid "DevOps Engineer"
-msgstr "Ingeniero DevOps"
+#: app/templates/includes/home.html:8
+msgid "Full Stack Engineer"
+msgstr "Ingeniero Full Stack"
 
 #: app/templates/includes/home.html:15 app/templates/includes/home.html:16
 msgid "/3dworld"
@@ -321,132 +315,429 @@ msgstr "GDcode"
 msgid "Espressive"
 msgstr "Espressive"
 
-#: app/templates/includes/portfolio.html:35
+#: app/templates/includes/portfolio.html:20
+#: app/templates/includes/resume.html:184
+msgid "Thomson Reuters"
+msgstr "Thomson Reuters"
+
+#: app/templates/includes/portfolio.html:37
+#: app/templates/includes/portfolio.html:310
+msgid "Self-Service Image Factory"
+msgstr "Fábrica de Imágenes Self-Service"
+
+#: app/templates/includes/portfolio.html:40
+#, python-format
+msgid ""
+"Architected a serverless, multicloud self-service platform for building, "
+"testing, scanning, and distributing 100+ golden machine images across "
+"AWS, Azure, GCP, and OCI. Reduced release cycles from monthly to weekly "
+"and cut infrastructure costs by 40%%."
+msgstr ""
+"Diseñé la arquitectura de una plataforma serverless multicloud de "
+"autoservicio para construir, probar, escanear y distribuir más de 100 "
+"golden machine images en AWS, Azure, GCP y OCI. Reduje los ciclos de "
+"lanzamiento de mensuales a semanales y recorté los costos de "
+"infraestructura en un 40%%."
+
+#: app/templates/includes/portfolio.html:43
+#: app/templates/includes/portfolio.html:66
+#: app/templates/includes/portfolio.html:88
+msgid "Click to view architecture overview"
+msgstr "Haz clic para ver el diagrama de arquitectura"
+
+#: app/templates/includes/portfolio.html:60
+#: app/templates/includes/portfolio.html:532
+msgid "Image Factory AI Agent"
+msgstr "Agente IA de Image Factory"
+
+#: app/templates/includes/portfolio.html:63
+msgid ""
+"Built an AI agent powered by AWS Bedrock AgentCore with multimodal "
+"capabilities — processing files and media via Gemini for RAG stored in "
+"S3, then generating responses with Claude. Features custom tools, log "
+"access, database queries, automated troubleshooting, and disaster "
+"recovery monitoring with fully auditable, traceable actions."
+msgstr ""
+"Construí un agente de IA impulsado por AWS Bedrock AgentCore con "
+"capacidades multimodales — procesando archivos y medios via Gemini para "
+"RAG almacenado en S3, generando respuestas con Claude. Incluye "
+"herramientas personalizadas, acceso a logs, consultas a base de datos, "
+"troubleshooting automatizado y monitoreo de recuperación ante desastres "
+"con acciones completamente auditables y trazables."
+
+#: app/templates/includes/portfolio.html:82
+#: app/templates/includes/portfolio.html:423
+msgid "DNS Management Platform"
+msgstr "Plataforma de Gestión DNS"
+
+#: app/templates/includes/portfolio.html:85
+#, python-format
+msgid ""
+"Designed the architecture for an enterprise DNS management application "
+"handling 200+ domains and 30,000+ records with audit trail, ownership "
+"integration, and failover planning. Built serverless on Azure with 100%% "
+"IaC via Bicep."
+msgstr ""
+"Diseñé la arquitectura de una aplicación empresarial de gestión DNS que "
+"administra más de 200 dominios y 30,000+ registros con auditoría, "
+"integración de propiedad y planes de failover. Construida serverless en "
+"Azure con 100%% de IaC mediante Bicep."
+
+#: app/templates/includes/portfolio.html:105
+msgid "Colegio Malinalli"
+msgstr "Colegio Malinalli"
+
+#: app/templates/includes/portfolio.html:108
+msgid ""
+"Designed and developed a responsive institutional website for Colegio "
+"Malinalli, delivering a modern web presence to enhance enrollment and "
+"community engagement."
+msgstr ""
+"Diseñé y desarrollé un sitio web institucional responsivo para el Colegio"
+" Malinalli, ofreciendo una presencia web moderna para impulsar la "
+"inscripción y el acercamiento con la comunidad."
+
+#: app/templates/includes/portfolio.html:111
+msgid "Click to visit the site"
+msgstr "Haz clic para visitar el sitio"
+
+#: app/templates/includes/portfolio.html:126
+msgid "Crypto Trading Platform"
+msgstr "Plataforma de Trading Crypto"
+
+#: app/templates/includes/portfolio.html:129
+msgid ""
+"Built a collaborative crypto trading platform featuring a pooling system "
+"where multiple\n"
+"                        investors contribute capital managed by an "
+"automated trading bot. The system handles proportional\n"
+"                        profit distribution based on each user's stake. "
+"Access restricted via private VPN."
+msgstr ""
+"Desarrollé una plataforma colaborativa de trading de criptomonedas con un"
+" sistema de pooling donde múltiples\n"
+"inversionistas aportan capital gestionado por un bot de trading "
+"automatizado. El sistema distribuye\n"
+"ganancias proporcionalmente según la participación de cada usuario. "
+"Acceso restringido por VPN privada."
+
+#: app/templates/includes/portfolio.html:146
 msgid "Smart Terra"
 msgstr "Smart Terra"
 
-#: app/templates/includes/portfolio.html:38
+#: app/templates/includes/portfolio.html:149
 msgid ""
-"In collaboration with a partner we developed an IoT based smart terrarium"
-" application for precise terrarium management."
+"Co-developed a full-stack IoT application for automated terrarium climate"
+" control, integrating real-time sensor data with a responsive dashboard "
+"for remote monitoring."
 msgstr ""
-"En colaboración con un socio, desarrollamos una aplicación de terrario "
-"inteligente basada en IoT para el manejo preciso del terrario."
+"Co-desarrollé una aplicación IoT full-stack para el control climático "
+"automatizado de terrarios, integrando datos de sensores en tiempo real "
+"con un panel de control responsivo para monitoreo remoto."
 
-#: app/templates/includes/portfolio.html:41
-#: app/templates/includes/portfolio.html:65
-#: app/templates/includes/portfolio.html:88
+#: app/templates/includes/portfolio.html:152
+#: app/templates/includes/portfolio.html:251
+#: app/templates/includes/portfolio.html:273
 msgid "Click to learn more"
 msgstr "Haz clic para obtener más información"
 
-#: app/templates/includes/portfolio.html:59
-msgid "Robomaster programming"
-msgstr "Programación de Robomaster"
+#: app/templates/includes/portfolio.html:167
+msgid "1Password Secrets Library"
+msgstr "Biblioteca de Secretos 1Password"
 
-#: app/templates/includes/portfolio.html:62
+#: app/templates/includes/portfolio.html:170
 msgid ""
-"Used trajectory generation algorithms programmed in python to move the "
-"DJI robomaster across multiple fields with obstacles."
+"Built an internal Python library for secure secrets management via the "
+"1Password API,\n"
+"                        enabling automated credential retrieval across "
+"CI/CD pipelines and reducing manual secret\n"
+"                        handling across the engineering organization."
 msgstr ""
-"Utilicé algoritmos de generación de trayectorias programados en Python "
-"para mover el Robomaster de DJI a través de varios campos con obstáculos."
+"Desarrollé una biblioteca interna en Python para la gestión segura de "
+"secretos mediante la API de 1Password,\n"
+"habilitando la obtención automatizada de credenciales en pipelines CI/CD "
+"y reduciendo el manejo manual de secretos en toda la organización de "
+"ingeniería."
 
-#: app/templates/includes/portfolio.html:82
+#: app/templates/includes/portfolio.html:186
+msgid "Data Warehouse"
+msgstr "Almacén de Datos"
+
+#: app/templates/includes/portfolio.html:189
+msgid ""
+"Architected and automated the provisioning of an AWS Redshift data "
+"warehouse using\n"
+"                        Terraform and Python, implementing Infrastructure"
+" as Code best practices with full compliance\n"
+"                        to enterprise security policies."
+msgstr ""
+"Diseñé la arquitectura y automaticé el aprovisionamiento de un almacén de"
+" datos AWS Redshift utilizando\n"
+"Terraform y Python, implementando mejores prácticas de Infraestructura "
+"como Código con cumplimiento total de las políticas de seguridad "
+"empresariales."
+
+#: app/templates/includes/portfolio.html:205
+msgid "MLOps Pipeline"
+msgstr "Pipeline de MLOps"
+
+#: app/templates/includes/portfolio.html:208
+msgid ""
+"Engineered a Blue-Green deployment pipeline for AWS SageMaker ML "
+"endpoints, achieving\n"
+"                        zero-downtime model updates and eliminating the "
+"previous 30-minute service interruption\n"
+"                        during production releases."
+msgstr ""
+"Diseñé un pipeline de despliegue Blue-Green para endpoints de ML en AWS "
+"SageMaker, logrando\n"
+"actualizaciones de modelos sin tiempo de inactividad y eliminando la "
+"interrupción previa de 30 minutos durante los despliegues a producción."
+
+#: app/templates/includes/portfolio.html:225
+msgid "GD-code Website"
+msgstr "Sitio Web de GD-code"
+
+#: app/templates/includes/portfolio.html:228
+msgid "Coming soon"
+msgstr "Próximamente"
+
+#: app/templates/includes/portfolio.html:245
+msgid "Robomaster Autonomous Navigation"
+msgstr "Navegación Autónoma Robomaster"
+
+#: app/templates/includes/portfolio.html:248
+msgid ""
+"Developed path-planning and trajectory generation algorithms in Python "
+"for the DJI Robomaster, enabling autonomous navigation through complex "
+"obstacle courses."
+msgstr ""
+"Desarrollé algoritmos de planificación de rutas y generación de "
+"trayectorias en Python para el DJI Robomaster, habilitando la navegación "
+"autónoma a través de circuitos de obstáculos complejos."
+
+#: app/templates/includes/portfolio.html:267
 msgid "Smart Blinds"
 msgstr "Persianas Inteligentes"
 
-#: app/templates/includes/portfolio.html:85
+#: app/templates/includes/portfolio.html:270
 msgid ""
-"I designed, developed and built an IoT device compatible with Alexa, "
-"enabling precise control of my bedroom blinds."
+"Designed and built a custom IoT home automation device with WiFi "
+"connectivity and Alexa voice integration, enabling remote and voice-"
+"controlled operation of window blinds."
 msgstr ""
-"Diseñé, desarrollé y construí un dispositivo IoT compatible con Alexa, "
-"que permite el control preciso de las persianas de mi habitación."
+"Diseñé y construí un dispositivo IoT personalizado de domótica con "
+"conectividad WiFi e integración de voz con Alexa, permitiendo el control "
+"remoto y por voz de persianas."
 
-#: app/templates/includes/portfolio.html:105
-msgid "GD-code web page"
-msgstr "Página web de GD-code"
+#: app/templates/includes/portfolio.html:288
+msgid "Assistive Crawling Device"
+msgstr "Dispositivo Asistivo para Gateo"
 
-#: app/templates/includes/portfolio.html:108
-msgid "Comming soon"
-msgstr "Próximamente"
-
-#: app/templates/includes/portfolio.html:125
-msgid "Casa4U"
-msgstr "Casa4U"
-
-#: app/templates/includes/portfolio.html:128
-msgid "A real state web app to help people find their dream home, rent or sales."
-msgstr ""
-"Una aplicación web de bienes raíces para ayudar a las personas a "
-"encontrar la casa de sus sueños, renta o venta."
-
-#: app/templates/includes/portfolio.html:131
-msgid "Comming Soon"
-msgstr "Próximamente"
-
-#: app/templates/includes/portfolio.html:146
-msgid "1password Library"
-msgstr "Biblioteca de 1password"
-
-#: app/templates/includes/portfolio.html:149
+#: app/templates/includes/portfolio.html:291
 msgid ""
-"I created an in-house library enabling employees to securely share "
-"secrets using 1Password\n"
-"                        app, significantly enhancing automation within "
-"our IT department streamlining various internal\n"
-"                        tasks."
+"Co-designed and fabricated an assistive mobility device for children with"
+" developmental\n"
+"                        disabilities, combining mechatronic engineering "
+"with accessibility-focused design to support\n"
+"                        early motor skill development."
 msgstr ""
-"Creé una biblioteca interna que permite a los empleados compartir "
-"seguramente secretos utilizando la aplicación 1Password,\n"
-"mejorando significativamente la automatización dentro de nuestro "
-"departamento de TI y simplificando diversas tareas internas."
+"Co-diseñé y fabriqué un dispositivo de movilidad asistiva para niños con "
+"discapacidades del desarrollo,\n"
+"combinando ingeniería mecatrónica con diseño centrado en accesibilidad "
+"para apoyar el desarrollo temprano de habilidades motoras."
 
-#: app/templates/includes/portfolio.html:165
-msgid "Data Warehouse"
-msgstr "Almacén de Datos - \"Data Warehouse\""
+#: app/templates/includes/portfolio.html:313
+msgid "Serverless Multicloud Golden Image Platform — Thomson Reuters"
+msgstr "Plataforma Serverless Multicloud de Golden Images — Thomson Reuters"
 
-#: app/templates/includes/portfolio.html:168
-msgid ""
-"Automated infrastructure deployment for an AWS Redshift data warehouse "
-"using Terraform and\n"
-"                        Python adhering to internal security and "
-"compliance best practices."
+#: app/templates/includes/portfolio.html:319
+#: app/templates/includes/portfolio.html:432
+#: app/templates/includes/portfolio.html:541
+msgid "CORPORATE VPN + SSO"
+msgstr "VPN CORPORATIVA + SSO"
+
+#: app/templates/includes/portfolio.html:326
+#: app/templates/includes/portfolio.html:439
+msgid "Web UI"
+msgstr "Web UI"
+
+#: app/templates/includes/portfolio.html:332
+msgid "CLI"
+msgstr "CLI"
+
+#: app/templates/includes/portfolio.html:334
+msgid "Cross-platform"
+msgstr "Multiplataforma"
+
+#: app/templates/includes/portfolio.html:338
+msgid "API"
+msgstr "API"
+
+#: app/templates/includes/portfolio.html:340
+msgid "Serverless"
+msgstr "Serverless"
+
+#: app/templates/includes/portfolio.html:349
+msgid "Factory Orchestrator"
+msgstr "Orquestador de Fábrica"
+
+#: app/templates/includes/portfolio.html:350
+msgid "Manages the full image lifecycle via simple YML definitions"
 msgstr ""
-"Implementé y automaticé el despliegue de la infraestructura para un "
-"almacén de datos AWS Redshift utilizando Terraform y\n"
-"Python, siguiendo las mejores prácticas internas de seguridad de datos."
+"Gestiona el ciclo de vida completo de imágenes mediante definiciones YML "
+"simples"
 
-#: app/templates/includes/portfolio.html:183
-msgid "MLOps"
-msgstr "MLOps"
+#: app/templates/includes/portfolio.html:399
+msgid "Golden Images"
+msgstr "Golden Images"
 
-#: app/templates/includes/portfolio.html:186
-msgid ""
-"Implemented a Blue-Green deployment strategy for AWS SageMaker endpoints\n"
-"                        hosting machine learning models, transforming a "
-"30-minute downtime during updates into zero\n"
-"                        downtime."
+#: app/templates/includes/portfolio.html:403
+msgid "Cost Reduction"
+msgstr "Reducción de Costos"
+
+#: app/templates/includes/portfolio.html:407
+msgid "Faster Releases"
+msgstr "Lanzamientos más Rápidos"
+
+#: app/templates/includes/portfolio.html:426
+msgid "Enterprise DNS Record Management — Thomson Reuters"
+msgstr "Gestión Empresarial de Registros DNS — Thomson Reuters"
+
+#: app/templates/includes/portfolio.html:450
+msgid "Application Gateway"
+msgstr "Application Gateway"
+
+#: app/templates/includes/portfolio.html:451
+msgid "Load balancing, WAF, and SSL termination"
+msgstr "Balanceo de carga, WAF y terminación SSL"
+
+#: app/templates/includes/portfolio.html:461
+msgid "Backend API"
+msgstr "API Backend"
+
+#: app/templates/includes/portfolio.html:474
+msgid "Database"
+msgstr "Base de Datos"
+
+#: app/templates/includes/portfolio.html:485
+#: app/templates/includes/portfolio.html:633
+msgid "Audit Trail"
+msgstr "Auditoría"
+
+#: app/templates/includes/portfolio.html:490
+msgid "Ownership"
+msgstr "Propiedad"
+
+#: app/templates/includes/portfolio.html:495
+msgid "Failover"
+msgstr "Failover"
+
+#: app/templates/includes/portfolio.html:508
+msgid "Domains"
+msgstr "Dominios"
+
+#: app/templates/includes/portfolio.html:512
+msgid "DNS Records"
+msgstr "Registros DNS"
+
+#: app/templates/includes/portfolio.html:516
+msgid "IaC with Bicep"
+msgstr "IaC con Bicep"
+
+#: app/templates/includes/portfolio.html:535
+msgid "Intelligent Operations Assistant — Thomson Reuters"
+msgstr "Asistente Inteligente de Operaciones — Thomson Reuters"
+
+#: app/templates/includes/portfolio.html:548
+msgid "Chat UI"
+msgstr "Chat"
+
+#: app/templates/includes/portfolio.html:549
+msgid "Web UI Integration"
+msgstr "Integración Web UI"
+
+#: app/templates/includes/portfolio.html:550
+msgid "Image Factory Web App"
+msgstr "Web App de Image Factory"
+
+#: app/templates/includes/portfolio.html:554
+msgid "Automation"
+msgstr "Automatización"
+
+#: app/templates/includes/portfolio.html:555
+msgid "Monitor & DR"
+msgstr "Monitoreo y DR"
+
+#: app/templates/includes/portfolio.html:556
+msgid "Scheduled & Event-driven"
+msgstr "Programado y por eventos"
+
+#: app/templates/includes/portfolio.html:567
+msgid "Media/Files"
+msgstr "Medios/Archivos"
+
+#: app/templates/includes/portfolio.html:577
+msgid "RAG → S3"
+msgstr "RAG → S3"
+
+#: app/templates/includes/portfolio.html:591
+msgid "AWS Bedrock AgentCore"
+msgstr "AWS Bedrock AgentCore"
+
+#: app/templates/includes/portfolio.html:592
+msgid "Refined system prompt, custom skills & tools for Image Factory operations"
 msgstr ""
-"Implementé una estrategia Blue-Green para endpoints de AWS SageMaker que "
-"alojan modelos de\n"
-"machine learning, logrando eliminar completamente un tiempo de "
-"inactividad de 30 minutos en el servicio durante las actualizaciones."
+"Prompt de sistema refinado, habilidades y herramientas personalizadas "
+"para operaciones de Image Factory"
 
-#: app/templates/includes/portfolio.html:202
-msgid "Baby crawling aid"
-msgstr "Ayudante para Gatear"
+#: app/templates/includes/portfolio.html:602
+msgid "Log Access"
+msgstr "Acceso a Logs"
 
-#: app/templates/includes/portfolio.html:205
-msgid ""
-"I collaborated with a partner to design and build a device aimed at "
-"assisting children with\n"
-"                        intellectual disabilities in their crawling "
-"journey."
-msgstr ""
-"Colaboré con un compañero para diseñar y construir un dispositivo "
-"destinado a ayudar a niños con discapacidades intelectuales en su proceso"
-" de gateo."
+#: app/templates/includes/portfolio.html:607
+msgid "DB Queries"
+msgstr "Consultas a BD"
+
+#: app/templates/includes/portfolio.html:612
+msgid "API Actions"
+msgstr "Acciones API"
+
+#: app/templates/includes/portfolio.html:617
+msgid "Troubleshoot"
+msgstr "Troubleshoot"
+
+#: app/templates/includes/portfolio.html:622
+msgid "Disaster Recovery"
+msgstr "Recuperación ante Desastres"
+
+#: app/templates/includes/portfolio.html:634
+msgid "All actions logged"
+msgstr "Todas las acciones registradas"
+
+#: app/templates/includes/portfolio.html:635
+msgid "Traceable & Queryable"
+msgstr "Trazable y Consultable"
+
+#: app/templates/includes/portfolio.html:639
+msgid "Image Factory API"
+msgstr "API de Image Factory"
+
+#: app/templates/includes/portfolio.html:640
+msgid "Full API capabilities"
+msgstr "Capacidades completas de la API"
+
+#: app/templates/includes/portfolio.html:650
+msgid "Autonomous Ops"
+msgstr "Operaciones Autónomas"
+
+#: app/templates/includes/portfolio.html:654
+msgid "Engineering Cycles Freed"
+msgstr "Ciclos de Ingeniería Liberados"
+
+#: app/templates/includes/portfolio.html:658
+msgid "Auditable Actions"
+msgstr "Acciones Auditables"
 
 #: app/templates/includes/resume.html:11
 msgid "Education and professional experience"
@@ -534,183 +825,325 @@ msgstr "Ingeniero de nube Senior"
 msgid "Apr/2024 - Present"
 msgstr "Abr/2020 - Actualidad"
 
-#: app/templates/includes/resume.html:184
-msgid "Thomson Reuters"
-msgstr "Thomson Reuters"
-
 #: app/templates/includes/resume.html:185
+#, python-format
 msgid ""
-"As a Senior Cloud Engineer, I automate the\n"
-"\t\t\t\t\t\tcreation and management of Amazon Machine Images (AMIs)\n"
-"\t\t\t\t\t\tfor internal use, develop internal applications, and\n"
-"\t\t\t\t\t\tbuild automation solutions to enhance employee\n"
-"\t\t\t\t\t\tproductivity. I utilize tools like AWS, Azure,\n"
-"\t\t\t\t\t\tCloudformation, Bicep, Terraform, and Python to\n"
-"\t\t\t\t\t\tstreamline processes, manage cloud infrastructure, and\n"
-"\t\t\t\t\t\timprove operational efficiency."
+"Architected a serverless multicloud Image Factory\n"
+"\t\t\t\t\t\tdelivering 100+ golden machine images across AWS, Azure,\n"
+"\t\t\t\t\t\tGCP, and OCI, cutting release cycles from monthly to\n"
+"\t\t\t\t\t\tweekly. Designed an enterprise DNS management platform\n"
+"\t\t\t\t\t\thandling 200+ domains and 30,000+ records on Azure.\n"
+"\t\t\t\t\t\tReduced infrastructure costs by 40%% through automation\n"
+"\t\t\t\t\t\twith Terraform, Bicep, CloudFormation, and Python."
 msgstr ""
-"Como ingeniero senior de la nube, automatizo la creación y gestión de "
-"Amazon Machine Images AMIs para uso interno, desarrollo aplicaciones "
-"internas y construyo soluciones de automatización para mejorar la "
-"productividad de los empleados. Utilizo herramientas como AWS, Azure, "
-"Cloudformation, Bicep, Terraform y Python para agilizar procesos, "
-"gestionar la infraestructura de la nube y mejorar la eficiencia "
-"operativa."
+"Arquitecté una Image Factory serverless multicloud que entrega más de 100"
+" imágenes doradas en AWS, Azure, GCP y OCI, reduciendo los ciclos de "
+"lanzamiento de mensuales a semanales. Diseñé una plataforma empresarial "
+"de gestión DNS que administra más de 200 dominios y 30,000+ registros en "
+"Azure. Reduje costos de infraestructura en un 40%% mediante "
+"automatización con Terraform, Bicep, CloudFormation y Python."
 
-#: app/templates/includes/resume.html:199
+#: app/templates/includes/resume.html:198
 msgid "Thomson Reuters Webpage"
 msgstr "Página web de Thomson Reuters"
 
-#: app/templates/includes/resume.html:220
+#: app/templates/includes/resume.html:215
+msgid "DevOps Engineer"
+msgstr "Ingeniero DevOps"
+
+#: app/templates/includes/resume.html:219
 msgid "Sep/2022 - Apr/2024"
 msgstr "Sep/2022 - Abr/2024"
 
-#: app/templates/includes/resume.html:223
+#: app/templates/includes/resume.html:222
 msgid "Espressive Inc."
 msgstr "Espressive Inc."
 
-#: app/templates/includes/resume.html:224
+#: app/templates/includes/resume.html:223
 msgid ""
-"As a DevOps engineer, I develop tools to automate\n"
-"\t\t\t\t\t\tcompany processes using Python and Bash. I also create\n"
-"\t\t\t\t\t\tinfrastructure for new development and production\n"
-"\t\t\t\t\t\tenvironments with Terraform, update automation scripts\n"
-"\t\t\t\t\t\tfor technologies like Kubernetes, Docker, AWS, and\n"
-"\t\t\t\t\t\tDjango, and integrate third-party services via APIs. My\n"
-"\t\t\t\t\t\twork enhances resource management and streamlines\n"
-"\t\t\t\t\t\tapplication deployment in our organization."
+"Engineered a zero-downtime Blue-Green deployment\n"
+"\t\t\t\t\t\tpipeline for AWS SageMaker ML endpoints, eliminating\n"
+"\t\t\t\t\t\t30-minute service interruptions. Provisioned an AWS\n"
+"\t\t\t\t\t\tRedshift data warehouse with Terraform and Python\n"
+"\t\t\t\t\t\tfollowing IaC best practices. Built a 1Password secrets\n"
+"\t\t\t\t\t\tmanagement library adopted across CI/CD pipelines,\n"
+"\t\t\t\t\t\treducing manual credential handling organization-wide."
 msgstr ""
-"Como ingeniero DevOps, desarrollo herramientas para automatizar procesos "
-"empresariales utilizando Python y Bash.\n"
-"También creo infraestructura para nuevos entornos de desarrollo y "
-"producción con Terraform,\n"
-"actualizo scripts de automatización para tecnologías como Kubernetes, "
-"Docker, AWS y Django, e\n"
-"integro servicios de terceros a través de APIs. Mi trabajo mejora la "
-"gestión de recursos y optimiza\n"
-"la implementación de aplicaciones en nuestra organización."
+"Diseñé un pipeline de despliegue Blue-Green sin tiempo de inactividad "
+"para endpoints ML de AWS SageMaker, eliminando interrupciones de 30 "
+"minutos. Aprovisioné un data warehouse en AWS Redshift con Terraform y "
+"Python siguiendo mejores prácticas de IaC. Construí una librería de "
+"gestión de secretos con 1Password adoptada en pipelines CI/CD, reduciendo"
+" el manejo manual de credenciales en toda la organización."
 
-#: app/templates/includes/resume.html:238
+#: app/templates/includes/resume.html:236
 msgid "Espressive Webpage"
 msgstr "Página web de Espressive"
 
-#: app/templates/includes/resume.html:256
-msgid "Control Systems python developer"
-msgstr "Desarrollador de Python para Sistemas de Control"
+#: app/templates/includes/resume.html:254
+msgid "Robotics & Controls Developer"
+msgstr "Desarrollador de Robótica y Control"
 
-#: app/templates/includes/resume.html:261
+#: app/templates/includes/resume.html:259
 msgid "Aug/2021 - Jan/2023"
 msgstr "Ago/2021 - Ene/2023"
 
-#: app/templates/includes/resume.html:264
+#: app/templates/includes/resume.html:262
 msgid "INIAT"
 msgstr "INIAT"
 
-#: app/templates/includes/resume.html:265
+#: app/templates/includes/resume.html:263
 msgid ""
-"I took the lead in designing and developing a\n"
-"\t\t\t\t\t\tself-driving two-wheeled vehicle, using Python, ROS 2,\n"
-"\t\t\t\t\t\tand C++ to implement artificial intelligence. This\n"
-"\t\t\t\t\t\tproject involved integrating hardware and software\n"
-"\t\t\t\t\t\tsystems and crafting control and navigation algorithms,\n"
-"\t\t\t\t\t\tmarking a notable achievement in the field of\n"
-"\t\t\t\t\t\trobotics."
+"Led the design and development of an autonomous\n"
+"\t\t\t\t\t\ttwo-wheeled vehicle using Python, ROS 2, and C++.\n"
+"\t\t\t\t\t\tImplemented AI-driven control and navigation algorithms,\n"
+"\t\t\t\t\t\tintegrating sensor hardware with real-time software\n"
+"\t\t\t\t\t\tsystems for autonomous operation."
 msgstr ""
-"Me encargué de diseñar y desarrollar un vehículo autónomo de dos ruedas, "
-"utilizando Python,\n"
-"ROS 2 y C++, para implementar inteligencia artificial. Este proyecto "
-"involucró la integración de hardware\n"
-"y sistemas de software, así como la creación de algoritmos de control y "
-"navegación, marcando un logro notable\n"
-"en el campo de la robótica."
+"Lideré el diseño y desarrollo de un vehículo autónomo de dos ruedas "
+"utilizando Python, ROS 2 y C++. Implementé algoritmos de control y "
+"navegación basados en IA, integrando hardware de sensores con sistemas de"
+" software en tiempo real para operación autónoma."
 
-#: app/templates/includes/resume.html:278
+#: app/templates/includes/resume.html:274
 msgid "INIAT Webpage"
 msgstr "Página web de INIAT"
 
-#: app/templates/includes/resume.html:298
-msgid "Software and Hardware Developer"
-msgstr "Desarrollador de Software y Hardware"
+#: app/templates/includes/resume.html:294
+msgid "Full Stack Developer"
+msgstr "Desarrollador Full Stack"
 
-#: app/templates/includes/resume.html:303
+#: app/templates/includes/resume.html:299
 msgid "May/2020 - Present"
 msgstr "May/2020 - Actualidad"
 
-#: app/templates/includes/resume.html:306
+#: app/templates/includes/resume.html:302
 msgid "GD-code - Freelance"
 msgstr "GD-code - Freelance"
 
-#: app/templates/includes/resume.html:307
+#: app/templates/includes/resume.html:303
 msgid ""
-"Comprehensive service delivery encompassing web\n"
-"\t\t\t\t\t\tapplication development and maintenance using Flask and\n"
-"\t\t\t\t\t\tDjango, as well as the creation of desktop applications\n"
-"\t\t\t\t\t\tin Python. I also design and develop REST APIs using\n"
-"\t\t\t\t\t\tFlask and AWS Lambda, and I am involved in creating\n"
-"\t\t\t\t\t\tembedded hardware solutions. This experience provides me\n"
-"\t\t\t\t\t\twith a holistic perspective in delivering technology\n"
-"\t\t\t\t\t\tprojects spanning a variety of platforms and\n"
-"\t\t\t\t\t\ttechnologies."
+"Delivering end-to-end solutions for clients: responsive\n"
+"\t\t\t\t\t\tweb applications with Flask and Django, serverless REST\n"
+"\t\t\t\t\t\tAPIs on AWS Lambda, desktop tools in Python, and embedded\n"
+"\t\t\t\t\t\tIoT hardware. Full ownership from architecture to\n"
+"\t\t\t\t\t\tdeployment across diverse platforms and technologies."
 msgstr ""
-"Ofrezco servicios integrales que abarcan el desarrollo y mantenimiento de"
-" aplicaciones web\n"
-"utilizando Flask y Django, así como la creación de aplicaciones de "
-"escritorio en Python.\n"
-"También diseño y desarrollo APIs REST utilizando Flask y AWS Lambda, y "
-"estoy involucrado en\n"
-"la creación de soluciones de hardware integrado. Esta experiencia me "
-"proporciona una perspectiva holística\n"
-"en la entrega de proyectos tecnológicos que abarcan una variedad de "
-"plataformas y tecnologías."
+"Entregando soluciones de principio a fin para clientes: aplicaciones web "
+"responsivas con Flask y Django, APIs REST serverless en AWS Lambda, "
+"herramientas de escritorio en Python y hardware IoT embebido. "
+"Responsabilidad total desde la arquitectura hasta el despliegue en "
+"diversas plataformas y tecnologías."
 
-#: app/templates/includes/resume.html:318
-#: app/templates/includes/resume.html:351
+#: app/templates/includes/resume.html:310
+#: app/templates/includes/resume.html:341
 msgid "Learn More"
 msgstr "Más información"
 
-#: app/templates/includes/resume.html:336
+#: app/templates/includes/resume.html:328
 msgid "Computer Teacher"
 msgstr "Profesor de Informática"
 
-#: app/templates/includes/resume.html:340
+#: app/templates/includes/resume.html:332
 msgid "Jan/2018 - May/2018"
 msgstr "Ene/2018 - May/2018"
 
-#: app/templates/includes/resume.html:343
+#: app/templates/includes/resume.html:335
 msgid "Malinalli"
 msgstr "Malinalli"
 
-#: app/templates/includes/resume.html:344
+#: app/templates/includes/resume.html:336
 msgid ""
-"I supervised and taught a total of nine groups,\n"
-"\t\t\t\t\t\tconsisting of six elementary school groups and three\n"
-"\t\t\t\t\t\tpreschool groups. My responsibilities included planning\n"
-"\t\t\t\t\t\tand implementing educational programs tailored to\n"
-"\t\t\t\t\t\tvarious age levels."
+"Supervised and taught nine groups across elementary and\n"
+"\t\t\t\t\t\tpreschool levels, planning and delivering educational\n"
+"\t\t\t\t\t\tprograms tailored to different age groups."
 msgstr ""
-"Supervisé y enseñé a un total de nueve grupos, que consistían en seis "
-"grupos de escuela primaria y\n"
-"tres grupos de preescolar. Mis responsabilidades incluyeron la "
-"planificación e implementación de programas educativos\n"
-"adaptados a diversos niveles de edad."
+"Supervisé y enseñé nueve grupos de nivel primaria y preescolar, "
+"planificando e impartiendo programas educativos adaptados a diferentes "
+"grupos de edad."
 
-#: app/templates/includes/resume.html:391
+#: app/templates/includes/resume.html:381
 msgid "Feeling interested?"
 msgstr "¿Interesado?"
 
-#: app/templates/includes/resume.html:394
+#: app/templates/includes/resume.html:384
 msgid "View or download my CV in PDF"
 msgstr "Ve o descarga mi CV en PDF"
 
-#: app/templates/includes/resume.html:403
+#: app/templates/includes/resume.html:393
 msgid "View"
 msgstr "Ver"
 
-#: app/templates/includes/resume.html:413
+#: app/templates/includes/resume.html:403
 msgid "Download"
 msgstr "Descargar"
 
 #: app/templates/includes/skip2content.html:2
 msgid "Skip to Content"
 msgstr "Ir al Contenido"
+
+#~ msgid ""
+#~ "I hold a degree in Mechatronics "
+#~ "Engineering from Universidad Iberoamericana, "
+#~ "where I gained a\n"
+#~ "                    strong foundation in "
+#~ "interdisciplinary engineering principles. I "
+#~ "seamlessly integrate hardware and\n"
+#~ "                    software solutions to "
+#~ "create innovative, multifaceted systems. I "
+#~ "bring a wealth of expertise in\n"
+#~ "                    Python programming, AWS "
+#~ "cloud infrastructure, and efficient code "
+#~ "deployment practices to my\n"
+#~ "                    work."
+#~ msgstr ""
+#~ "Soy ingeniero en mecatrónica graduado de"
+#~ " la Universidad Iberoamericana, donde "
+#~ "adquirí una\n"
+#~ "                    sólida base en principios"
+#~ " de ingeniería interdisciplinaria. Integro "
+#~ "de manera fluida soluciones de hardware"
+#~ " y\n"
+#~ "                    software para crear "
+#~ "sistemas innovadores y multifacéticos. Aporto"
+#~ " una gran experiencia en\n"
+#~ "                    programación en Python, "
+#~ "infraestructura en la nube de AWS "
+#~ "y prácticas eficientes de implementación "
+#~ "de código a mi\n"
+#~ "                    trabajo."
+
+#~ msgid ""
+#~ "My passion lies in merging machine "
+#~ "learning with automotive technology, "
+#~ "specifically focusing on\n"
+#~ "                    enhancing autonomous vehicles."
+#~ " When I'm not immersed in my "
+#~ "technical pursuits, I find tranquility "
+#~ "in\n"
+#~ "                    playing the piano and "
+#~ "crafting with wood, balancing creativity "
+#~ "and precision in my hobbies. Whether"
+#~ "\n"
+#~ "                    I'm exploring melodies on"
+#~ " the piano or creating handmade "
+#~ "furniture, I'm dedicated to continuous\n"
+#~ "                    personal and professional growth."
+#~ msgstr ""
+#~ "Mi pasión se centra en fusionar el"
+#~ " machine learning con la tecnología "
+#~ "automotriz, centrándome específicamente en\n"
+#~ "                    mejorar los vehículos "
+#~ "autónomos. Cuando no estoy inmerso en"
+#~ " mis actividades técnicas, encuentro "
+#~ "tranquilidad en\n"
+#~ "                    tocar el piano y "
+#~ "trabajar la madera, equilibrando la "
+#~ "creatividad y la precisión en mis "
+#~ "pasatiempos. Ya sea\n"
+#~ "                    explorando melodías en el"
+#~ " piano o creando muebles hechos a "
+#~ "mano, me dedico al crecimiento continuo"
+#~ "\n"
+#~ "                    personal y profesional."
+
+#~ msgid ""
+#~ "As a Senior Cloud Engineer, I automate the\n"
+#~ "\t\t\t\t\t\tcreation and management of Amazon Machine Images (AMIs)\n"
+#~ "\t\t\t\t\t\tfor internal use, develop internal applications, and\n"
+#~ "\t\t\t\t\t\tbuild automation solutions to enhance employee\n"
+#~ "\t\t\t\t\t\tproductivity. I utilize tools like AWS, Azure,\n"
+#~ "\t\t\t\t\t\tCloudformation, Bicep, Terraform, and Python to\n"
+#~ "\t\t\t\t\t\tstreamline processes, manage cloud infrastructure, and\n"
+#~ "\t\t\t\t\t\timprove operational efficiency."
+#~ msgstr ""
+#~ "Como ingeniero senior de la nube, "
+#~ "automatizo la creación y gestión de "
+#~ "Amazon Machine Images AMIs para uso "
+#~ "interno, desarrollo aplicaciones internas y"
+#~ " construyo soluciones de automatización "
+#~ "para mejorar la productividad de los "
+#~ "empleados. Utilizo herramientas como AWS, "
+#~ "Azure, Cloudformation, Bicep, Terraform y "
+#~ "Python para agilizar procesos, gestionar "
+#~ "la infraestructura de la nube y "
+#~ "mejorar la eficiencia operativa."
+
+#~ msgid ""
+#~ "As a DevOps engineer, I develop tools to automate\n"
+#~ "\t\t\t\t\t\tcompany processes using Python and Bash. I also create\n"
+#~ "\t\t\t\t\t\tinfrastructure for new development and production\n"
+#~ "\t\t\t\t\t\tenvironments with Terraform, update automation scripts\n"
+#~ "\t\t\t\t\t\tfor technologies like Kubernetes, Docker, AWS, and\n"
+#~ "\t\t\t\t\t\tDjango, and integrate third-party services via APIs. My\n"
+#~ "\t\t\t\t\t\twork enhances resource management and streamlines\n"
+#~ "\t\t\t\t\t\tapplication deployment in our organization."
+#~ msgstr ""
+#~ "Como ingeniero DevOps, desarrollo herramientas"
+#~ " para automatizar procesos empresariales "
+#~ "utilizando Python y Bash.\n"
+#~ "También creo infraestructura para nuevos "
+#~ "entornos de desarrollo y producción con"
+#~ " Terraform,\n"
+#~ "actualizo scripts de automatización para "
+#~ "tecnologías como Kubernetes, Docker, AWS "
+#~ "y Django, e\n"
+#~ "integro servicios de terceros a través"
+#~ " de APIs. Mi trabajo mejora la "
+#~ "gestión de recursos y optimiza\n"
+#~ "la implementación de aplicaciones en nuestra organización."
+
+#~ msgid "Control Systems python developer"
+#~ msgstr "Desarrollador de Python para Sistemas de Control"
+
+#~ msgid ""
+#~ "I took the lead in designing and developing a\n"
+#~ "\t\t\t\t\t\tself-driving two-wheeled vehicle, using Python, ROS 2,\n"
+#~ "\t\t\t\t\t\tand C++ to implement artificial intelligence. This\n"
+#~ "\t\t\t\t\t\tproject involved integrating hardware and software\n"
+#~ "\t\t\t\t\t\tsystems and crafting control and navigation algorithms,\n"
+#~ "\t\t\t\t\t\tmarking a notable achievement in the field of\n"
+#~ "\t\t\t\t\t\trobotics."
+#~ msgstr ""
+#~ "Me encargué de diseñar y desarrollar "
+#~ "un vehículo autónomo de dos ruedas, "
+#~ "utilizando Python,\n"
+#~ "ROS 2 y C++, para implementar "
+#~ "inteligencia artificial. Este proyecto "
+#~ "involucró la integración de hardware\n"
+#~ "y sistemas de software, así como "
+#~ "la creación de algoritmos de control "
+#~ "y navegación, marcando un logro notable"
+#~ "\n"
+#~ "en el campo de la robótica."
+
+#~ msgid "Software and Hardware Developer"
+#~ msgstr "Desarrollador de Software y Hardware"
+
+#~ msgid ""
+#~ "Comprehensive service delivery encompassing web\n"
+#~ "\t\t\t\t\t\tapplication development and maintenance using Flask and\n"
+#~ "\t\t\t\t\t\tDjango, as well as the creation of desktop applications\n"
+#~ "\t\t\t\t\t\tin Python. I also design and develop REST APIs using\n"
+#~ "\t\t\t\t\t\tFlask and AWS Lambda, and I am involved in creating\n"
+#~ "\t\t\t\t\t\tembedded hardware solutions. This experience provides me\n"
+#~ "\t\t\t\t\t\twith a holistic perspective in delivering technology\n"
+#~ "\t\t\t\t\t\tprojects spanning a variety of platforms and\n"
+#~ "\t\t\t\t\t\ttechnologies."
+#~ msgstr ""
+#~ "Ofrezco servicios integrales que abarcan "
+#~ "el desarrollo y mantenimiento de "
+#~ "aplicaciones web\n"
+#~ "utilizando Flask y Django, así como "
+#~ "la creación de aplicaciones de "
+#~ "escritorio en Python.\n"
+#~ "También diseño y desarrollo APIs REST"
+#~ " utilizando Flask y AWS Lambda, y "
+#~ "estoy involucrado en\n"
+#~ "la creación de soluciones de hardware"
+#~ " integrado. Esta experiencia me proporciona"
+#~ " una perspectiva holística\n"
+#~ "en la entrega de proyectos tecnológicos"
+#~ " que abarcan una variedad de "
+#~ "plataformas y tecnologías."
 

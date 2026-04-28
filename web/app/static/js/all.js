@@ -533,6 +533,24 @@
 			mainClass: "mfp-fade",
 		});
 
+		// Works Item Inline Modal
+		$(".work-modal-link").magnificPopup({
+			type: "inline",
+			mainClass: "mfp-fade",
+			callbacks: {
+				open: function () {
+					var isLight = $(".page-section").first().hasClass("light-content") ||
+						$(".page").hasClass("light-content");
+					if (isLight) {
+						$(".mfp-wrap, .mfp-bg").addClass("light-content");
+					}
+				},
+				close: function () {
+					$(".mfp-wrap, .mfp-bg").removeClass("light-content");
+				}
+			}
+		});
+
 		// Other Custom Lightbox
 		$(".lightbox-gallery-1").magnificPopup({
 			gallery: {
