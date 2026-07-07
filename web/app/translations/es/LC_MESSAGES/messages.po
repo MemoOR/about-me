@@ -517,8 +517,20 @@ msgid "GD-code Website"
 msgstr "Sitio Web de GD-code"
 
 #: app/templates/includes/portfolio.html:227
-msgid "Coming soon"
-msgstr "Próximamente"
+msgid ""
+"GD-code Labs & Studios is a custom software and hardware studio based in "
+"Mexico City. As co-founder, I help design and build full-stack solutions end "
+"to end — from web and mobile apps to cloud infrastructure and custom "
+"electronics."
+msgstr ""
+"GD-code Labs & Studios es un estudio de software y hardware a la medida con "
+"sede en la Ciudad de México. Como cofundador, ayudo a diseñar y construir "
+"soluciones full-stack de principio a fin — desde apps web y móviles hasta "
+"infraestructura en la nube y electrónica personalizada."
+
+#: app/templates/includes/portfolio.html:231
+msgid "Click to visit the site"
+msgstr "Haz clic para visitar el sitio"
 
 #: app/templates/includes/portfolio.html:244
 msgid "Robomaster Autonomous Navigation"
