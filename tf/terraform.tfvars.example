@@ -1,0 +1,16 @@
+project     = "aboutme-memoor"
+environment = "prod"
+region      = "us-east-1"
+
+domain_name = "guillermoortega.me"
+aliases     = ["guillermoortega.me", "www.guillermoortega.me"]
+
+contact_recipient = "memo.or99@hotmail.com"
+
+google_site_verification = "google-site-verification=xxxxxxxxxxxxxxxxxxxx"
+
+# Optional: allow the CloudFront hostname to call the contact Function URL (CORS).
+# The apex + www origins are added automatically. After the first apply, run
+#   terraform output cloudfront_domain_name
+# and add it here (with https://), then apply again:
+# cors_extra_origins = ["https://dxxxxxxxxxxxxx.cloudfront.net"]

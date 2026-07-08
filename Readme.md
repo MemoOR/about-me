@@ -42,25 +42,39 @@ This repository contains the source code for my personal portfolio website. Buil
 
 ## 🛠️ Tech Stack
 
-- **Backend:** Python Flask
-- **Frontend:** HTML, CSS, JavaScript, Three.js
-- **Server:** Gunicorn, Nginx
-- **Containerization:** Docker, Docker Compose
-- **Infrastructure:** Terraform, DigitalOcean
-- **SSL:** Let's Encrypt (Certbot)
-- **Internationalization:** Babel (ES/EN)
+**Current — static React site on AWS (near-zero hosting cost):**
+
+- **Frontend:** React 18 + TypeScript, [Vite](https://vitejs.dev/) with [`vite-react-ssg`](https://github.com/Daydreamer-riri/vite-react-ssg) for static prerendering
+- **3D / animations:** Three.js game and the original jQuery-plugin animations, reused verbatim for a pixel-identical look
+- **Internationalization:** i18next / react-i18next (ES/EN)
+- **Contact form:** AWS Lambda (Python) → reCAPTCHA v3 + Gmail SMTP, credentials in AWS Secrets Manager
+- **Infrastructure:** Terraform — private S3 bucket, CloudFront (OAC), ACM (us-east-1)
+- **Hosting cost:** ~$0/month (S3 + CloudFront free tier)
+
+**Legacy — original containerized Flask app (still in the repo under `web/`, `router/`, `deploy/`):**
+
+- Python Flask · Gunicorn · Nginx · Docker Compose · Terraform + DigitalOcean · Let's Encrypt (Certbot) · Babel
 
 
 ## 📁 Project Structure
 
 ```
 about-me/
-├── web/              # Flask application
-├── router/           # Nginx reverse proxy
-├── deploy/           # Terraform & deployment scripts
-├── certbot/          # SSL certificates
-└── docker-compose.yml
+├── app/               # React + Vite (SSG) site — the current frontend
+│   ├── src/           # components, sections, pages, i18n, lib
+│   └── public/static/ # original CSS/JS/assets reused verbatim
+├── lambda/contact/    # serverless contact-form handler (Python)
+├── tf/                # Terraform — S3 + CloudFront + ACM + contact API
+├── deploy/            # deploy-aws.sh (build → S3 sync → invalidation) + legacy scripts
+├── docs/              # stack-blueprint.md, aws-migration.md
+├── web/               # legacy Flask application
+├── router/            # legacy Nginx reverse proxy
+└── docker-compose.yml # legacy container stack
 ```
+
+> The site was migrated from a Flask app on a DigitalOcean droplet to a
+> statically prerendered React site on S3 + CloudFront. See
+> [docs/aws-migration.md](docs/aws-migration.md) for the full guide.
 
 ---
 
@@ -69,24 +83,72 @@ about-me/
 ### Local Development
 
 ```bash
-# Build and start services
-make build
-make start
-
-# Test without nginx
-make test
-
-# Stop services
-make stop
+cd app
+cp .env.example .env      # fill in the public values (reCAPTCHA site key, PDF URLs)
+npm install
+npm run dev               # http://localhost:5173/en
 ```
 
-### Environment Setup
+Other scripts (run inside `app/`):
 
-Create an `app.env` file based on `.env.template` with your configuration.
+```bash
+npm run build       # static SSG build -> app/dist
+npm run typecheck   # tsc --noEmit
+```
+
+> Public, build-time values live in `app/.env` (see `app/.env.example`). Secret
+> values (SMTP credentials, reCAPTCHA secret) never touch the client — they live
+> in AWS Secrets Manager and are read by the contact Lambda.
 
 ---
 
 ## 📦 Deployment
+
+Full walkthrough in **[docs/aws-migration.md](docs/aws-migration.md)**. Summary:
+
+### 1. Provision infrastructure (one-time)
+
+DNS is managed in Route 53 (no DigitalOcean). Bootstrap in two steps so the name
+servers exist before ACM validates:
+
+```bash
+cd tf
+cp terraform.tfvars.example terraform.tfvars   # edit domain / aliases
+terraform init
+
+# a) Create the hosted zone, then set its name servers at your registrar:
+terraform apply -target=aws_route53_zone.primary
+terraform output route53_name_servers          # update NS at the registrar, wait for propagation
+
+# b) Full apply — ACM validates via Route 53, then CloudFront + DNS records:
+terraform apply
+```
+
+### 2. Set the contact secret (SMTP + reCAPTCHA)
+
+Terraform creates the secret with placeholders; set the real values once:
+
+```bash
+aws secretsmanager put-secret-value \
+  --secret-id "$(terraform -chdir=tf output -raw contact_secret_arn)" \
+  --secret-string '{
+    "mail_username": "you@gmail.com",
+    "mail_password": "gmail-app-password",
+    "mail_default_sender": "you@gmail.com",
+    "recaptcha_private_key": "recaptcha-secret-key"
+  }'
+```
+
+### 3. Build & ship the site
+
+```bash
+./deploy/deploy-aws.sh    # npm build -> aws s3 sync -> CloudFront invalidation
+```
+
+---
+
+<details>
+<summary><strong>Legacy — Flask on a DigitalOcean droplet</strong></summary>
 
 ### Initial Provisioning
 
@@ -173,25 +235,32 @@ Or use the Makefile:
 make renew-cert
 ```
 
+</details>
+
 ---
 
-## 🌍 Internationalization (Babel)
+## 🌍 Internationalization
 
-### Update translations after code changes:
+The React site ships English and Spanish, each prerendered to its own route
+(`/en`, `/es`). English strings live inline in the components as
+`t('key', 'English default')`; Spanish lives in
+[`app/src/locales/es.json`](app/src/locales/es.json).
+
+To add or change copy: edit the `t(...)` default in the component (English) and
+add the matching key to `es.json` (Spanish).
+
+<details>
+<summary><strong>Legacy — Flask / Babel</strong></summary>
+
+The original app used Babel `.po` files under `web/app/translations`:
 
 ```bash
 cd web/
 pybabel update -i app/translations/messages.pot -d app/translations
-# Add new translations to .po files
-```
-
-### Test translations locally:
-
-```bash
-cd web/
 pybabel compile -d app/translations
-# Run the app
 ```
+
+</details>
 
 ---
 
