@@ -19,8 +19,8 @@ export default function SeoHead({ lang, enPath, esPath }: SeoHeadProps) {
   const canonical = lang === 'en' ? `${SITE_URL}${enPath}` : `${SITE_URL}${esPath}`;
   const altEn = `${SITE_URL}${enPath}`;
   const altEs = `${SITE_URL}${esPath}`;
-  const description = t('meta.description', 'Guillermo Ortega Romo — Senior Cloud Engineer & Full Stack Developer. AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portfolio, resume & contact.');
-  const ogDescription = t('meta.ogDescription', 'Full Stack Engineer & Senior Cloud Engineer. AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portfolio & Resume.');
+  const description = t('meta.description', 'Guillermo Ortega Romo — Senior Software Engineer II (Full Stack). AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portfolio, resume & contact.');
+  const ogDescription = t('meta.ogDescription', 'Senior Software Engineer II (Full Stack). AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portfolio & Resume.');
 
   return (
     <Head>

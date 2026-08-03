@@ -13,18 +13,18 @@
     "menu": "Menú"
   },
   "meta": {
-    "description": "Guillermo Ortega Romo — Ingeniero Senior de Nube y Desarrollador Full Stack. AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portafolio, currículum y contacto.",
-    "ogDescription": "Ingeniero Full Stack e Ingeniero Senior de Nube. AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portafolio y Currículum."
+    "description": "Guillermo Ortega Romo — Ingeniero de Software Senior II (Full Stack). AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portafolio, currículum y contacto.",
+    "ogDescription": "Ingeniero de Software Senior II (Full Stack). AWS, Azure, GCP, OCI. Python, Terraform, Bicep. Portafolio y Currículum."
   },
   "home": {
-    "role": "Ingeniero Full Stack",
+    "role": "Ingeniero de Software Senior II (Full Stack)",
     "playGame": "Juega un juego",
     "explore": "Explora la página",
     "scrollNext": "Desplázate a la siguiente sección"
   },
   "about": {
     "title": "Acerca de mí",
-    "p1": "Ingeniero Senior de Nube con título en Ingeniería Mecatrónica de la Universidad Iberoamericana. Diseño y construyo plataformas serverless, infraestructura en la nube y herramientas internas en AWS, Azure, GCP y OCI. Con dominio de Python, Terraform, Bicep y CloudFormation, entrego soluciones escalables de Infraestructura como Código que reducen costos y aceleran los ciclos de entrega.",
+    "p1": "Ingeniero de Software Senior II con título en Ingeniería Mecatrónica de la Universidad Iberoamericana. Diseño y construyo plataformas serverless, infraestructura en la nube y herramientas internas en AWS, Azure, GCP y OCI. Con dominio de Python, Terraform, Bicep y CloudFormation, entrego soluciones escalables de Infraestructura como Código que reducen costos y aceleran los ciclos de entrega.",
     "p2": "Mi formación en mecatrónica me da una ventaja única conectando hardware y software, desde sistemas embebidos IoT hasta aplicaciones web full-stack. Me apasiona la automatización, las mejores prácticas de DevOps y construir herramientas que hagan más productivos a los equipos de ingeniería. Fuera del trabajo, disfruto tocar el piano y la carpintería, equilibrando creatividad y precisión en todo lo que hago.",
     "whereToFind": "Dónde encontrarme",
     "findText": "Siéntete libre de visitar mis perfiles de LinkedIn y GitHub para conocer un poco más acerca de mí",
@@ -57,7 +57,7 @@
     "edu3Descr": "Nivel de inglés: Competencia profesional completa",
     "edu4Title": "Ingeniería en Mecatrónica y producción",
     "edu4Date": "Ago/2017 - Dic/2022",
-    "exp1Title": "Ingeniero de nube Senior",
+    "exp1Title": "Ingeniero de Software Senior II",
     "exp1Date": "Abr/2020 - Actualidad",
     "exp1Descr": "Arquitecté una Image Factory serverless multicloud que entrega más de 100 imágenes doradas en AWS, Azure, GCP y OCI, reduciendo los ciclos de lanzamiento de mensuales a semanales. Diseñé una plataforma empresarial de gestión DNS que administra más de 200 dominios y 30,000+ registros en Azure. Reduje costos de infraestructura en un 40% mediante automatización con Terraform, Bicep, CloudFormation y Python.",
     "exp2Title": "Ingeniero DevOps",

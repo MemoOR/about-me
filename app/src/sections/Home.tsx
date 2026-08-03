@@ -18,7 +18,7 @@ export default function Home({ lang }: { lang: Lang }) {
             className="hs-line-10 uppercase mb-30 mb-xs-20 wow animate__animated animate__fadeInDownShort"
             data-wow-delay=".1s"
           >
-            {t('home.role', 'Full Stack Engineer')}
+            {t('home.role', 'Senior Software Engineer II (Full Stack)')}
           </h1>
           <h2
             className="hs-line-5 mb-60 mb-xs-40 wow animate__animated animate__fadeInDownShort"

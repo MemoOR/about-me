@@ -132,7 +132,7 @@ export default function Resume({ lang }: { lang: Lang }) {
                 <div className="pb-3 d-flex w-100 align-items-center resume-icon icon-rect icon-light">
                   <Icon name="trLogo" />
                 </div>
-                <h3 className="resume-title">{t('resume.exp1Title', 'Senior Cloud Engineer')}</h3>
+                <h3 className="resume-title">{t('resume.exp1Title', 'Senior Software Engineer II')}</h3>
                 <span className="date">
                   <i className="fa fa-calendar" />
                   <span className="sr-only" />

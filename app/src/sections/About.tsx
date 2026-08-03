@@ -22,7 +22,7 @@ export default function About() {
             >
               {t(
                 'about.p1',
-                'Senior Cloud Engineer with a Mechatronics Engineering degree from Universidad Iberoamericana. I design and build serverless platforms, cloud infrastructure, and internal tooling across AWS, Azure, GCP, and OCI. Proficient in Python, Terraform, Bicep, and CloudFormation, I deliver scalable Infrastructure as Code solutions that reduce costs and accelerate release cycles.',
+                'Senior Software Engineer II with a Mechatronics Engineering degree from Universidad Iberoamericana. I design and build serverless platforms, cloud infrastructure, and internal tooling across AWS, Azure, GCP, and OCI. Proficient in Python, Terraform, Bicep, and CloudFormation, I deliver scalable Infrastructure as Code solutions that reduce costs and accelerate release cycles.',
               )}
             </div>
 
@@ -73,7 +73,7 @@ export default function About() {
                 </div>
                 <div className="team-item-descr">
                   <div className="team-item-name">Guillermo Ortega Romo</div>
-                  <div className="team-item-role">Senior Cloud Engineer</div>
+                  <div className="team-item-role">Senior Software Engineer II</div>
                 </div>
               </div>
             </div>
